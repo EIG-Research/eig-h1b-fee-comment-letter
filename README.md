@@ -177,23 +177,6 @@ results and per-petition selection counts across batches. The draws are statisti
 identical to drawing all 100 at once; peak memory stays near 2 GB instead of exceeding 10 GB.
 `sim_batch_size_int` at the top of the script controls this.
 
-### Verifying a single number
-
-Every published figure is written to a CSV in `output/tables/`, and the console log of each
-run is preserved in `output/logs/`. To check a number in the comment, find it in the
-traceability table above, open the named CSV, and compare. To regenerate it, run the script
-named in the same row — subject to the chain constraint above.
-
-### Cost of a full run
-
-About 23 minutes end to end on a recent Apple Silicon laptop, dominated by script 06 at 16
-minutes. Script 06 peaks at roughly 2.3 GB resident, and script 04 holds the pooled ACS and
-petition samples in memory at once, so budget around 8 GB of free RAM for a full run. Script
-04 requires network access for the FRED API call; every other script runs offline.
-
-Measured step times from the verification run in `output/logs/`: 01 under 0.1 min, 02 0.3
-min, 03 under 0.1 min, 04 2.0 min, 05 0.7 min, 06 16.1 min, 07 1.8 min, 08 1.9 min.
-
 ---
 
 ## Every claim in the letter, and where to check it
