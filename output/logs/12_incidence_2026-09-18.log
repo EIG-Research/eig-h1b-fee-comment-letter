@@ -1,0 +1,137 @@
+Warning message:
+package ‘arrow’ was built under R version 4.6.1 
+FY2027 in-US registrations carried forward from scripts 10 and 11: 196,960
+In-US petitions, FY2022-24: 139,128; with an age match: 138,894
+
+Payroll-savings quartile cut points on the status-quo cohort: -0.0866, +0.0901, +0.2640
+Wage quartile cut points on the status-quo cohort: $85,578, $104,732, $135,257
+  simulated Borjas headline, current lottery (savings_quartile_int)
+  simulated Borjas headline, weighted lottery + old wage levels (savings_quartile_int)
+  simulated Borjas headline, weighted lottery + new wage levels (savings_quartile_int)
+  simulated Tenure-adjusted, current lottery (savings_quartile_int)
+  simulated Tenure-adjusted, weighted lottery + old wage levels (savings_quartile_int)
+  simulated Tenure-adjusted, weighted lottery + new wage levels (savings_quartile_int)
+  simulated Borjas headline, current lottery (wage_quartile_int)
+  simulated Borjas headline, weighted lottery + old wage levels (wage_quartile_int)
+  simulated Borjas headline, weighted lottery + new wage levels (wage_quartile_int)
+  simulated Tenure-adjusted, current lottery (wage_quartile_int)
+  simulated Tenure-adjusted, weighted lottery + old wage levels (wage_quartile_int)
+  simulated Tenure-adjusted, weighted lottery + new wage levels (wage_quartile_int)
+
+===== Fee incidence by payroll-savings quartile, mu = 0 =====
+  Q1 holds the smallest payroll savings, which is where the best-paid
+  H-1B workers sit: the payroll saving falls as the wage rises.
+
+  Borjas headline, current lottery
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     25.0%    -2.312    -0.221    -0.087   $134,272     86.7%    29.3     30.1    42,670
+    2     25.0%    -0.087    +0.007    +0.090   $113,658     63.1%    29.3     29.7    31,049
+    3     25.0%    +0.090    +0.172    +0.264   $100,151     38.7%    29.8     30.1    19,058
+    4     25.0%    +0.264    +0.383    +1.420    $86,382     14.6%    31.6     31.7     7,193
+    cohort: 99,970 of 196,960 in-US applications lost (50.8%); mean age 30.0 -> 30.7; F-1 share 85.3% -> 84.4%
+
+  Borjas headline, weighted lottery + old wage levels
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     33.6%    -2.312    -0.236    -0.087   $138,770     86.3%    29.8     30.5    57,183
+    2     26.7%    -0.087    +0.004    +0.090   $122,631     61.0%    29.9     30.3    32,098
+    3     22.3%    +0.090    +0.169    +0.264   $104,685     36.7%    30.5     30.7    16,131
+    4     17.3%    +0.264    +0.368    +1.246    $91,268     14.0%    32.2     32.3     4,780
+    cohort: 110,193 of 196,960 in-US applications lost (55.9%); mean age 30.4 -> 31.2; F-1 share 83.0% -> 82.2%
+
+  Borjas headline, weighted lottery + new wage levels
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     53.3%    -2.312    -0.260    -0.087   $144,656     86.3%    29.7     30.4    90,541
+    2     28.2%    -0.087    -0.006    +0.090   $133,290     58.3%    30.1     30.4    32,333
+    3     14.1%    +0.090    +0.157    +0.264   $127,114     33.3%    31.2     31.4     9,280
+    4      4.4%    +0.264    +0.335    +1.160   $107,977     12.6%    33.4     33.5     1,102
+    cohort: 133,257 of 196,960 in-US applications lost (67.7%); mean age 30.2 -> 31.0; F-1 share 82.7% -> 82.4%
+
+  Tenure-adjusted, current lottery
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     25.0%    -2.312    -0.221    -0.087   $134,272     92.0%    29.3     30.2    45,292
+    2     25.0%    -0.087    +0.007    +0.090   $113,658     76.2%    29.3     29.8    37,512
+    3     25.0%    +0.090    +0.172    +0.264   $100,151     57.5%    29.8     30.2    28,298
+    4     25.0%    +0.264    +0.383    +1.420    $86,382     34.8%    31.6     31.8    17,129
+    cohort: 128,231 of 196,960 in-US applications lost (65.1%); mean age 30.0 -> 30.9; F-1 share 85.3% -> 84.1%
+
+  Tenure-adjusted, weighted lottery + old wage levels
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     33.6%    -2.312    -0.236    -0.087   $138,770     91.7%    29.8     30.6    60,765
+    2     26.7%    -0.087    +0.004    +0.090   $122,631     74.5%    29.9     30.4    39,218
+    3     22.3%    +0.090    +0.169    +0.264   $104,685     55.5%    30.5     30.8    24,374
+    4     17.3%    +0.264    +0.368    +1.246    $91,268     33.6%    32.2     32.4    11,482
+    cohort: 135,840 of 196,960 in-US applications lost (69.0%); mean age 30.4 -> 31.3; F-1 share 83.0% -> 81.8%
+
+  Tenure-adjusted, weighted lottery + new wage levels
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     53.3%    -2.312    -0.260    -0.087   $144,656     91.7%    29.7     30.4    96,204
+    2     28.2%    -0.087    -0.006    +0.090   $133,290     72.5%    30.1     30.5    40,203
+    3     14.1%    +0.090    +0.157    +0.264   $127,114     52.1%    31.2     31.4    14,511
+    4      4.4%    +0.264    +0.335    +1.160   $107,977     30.7%    33.4     33.6     2,684
+    cohort: 153,601 of 196,960 in-US applications lost (78.0%); mean age 30.2 -> 31.2; F-1 share 82.7% -> 82.3%
+
+=== The fee removes the best-paid first, in every scenario ===
+  Borjas headline, current lottery                       Q1 (median wage $134,272) loses 86.7%; Q4 (median wage $86,382) loses 14.6%
+  Borjas headline, weighted lottery + old wage levels    Q1 (median wage $138,770) loses 86.3%; Q4 (median wage $91,268) loses 14.0%
+  Borjas headline, weighted lottery + new wage levels    Q1 (median wage $144,656) loses 86.3%; Q4 (median wage $107,977) loses 12.6%
+  Tenure-adjusted, current lottery                       Q1 (median wage $134,272) loses 92.0%; Q4 (median wage $86,382) loses 34.8%
+  Tenure-adjusted, weighted lottery + old wage levels    Q1 (median wage $138,770) loses 91.7%; Q4 (median wage $91,268) loses 33.6%
+  Tenure-adjusted, weighted lottery + new wage levels    Q1 (median wage $144,656) loses 91.7%; Q4 (median wage $107,977) loses 30.7%
+
+=== The fee selects for older workers ===
+  Borjas headline, current lottery                       mean age 30.00 -> 30.71 (+0.71 years)   F-1 share 85.3% -> 84.4%
+  Borjas headline, weighted lottery + old wage levels    mean age 30.38 -> 31.16 (+0.78 years)   F-1 share 83.0% -> 82.2%
+  Borjas headline, weighted lottery + new wage levels    mean age 30.18 -> 31.04 (+0.86 years)   F-1 share 82.7% -> 82.4%
+  Tenure-adjusted, current lottery                       mean age 30.00 -> 30.87 (+0.86 years)   F-1 share 85.3% -> 84.1%
+  Tenure-adjusted, weighted lottery + old wage levels    mean age 30.38 -> 31.32 (+0.94 years)   F-1 share 83.0% -> 81.8%
+  Tenure-adjusted, weighted lottery + new wage levels    mean age 30.18 -> 31.18 (+1.01 years)   F-1 share 82.7% -> 82.3%
+
+=== Cut by wage instead of by payroll savings, mu = 0 ===
+
+  Borjas headline, current lottery
+    Q1   25.0% of cohort   median wage     $74,963   age 29.4 -> 30.2   volume cut  45.0%
+    Q2   25.1% of cohort   median wage     $95,255   age 29.8 -> 30.6   volume cut  46.5%
+    Q3   24.9% of cohort   median wage    $119,015   age 30.1 -> 30.9   volume cut  53.7%
+    Q4   25.0% of cohort   median wage    $156,651   age 30.8 -> 31.3   volume cut  57.9%
+
+  Borjas headline, weighted lottery + old wage levels
+    Q1   16.7% of cohort   median wage     $76,068   age 29.5 -> 30.4   volume cut  49.5%
+    Q2   21.8% of cohort   median wage     $95,851   age 30.0 -> 30.9   volume cut  50.7%
+    Q3   27.4% of cohort   median wage    $120,285   age 30.4 -> 31.3   volume cut  58.2%
+    Q4   34.2% of cohort   median wage    $159,752   age 31.1 -> 31.7   volume cut  60.6%
+
+  Borjas headline, weighted lottery + new wage levels
+    Q1    6.1% of cohort   median wage     $77,533   age 28.9 -> 30.4   volume cut  67.4%
+    Q2   11.6% of cohort   median wage     $95,851   age 29.6 -> 31.0   volume cut  69.9%
+    Q3   31.3% of cohort   median wage    $123,648   age 29.8 -> 30.6   volume cut  66.9%
+    Q4   50.9% of cohort   median wage    $161,291   age 30.7 -> 31.4   volume cut  67.6%
+
+  Tenure-adjusted, current lottery
+    Q1   25.0% of cohort   median wage     $74,963   age 29.4 -> 30.3   volume cut  62.1%
+    Q2   25.1% of cohort   median wage     $95,255   age 29.8 -> 30.8   volume cut  61.7%
+    Q3   24.9% of cohort   median wage    $119,015   age 30.1 -> 31.1   volume cut  66.9%
+    Q4   25.0% of cohort   median wage    $156,651   age 30.8 -> 31.4   volume cut  69.7%
+
+  Tenure-adjusted, weighted lottery + old wage levels
+    Q1   16.7% of cohort   median wage     $76,068   age 29.5 -> 30.6   volume cut  65.5%
+    Q2   21.8% of cohort   median wage     $95,851   age 30.0 -> 31.1   volume cut  65.1%
+    Q3   27.4% of cohort   median wage    $120,285   age 30.4 -> 31.5   volume cut  70.6%
+    Q4   34.2% of cohort   median wage    $159,752   age 31.1 -> 31.8   volume cut  71.9%
+
+  Tenure-adjusted, weighted lottery + new wage levels
+    Q1    6.1% of cohort   median wage     $77,533   age 28.9 -> 30.6   volume cut  78.7%
+    Q2   11.6% of cohort   median wage     $95,851   age 29.6 -> 31.2   volume cut  80.2%
+    Q3   31.3% of cohort   median wage    $123,648   age 29.8 -> 30.8   volume cut  77.6%
+    Q4   50.9% of cohort   median wage    $161,291   age 30.7 -> 31.5   volume cut  77.6%
+
+=== What it does to the F-1 pipeline ===
+  Borjas headline, current lottery                       F-1 applications lost 86,092 of 167,996 (51.2%)
+  Borjas headline, weighted lottery + old wage levels    F-1 applications lost 92,215 of 163,501 (56.4%)
+  Borjas headline, weighted lottery + new wage levels    F-1 applications lost 110,475 of 162,966 (67.8%)
+  Tenure-adjusted, current lottery                       F-1 applications lost 110,169 of 167,996 (65.6%)
+  Tenure-adjusted, weighted lottery + old wage levels    F-1 applications lost 113,479 of 163,501 (69.4%)
+  Tenure-adjusted, weighted lottery + new wage levels    F-1 applications lost 127,296 of 162,966 (78.1%)
+
+Saved the incidence tables to output/tables/fee_incidence_*.csv
+Saved the Datawrapper files to output/tables/datawrapper/
+EXIT=0

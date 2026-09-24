@@ -1,0 +1,128 @@
+Warning message:
+package ‘arrow’ was built under R version 4.6.1 
+Loaded the pooled Borjas sample: 911,631 rows, FY2021-FY2024
+FY2022-24 natives: 440,415; FY2022-24 approved H-1B petitions: 255,412
+Matched OFLC wage levels to 251,962 of 255,412 petitions (98.6%)
+  merge check: beneficiary age agrees on 100.000% of matched petitions
+After restricting to cap-subject types B and M: 251,962
+Dropping 0 petitions with no regional price parity or lifetime multiplier (territories and unmatched worksite states)
+Base sample for the simulation: 251,962 petitions (120,481 reserved, 131,481 unreserved)
+
+=== Synthetic registrant pool ===
+  FY2022  eligible registrations   301,419  approval rate 0.899  pool   270,961
+  FY2023  eligible registrations   474,384  approval rate 0.927  pool   439,800
+  FY2024  eligible registrations   758,967  approval rate 0.954  pool   723,873
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+
+Observed FY2022-24 allocation: Borjas gap -0.1668 (0.0029), tenure-adjusted -0.1308
+
+Synthetic pool: 28,692,680 registrations across 20 replications
+
+=== Eligible pool per replication, against the 85,000 cap ===
+  FY2022  lca_wage_level_wt                 269,888  cap fillable
+  FY2023  lca_wage_level_wt                 438,588  cap fillable
+  FY2024  lca_wage_level_wt                 721,912  cap fillable
+  FY2022  Old_OFLC_wage_level_wt            265,260  cap fillable
+  FY2023  Old_OFLC_wage_level_wt            424,129  cap fillable
+  FY2024  Old_OFLC_wage_level_wt            699,086  cap fillable
+  FY2022  New_OFLC_wage_level_strict_wt      53,469  BELOW THE CAP
+  FY2023  New_OFLC_wage_level_strict_wt      86,625  cap fillable
+  FY2024  New_OFLC_wage_level_strict_wt     176,890  cap fillable
+
+Running scenario 1 of 4: old unweighted lottery
+NOTE: 0/3/0/0/0/3/0 fixed-effect singletons were removed (6 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/3/0/0/0/3/0 fixed-effect singletons were removed (6 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+Running scenario 2 of 4: weighted lottery, old OFLC wage levels
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/4/0/0/0/3/0 fixed-effect singletons were removed (7 observations).
+Running scenario 3 of 4: weighted lottery, new OFLC wage levels
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+Running scenario 4 of 4: EIG wage-ranking proposal
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+
+========== Estimated H-1B wage gap by allocation regime ==========
+  (negative means H-1B workers earn less than comparable natives)
+
+  Allocation regime                                Borjas     Tenure       SD        Visas
+  0. observed FY2022-24 allocation                -16.68%    -13.08%      NA      251,962
+  1. old unweighted lottery                       -16.67%    -13.07%    0.06      255,000
+  2a. weighted lottery, old wage levels            -9.26%     -5.66%    0.05      255,000
+  2b. weighted lottery, new wage levels            10.45%     14.05%    0.07      208,950
+  3. EIG wage ranking, RPP and NPV adjusted         9.89%     13.49%    0.05      255,000
+
+Saved simulation tables to output/tables/
+EXIT=0

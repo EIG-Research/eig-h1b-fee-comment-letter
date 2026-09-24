@@ -1,0 +1,9 @@
+"script","status","minutes"
+"01_appendix_audit.R","ok",0.01
+"02_mechanical_identity_sim.R","ok",0.31
+"03_implied_elasticity.R","ok",0
+"04_borjas_replication.R","ok",2.04
+"05_borjas_labor_demand.R","ok",0.74
+"06_allocation_simulation.R","ok",16.13
+"07_fee_under_reformed_rules.R","ok",1.79
+"08_fee_incidence_by_quartile.R","ok",1.9

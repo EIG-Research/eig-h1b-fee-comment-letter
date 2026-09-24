@@ -1,0 +1,5 @@
+dhs_estimate_source,dhs_elasticity_num,predicted_log_quantity_change_num,predicted_quantity_change_pct,predicted_receipts_int,observed_receipts_int,observed_quantity_change_pct
+"Table A.4 cross-section, FY2025",0.94,4.038984793842585,5576.868162629394,784713,1212,-91.23200462996455
+"Table A.4 cross-section, FY2021",0.97,4.167888563858837,6357.895371745967,892675,1212,-91.23200462996455
+Table A.5 panel (long run),0.62,2.664011247002556,1335.3750213788976,198412,1212,-91.23200462996455
+"Table A.5 panel, read with the sign a demand elasticity must have",-0.62,-2.664011247002556,-93.03317958647945,963,1212,-91.23200462996455

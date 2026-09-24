@@ -1,0 +1,8 @@
+step_int,label_chr,estimate_num,std_error_num,t_stat_num,n_obs_int
+1,"1. Borjas Table 2 col. 5, on the critique sample",-0.16392593352200072,0.0029516445077771214,-55.53715330219528,690537
+2,2. + place-of-work PUMA replaces the metro of work,-0.17290352119193567,0.0029170108812262502,-59.27421193549016,690535
+3,3. + PW state x SOC major group and PW state x NAICS sector,-0.1013799211039728,0.002805065394978141,-36.14173177048616,690476
+4,4. + standard errors clustered by geography and occupation,-0.1013799211039728,0.013015469611097315,-7.789186570535553,690476
+5,5. + only filings whose education is reported,-0.1278601642728775,0.011640237745886815,-10.984325841459558,628936
+6,"6. Borjas specification, only reported education",-0.18048312561844715,0.04087666864347859,-4.415309065242067,628998
+7,"7. Borjas specification, education as a reported category",-0.18081540563516224,0.04084492953251802,-4.426875201026092,690537

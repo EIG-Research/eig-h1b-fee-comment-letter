@@ -1,0 +1,4 @@
+label_chr,n_cells_int,estimate_num,std_error_num
+place-of-work state (about 50 cells),57,-0.13778985327672974,0.002793068289787207
+"metro of work, Borjas's choice (315 cells)",313,-0.16392593352200072,0.0029516445077771214
+"place-of-work PUMA (1,293 cells)",1012,-0.17290352119193567,0.0029170108812262502

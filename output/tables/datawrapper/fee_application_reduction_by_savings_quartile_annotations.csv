@@ -1,0 +1,13 @@
+quartile,series,"Savings, lower bound","Savings, median","Savings, upper bound","Savings observed in this series, min","Savings observed in this series, max","Savings as the hiring rule sees it, min","Savings as the hiring rule sees it, max",Median wage,"Share of in-US cohort, %","Application reduction, %",FY2027 applications,FY2027 applications lost,Mean age before the fee,Mean age after the fee,Age shift,"F-1 share before the fee, %","F-1 share after the fee, %"
+Q1: below -0.09,Borjas headline,-2.3122,-0.221,-0.0866,-2.3122,-0.0866,-0.7,-0.0866,134272,25,86.7,49242,42674,29.3,30.1,0.77,83.4,78.8
+Q2: -0.09 to +0.09,Borjas headline,-0.0866,0.0072,0.0899,-0.0866,0.0899,-0.0866,0.0899,113658,25,63.1,49239,31062,29.3,29.7,0.44,86.5,84.7
+Q3: +0.09 to +0.26,Borjas headline,0.0899,0.1722,0.2637,0.0899,0.2637,0.0899,0.2637,100151,25,38.7,49239,19066,29.8,30.1,0.25,87,86.2
+Q4: above +0.26,Borjas headline,0.2637,0.3825,1.4197,0.2637,1.4197,0.2637,0.4,86369,25,14.6,49240,7201,31.6,31.7,0.13,84.4,84
+Q1: below -0.09,"Weighted lottery, old wage levels",-2.3122,-0.2356,-0.0866,-2.3122,-0.0866,-0.7,-0.0866,138789,33.6,86.3,66185,57106,29.8,30.5,0.77,81.1,76.3
+Q2: -0.09 to +0.09,"Weighted lottery, old wage levels",-0.0866,0.0036,0.0899,-0.0866,0.0899,-0.0866,0.0899,122629,26.7,61,52613,32107,29.9,30.3,0.43,84.3,82.4
+Q3: +0.09 to +0.26,"Weighted lottery, old wage levels",0.0899,0.1682,0.2637,0.0899,0.2637,0.0899,0.2637,104685,22.3,36.8,43968,16177,30.5,30.7,0.25,84.8,84
+Q4: above +0.26,"Weighted lottery, old wage levels",0.2637,0.3681,1.4197,0.2637,1.246,0.2637,0.4,91348,17.4,14,34194,4791,32.2,32.3,0.14,82.5,82.1
+Q1: below -0.09,"Weighted lottery, new wage levels",-2.3122,-0.2603,-0.0866,-2.3122,-0.0866,-0.7,-0.0866,144656,53.3,86.3,104929,90553,29.7,30.4,0.66,80.6,76.3
+Q2: -0.09 to +0.09,"Weighted lottery, new wage levels",-0.0866,-0.0056,0.0899,-0.0866,0.0899,-0.0866,0.0899,133290,28.1,58.3,55411,32303,30.1,30.4,0.3,85.1,83.8
+Q3: +0.09 to +0.26,"Weighted lottery, new wage levels",0.0899,0.1564,0.2637,0.0899,0.2636,0.0899,0.2636,127111,14.1,33.4,27831,9293,31.2,31.4,0.19,85.6,85
+Q4: above +0.26,"Weighted lottery, new wage levels",0.2637,0.3331,1.4197,0.2639,1.1603,0.2639,0.4,107977,4.5,12.7,8788,1113,33.3,33.4,0.11,83.7,83.6

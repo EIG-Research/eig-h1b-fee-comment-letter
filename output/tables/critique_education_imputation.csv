@@ -1,0 +1,5 @@
+label_chr,estimate_num,std_error_num,n_obs_int
+Table 2 col. 5 as published (education imputed),-0.1578929752961238,0.0024774360702699188,911628
+dropping filings with no reported education,-0.16787704018309876,0.0025697647466073484,849969
+education entered with an 'unknown' category,-0.16788718761695312,0.0025609798238840787,911628
+"restricted to FY2021-FY2022, where education is reported",-0.15038214045198153,0.0037036088218270033,440163

@@ -1,0 +1,86 @@
+Warning message:
+package ‘arrow’ was built under R version 4.6.1 
+R = 5.5797; R_g = 5.7857; sigma_pi = 0.1941
+Loaded 571,623 natives and 340,008 H-1B petitions
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+H-1B petitions with no native counterfactual (unseen fixed-effect level): 0 (0.00%)
+
+=== Payroll savings distribution (Figure 1) ===
+  Mean before the seniority adjustment: 0.157   (Borjas 0.156)
+  Mean after the seniority adjustment:  0.121   (Borjas 0.120)
+  Share with positive payroll savings:  68.5%   (Borjas 68.3%)
+Simulated baseline, mu_pi = -0.1
+Simulated baseline, mu_pi = +0.0
+Simulated baseline, mu_pi = +0.1
+Simulated growth_and_separations, mu_pi = -0.1
+Simulated growth_and_separations, mu_pi = +0.0
+Simulated growth_and_separations, mu_pi = +0.1
+
+=== Figure 2 benchmarks, degenerate pi = 0 ===
+  Hiring rate at F = 0:        68.5%   (Borjas 68%)
+  Hiring rate at F = $100,000: 45.0%   (Borjas 45%)
+  Hiring rate at $100,000 across mu: 45.3% to 64.5%   (Borjas 45% to 64%)
+
+================ Table 8. Impact of a visa fee on the demand for H-1B workers ================
+  replication   [Borjas]
+
+  N = 170,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    165.0   141.0   117.0   [  164.0   140.0   117.0]
+    Hiring rate (%)                     45.4    41.8    39.3   [   45.3    41.8    39.0]
+    Visas demanded (1000s)              77.2    71.1    66.8   [   77.1    71.1    66.3]
+    Total revenue ($bn)                 12.7    10.0     7.8   [   12.6    10.0     7.8]
+
+  N = 255,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    212.0   172.0   136.0   [  210.0   170.0   135.0]
+    Hiring rate (%)                     33.2    33.2    33.3   [   33.3    33.4    33.3]
+    Visas demanded (1000s)              84.6    84.6    84.9   [   84.9    85.0    84.9]
+    Total revenue ($bn)                 17.9    14.5    11.5   [   17.8    14.5    11.5]
+
+  N = 340,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    248.0   206.0   167.0   [  246.0   204.0   166.0]
+    Hiring rate (%)                     25.0    25.0    25.0   [   25.1    25.1    24.9]
+    Visas demanded (1000s)              84.9    84.8    84.8   [   85.0    85.0    84.8]
+    Total revenue ($bn)                 21.1    17.5    14.2   [   20.9    17.3    14.1]
+
+================ Table 9. Impact of a visa fee, allowing for wage growth and job separations ================
+  replication   [Borjas]
+
+  N = 170,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    137.0   116.0    96.0   [  136.0   115.0    95.0]
+    Hiring rate (%)                     37.4    34.9    33.1   [   37.5    35.0    33.2]
+    Visas demanded (1000s)              63.6    59.3    56.2   [   63.7    59.4    56.4]
+    Total revenue ($bn)                  8.7     6.9     5.4   [    8.7     6.8     5.4]
+
+  N = 255,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    153.0   122.0    96.0   [  152.0   121.0    95.0]
+    Hiring rate (%)                     33.3    33.1    33.1   [   33.2    33.2    33.2]
+    Visas demanded (1000s)              84.8    84.5    84.3   [   84.8    84.6    84.7]
+    Total revenue ($bn)                 13.0    10.3     8.1   [   12.9    10.2     8.0]
+
+  N = 340,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    190.0   154.0   123.0   [  188.0   153.0   122.0]
+    Hiring rate (%)                     24.9    24.9    24.9   [   25.0    24.9    24.9]
+    Visas demanded (1000s)              84.6    84.7    84.6   [   85.0    84.7    84.8]
+    Total revenue ($bn)                 16.1    13.0    10.4   [   16.0    13.0    10.3]
+
+Saved Tables 8 and 9 to output/tables/borjas_august_tables8_9.csv
+
+=== Highest fee at which all 85,000 visas are still used (N = 170,000) ===
+  mu = -0.1 : $148,000
+  mu = +0.0 : $114,000
+  mu = +0.1 : $87,000
+  Borjas: $87,000 worst case (mu = +0.1); $147,000 at mu = -0.1
+Warning messages:
+1: Removed 2045 rows containing non-finite outside the scale range (`stat_bin()`). 
+2: Removed 2 rows containing missing values or values outside the scale range
+(`geom_bar()`). 
+Saved fig01_borjas_payroll_savings.png
+Warning messages:
+1: Removed 400 rows containing missing values or values outside the scale range
+(`geom_line()`). 
+2: Removed 300 rows containing missing values or values outside the scale range
+(`geom_line()`). 
+3: Removed 300 rows containing missing values or values outside the scale range
+(`geom_line()`). 
+Saved fig02_borjas_fee_simulation.png
+EXIT=0

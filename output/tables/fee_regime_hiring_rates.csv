@@ -1,0 +1,73 @@
+alloc_method,weight_scheme,channel_chr,mu_pi_num,hiring_rate_num,n_petitions_int
+1. old unweighted lottery,eligible applicants,Abroad,-0.1,0.5354092003326476,114235
+1. old unweighted lottery,eligible applicants,Abroad,0,0.44855123210924847,114235
+1. old unweighted lottery,eligible applicants,Abroad,0.1,0.3596202564888169,114235
+1. old unweighted lottery,eligible applicants,In US,-0.1,0.43265823339517084,136918
+1. old unweighted lottery,eligible applicants,In US,0,0.3479895265779518,136918
+1. old unweighted lottery,eligible applicants,In US,0.1,0.2691200572605501,136918
+1. old unweighted lottery,eligible applicants,All,-0.1,0.4793147205090124,251153
+1. old unweighted lottery,eligible applicants,All,0,0.3934767253427194,251153
+1. old unweighted lottery,eligible applicants,All,0.1,0.31021074803008525,251153
+1. old unweighted lottery,lottery winners,Abroad,-0.1,0.535210230733065,114235
+1. old unweighted lottery,lottery winners,Abroad,0,0.4481073606135976,114235
+1. old unweighted lottery,lottery winners,Abroad,0.1,0.359312716258611,114235
+1. old unweighted lottery,lottery winners,In US,-0.1,0.4341733011754031,136918
+1. old unweighted lottery,lottery winners,In US,0,0.3491692550665172,136918
+1. old unweighted lottery,lottery winners,In US,0.1,0.2703733803788924,136918
+1. old unweighted lottery,lottery winners,All,-0.1,0.48010818862745097,251153
+1. old unweighted lottery,lottery winners,All,0,0.39408089764705884,251153
+1. old unweighted lottery,lottery winners,All,0.1,0.31078431647058824,251153
+"2a. weighted lottery, old wage levels",eligible applicants,Abroad,-0.1,0.5300966466407862,111023
+"2a. weighted lottery, old wage levels",eligible applicants,Abroad,0,0.443402988569936,111023
+"2a. weighted lottery, old wage levels",eligible applicants,Abroad,0.1,0.35541482395539664,111023
+"2a. weighted lottery, old wage levels",eligible applicants,In US,-0.1,0.42787161022981873,133453
+"2a. weighted lottery, old wage levels",eligible applicants,In US,0,0.3431166028489431,133453
+"2a. weighted lottery, old wage levels",eligible applicants,In US,0.1,0.26518879305823023,133453
+"2a. weighted lottery, old wage levels",eligible applicants,All,-0.1,0.4743610006708225,244476
+"2a. weighted lottery, old wage levels",eligible applicants,All,0,0.38868772394836304,244476
+"2a. weighted lottery, old wage levels",eligible applicants,All,0.1,0.30621013923657125,244476
+"2a. weighted lottery, old wage levels",lottery winners,Abroad,-0.1,0.47930703425623594,111023
+"2a. weighted lottery, old wage levels",lottery winners,Abroad,0,0.3962030325362359,111023
+"2a. weighted lottery, old wage levels",lottery winners,Abroad,0.1,0.3152024958996736,111023
+"2a. weighted lottery, old wage levels",lottery winners,In US,-0.1,0.38981652184252663,133453
+"2a. weighted lottery, old wage levels",lottery winners,In US,0,0.31019011675379826,133453
+"2a. weighted lottery, old wage levels",lottery winners,In US,0.1,0.23906129816888977,133453
+"2a. weighted lottery, old wage levels",lottery winners,All,-0.1,0.4305072988235294,244476
+"2a. weighted lottery, old wage levels",lottery winners,All,0,0.34940448588235296,244476
+"2a. weighted lottery, old wage levels",lottery winners,All,0.1,0.2736549674509804,244476
+"2b. weighted lottery, new wage levels",eligible applicants,Abroad,-0.1,0.28371327557016235,20082
+"2b. weighted lottery, new wage levels",eligible applicants,Abroad,0,0.21832984762473856,20082
+"2b. weighted lottery, new wage levels",eligible applicants,Abroad,0.1,0.16398018125684694,20082
+"2b. weighted lottery, new wage levels",eligible applicants,In US,-0.1,0.3062352498454426,37203
+"2b. weighted lottery, new wage levels",eligible applicants,In US,0,0.2365852216219122,37203
+"2b. weighted lottery, new wage levels",eligible applicants,In US,0.1,0.17797166895142866,37203
+"2b. weighted lottery, new wage levels",eligible applicants,All,-0.1,0.2983596054813651,57285
+"2b. weighted lottery, new wage levels",eligible applicants,All,0,0.23038229903115998,57285
+"2b. weighted lottery, new wage levels",eligible applicants,All,0.1,0.17300672078205465,57285
+"2b. weighted lottery, new wage levels",lottery winners,Abroad,-0.1,0.2623761664140257,20082
+"2b. weighted lottery, new wage levels",lottery winners,Abroad,0,0.2001603721196751,20082
+"2b. weighted lottery, new wage levels",lottery winners,Abroad,0.1,0.1495209722651944,20082
+"2b. weighted lottery, new wage levels",lottery winners,In US,-0.1,0.2863500843720389,37203
+"2b. weighted lottery, new wage levels",lottery winners,In US,0,0.22014356985626898,37203
+"2b. weighted lottery, new wage levels",lottery winners,In US,0.1,0.16562123582293098,37203
+"2b. weighted lottery, new wage levels",lottery winners,All,-0.1,0.27727008084265786,57285
+"2b. weighted lottery, new wage levels",lottery winners,All,0,0.21212655142751322,57285
+"2b. weighted lottery, new wage levels",lottery winners,All,0.1,0.15901298792711016,57285
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,Abroad,-0.1,0.29184755332496864,12752
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,Abroad,0,0.22811558971141782,12752
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,Abroad,0.1,0.17516232747804267,12752
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,In US,-0.1,0.3620295422144781,50504
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,In US,0,0.2856102486931728,50504
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,In US,0.1,0.21926619673689213,50504
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,All,-0.1,0.34764512457316304,63256
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,All,0,0.27386066143923105,63256
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,All,0.1,0.21031048438092828,63256
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,Abroad,-0.1,0.25553761459191926,12752
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,Abroad,0,0.19720657728916183,12752
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,Abroad,0.1,0.14920375949208708,12752
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,In US,-0.1,0.32992152085045945,50504
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,In US,0,0.2576041103136534,50504
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,In US,0.1,0.19709782396013015,50504
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,All,-0.1,0.3115538592156863,63256
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,All,0,0.24301743411764706,63256
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,All,0.1,0.18569756823529412,63256

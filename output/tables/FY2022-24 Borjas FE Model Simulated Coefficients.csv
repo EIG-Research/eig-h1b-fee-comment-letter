@@ -1,0 +1,6 @@
+alloc_method,n_replications,Mean visas awarded,"Estimated Wage Difference, Borjas Model","SD across replications, Borjas Model","Estimated Wage Difference, Tenure Model","SD across replications, Tenure Model"
+0. observed FY2022-24 allocation,1,251962,-16.67850469816889,NA,-13.078504698168892,NA
+1. old unweighted lottery,100,255000,-16.681937279051436,0.052602134535880765,-13.081937279051436,0.052602134535880765
+"2a. weighted lottery, old wage levels",100,255000,-9.265395368309933,0.05997045945242166,-5.665395368309935,0.05997045945242164
+"2b. weighted lottery, new wage levels",100,208843.95,10.45025002842437,0.06448489045539528,14.050250028424369,0.06448489045539536
+"3. EIG wage ranking, RPP and NPV adjusted",100,255000,9.880470246111354,0.051044195190349924,13.480470246111354,0.05104419519034982

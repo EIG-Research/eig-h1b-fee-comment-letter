@@ -1,0 +1,4 @@
+quantity,value_num,source_note
+Variance of log(petition count) across entities,1.2563827188133363,Computed from published Technical Appendix Tables A.1 and A.2
+Variance of log(per-petition fee) across entities,0.1346525167997774,Computed from published Technical Appendix Tables A.1 and A.2
+Share of variance in log(total fees) that is variance in the outcome,0.9031997800253939,Computed from published Technical Appendix Tables A.1 and A.2

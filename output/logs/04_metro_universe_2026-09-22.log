@@ -1,0 +1,228 @@
+Warning message:
+package ‘arrow’ was built under R version 4.6.1 
+Retrieved 103 monthly CPIAUCNS observations, 2018-01-01 to 2026-08-01
+NOTE: the 2025 CPI base uses 11 months. This rescales all dollar figures uniformly and leaves the wage-gap coefficients unchanged.
+Loaded 4 I-129 files: 373,104 petitions, FY2021-FY2024
+H-1B after core restrictions: 356,537; after the status-date window: 356,413 (dropped 124)
+Loaded ACS: 752,303 rows, years 2021, 2022, 2023, 2024
+ACS native sample before the earnings floor: 611,729
+H-1B rows with no place-of-work PUMA: 68 (0.02%)
+H-1B rows missing an occupation match: 1; missing an industry match: 16359; falling back to a state pseudo-metro: 30893
+ACS rows falling back to a state pseudo-metro: 113142 (18.5%)
+
+Earnings bounds applied at Borjas's stated values: floor $34,780 (the 0.01 percentile here); ceiling $1,290,000 (the 100.00 percentile here)
+
+=== Table 1 check (replication vs Borjas) ===
+  Native:
+    N            571,623   vs 581,648
+    Salary(000s)    127.1   vs    127.0
+    Log salary      11.53   vs    11.53
+    Age              35.8   vs     35.8
+    Male %           55.1   vs     55.1
+    Bachelor %       71.9   vs     71.8
+    Master %         20.9   vs     20.9
+    Prof %            4.6   vs      4.6
+    Doctorate %       2.7   vs      2.7
+  H-1B:
+    N            340,008   vs 343,397
+    Salary(000s)    112.7   vs    112.6
+    Log salary      11.58   vs    11.58
+    Age              31.9   vs     31.9
+    Male %           67.0   vs     67.2
+    Bachelor %       53.7   vs     52.3
+    Master %         40.6   vs     41.8
+    Prof %            1.0   vs      0.9
+    Doctorate %       4.8   vs      5.1
+
+=== Beneficiary location (Borjas: Abroad 42.1, USA 57.7, Other 0.2) ===
+  Abroad     144,626   42.5%
+  Other          697    0.2%
+  USA        194,685   57.3%
+
+Total regression observations: 911,631   (Borjas: 925,045)
+Estimated column 1
+Estimated column 2
+Estimated column 3
+NOTE: 0/0/0/0/0/3 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3 fixed-effect singletons were removed (3 observations).
+Estimated column 4
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+Estimated column 5
+
+================ Table 2. Estimates of the H-1B wage gap ================
+  replication (se)   [Borjas reported]
+
+  A. Baseline (OLS)
+    H-1B
+      (1)  +0.048 (0.001)   [+0.044]   diff +0.004
+      (2)  -0.064 (0.002)   [-0.062]   diff -0.002
+      (3)  -0.025 (0.002)   [-0.023]   diff -0.002
+      (4)  -0.128 (0.002)   [-0.136]   diff +0.008
+      (5)  -0.158 (0.002)   [-0.161]   diff +0.003
+
+  B. Location of beneficiary (OLS)
+    Abroad
+      (1)  +0.032 (0.001)   [+0.021]   diff +0.011
+      (2)  -0.061 (0.002)   [-0.065]   diff +0.004
+      (3)  -0.083 (0.002)   [-0.087]   diff +0.004
+      (4)  -0.168 (0.003)   [-0.181]   diff +0.013
+      (5)  -0.207 (0.003)   [-0.219]   diff +0.012
+    USA
+      (1)  +0.059 (0.001)   [+0.061]   diff -0.002
+      (2)  -0.066 (0.002)   [-0.059]   diff -0.007
+      (3)  +0.019 (0.002)   [+0.025]   diff -0.006
+      (4)  -0.099 (0.002)   [-0.102]   diff +0.003
+      (5)  -0.122 (0.003)   [-0.118]   diff -0.004
+
+Saved Table 2 to output/tables/borjas_august_table2.csv
+
+=== 12. Quality of the place-of-work metro in the ACS native sample ===
+  match error no metro identified      113,142   18.5%
+  match error under 0.1%               157,896   25.8%
+  match error 0.1 to 0.9%               58,727    9.6%
+  match error 1.0 to 1.9%               73,293   12.0%
+  match error 2.0 to 4.9%               99,358   16.2%
+  match error 5.0 to 9.9%               66,711   10.9%
+  match error 10.0 to 14.9%             42,602    7.0%
+  no metro of work at all: 18.5% of natives; no place-of-work PUMA: 0.71%
+  among natives with a metro, 41.9% sit in a cell with 2% or more match error and 21.9% with 5% or more
+  distinct metro cells: 315; distinct place-of-work PUMA cells: 1293
+
+=== 12a. Metro coverage, both universes ===
+  Borjas regression universe (full-time, year-round)       n =   611,729
+      no metro of work: 18.50%;  5-15% allocation error: 17.87% of all entries, 21.92% of those with a metro
+  All college-educated, privately employed U.S.-born workers n =   752,258
+      no metro of work: 19.06%;  5-15% allocation error: 17.62% of all entries, 21.77% of those with a metro
+
+=== 13. Critique sample: 690,540 rows (255,344 H-1B), FY2022-FY2024 ===
+  dropped from the Table 2 sample: 221,091 rows (24.3%), of which 215,804 are FY2021
+  distinct cells -- place-of-work state x SOC major group: 1167; place-of-work state x NAICS sector: 1011; detailed occupation: 522; detailed industry: 280
+
+=== 13a. Asymmetry in the metro fallback ===
+  natives assigned a state pseudo-metro: 18.0%; H-1B filings: 8.7%
+  under place-of-work PUMA the same rates are 0.71% and 0.02%, so the asymmetry is a property of the metro coding, not of the data
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+
+=== 13b. The wage gap as a function of geographic granularity ===
+  place-of-work state (about 50 cells)            57 cells   -0.1378 (0.0028)
+  metro of work, Borjas's choice (315 cells)     313 cells   -0.1639 (0.0030)
+  place-of-work PUMA (1,293 cells)             1,012 cells   -0.1729 (0.0029)
+  The estimate widens monotonically as the cells shrink. Clemens (2026) makes the same point in the other direction, reporting -0.125 on PUMAs against -0.085 on commuting zones.
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+
+=== 13c. Age as dummies against age as a quadratic ===
+  single-year age fixed effects, as published: -0.1639 (0.0030)
+  age and age squared entered linearly:        -0.1629 (0.0029)
+  Age is therefore already categorical in the published specification. The problem is not the functional form of the control but that one pooled coefficient is reported for a profile that varies with age, as section 16 shows.
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+  estimated critique step 1
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+  estimated critique step 2
+NOTE: 0/37/35/0/0/0 fixed-effect singletons were removed (64 observations).
+  estimated critique step 3
+NOTE: 0/37/35/0/0/0 fixed-effect singletons were removed (64 observations).
+  estimated critique step 4
+    two-way clustered on pw_state_chr + soc_major_chr (57 and 22 clusters)
+NOTE: 0/37/36/0/0/0 fixed-effect singletons were removed (65 observations).
+  estimated critique step 5
+    two-way clustered on pw_state_chr + soc_major_chr (57 and 22 clusters)
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+  estimated critique step 6
+    two-way clustered on metro_area + occ_code (313 and 522 clusters)
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+  estimated critique step 7
+    two-way clustered on metro_area + occ_code (313 and 522 clusters)
+
+=== 14. Stepwise critique of the headline wage gap ===
+  Borjas reports -0.161; Part I reproduces -0.158 on the full sample
+
+  1. Borjas Table 2 col. 5, on the critique sample             -0.1639 (0.0030)  t = -55.54  N = 690,537
+  2. + place-of-work PUMA replaces the metro of work           -0.1729 (0.0029)  t = -59.27  N = 690,535
+  3. + PW state x SOC major group and PW state x NAICS sector  -0.1014 (0.0028)  t = -36.14  N = 690,476
+  4. + standard errors clustered by geography and occupation   -0.1014 (0.0130)  t =  -7.79  N = 690,476
+  5. + only filings whose education is reported                -0.1279 (0.0116)  t = -10.98  N = 628,936
+  6. Borjas specification, only reported education             -0.1805 (0.0409)  t =  -4.42  N = 628,998
+  7. Borjas specification, education as a reported category    -0.1808 (0.0408)  t =  -4.43  N = 690,537
+
+=== 15. Education imputation ===
+  FY2021    84,596 filings, 0.1% with education imputed to bachelor's
+  FY2022    81,404 filings, 0.1% with education imputed to bachelor's
+  FY2023    86,930 filings, 38.5% with education imputed to bachelor's
+  FY2024    87,078 filings, 32.2% with education imputed to bachelor's
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/7/1 fixed-effect singletons were removed (8 observations).
+
+  Table 2 col. 5 as published (education imputed)            -0.1579 (0.0025)  N = 911,628
+  dropping filings with no reported education                -0.1679 (0.0026)  N = 849,969
+  education entered with an 'unknown' category               -0.1679 (0.0026)  N = 911,628
+  restricted to FY2021-FY2022, where education is reported   -0.1504 (0.0037)  N = 440,163
+  Borjas footnote 19 reports -0.172 (0.003) for the first two alternatives
+  of the 63,206 filings imputed to bachelor's, 38.7% entered through the master's-cap lottery, which requires a master's degree or above
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/37/35/0/0/0 fixed-effect singletons were removed (64 observations).
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+=== 16. The H-1B wage gap by single year of age ===
+  (positive means H-1B workers out-earn comparable natives of that age)
+
+  Borjas Table 2 col. 5
+    gap turns negative at age 25; share of H-1B filings below that age: 2.0%
+      age 22  +0.1928 (0.0239)      0.0% of filings
+      age 24  +0.0448 (0.0064)      1.5% of filings
+      age 26  -0.0531 (0.0052)      6.7% of filings
+      age 28  -0.0996 (0.0050)      9.0% of filings
+      age 30  -0.1251 (0.0051)      8.1% of filings
+      age 32  -0.1451 (0.0054)      6.3% of filings
+      age 34  -0.1898 (0.0057)      5.0% of filings
+      age 36  -0.2661 (0.0064)      3.8% of filings
+      age 38  -0.2953 (0.0068)      3.0% of filings
+      age 40  -0.3338 (0.0071)      2.4% of filings
+      age 42  -0.3272 (0.0078)      1.6% of filings
+      age 44  -0.3363 (0.0089)      1.1% of filings
+      age 46  -0.3479 (0.0105)      0.7% of filings
+      age 48  -0.3362 (0.0123)      0.4% of filings
+      age 50  -0.2844 (0.0156)      0.3% of filings
+
+  PW state x broad occupation and sector
+    gap turns negative at age 28; share of H-1B filings below that age: 20.7%
+      age 22  +0.2858 (0.0345)      0.0% of filings
+      age 24  +0.1463 (0.0385)      1.5% of filings
+      age 26  +0.0347 (0.0235)      6.7% of filings
+      age 28  -0.0268 (0.0188)      9.0% of filings
+      age 30  -0.0654 (0.0100)      8.1% of filings
+      age 32  -0.0902 (0.0119)      6.3% of filings
+      age 34  -0.1384 (0.0123)      5.0% of filings
+      age 36  -0.2168 (0.0147)      3.8% of filings
+      age 38  -0.2492 (0.0191)      3.0% of filings
+      age 40  -0.2757 (0.0239)      2.4% of filings
+      age 42  -0.2744 (0.0215)      1.6% of filings
+      age 44  -0.2918 (0.0261)      1.1% of filings
+      age 46  -0.3046 (0.0345)      0.7% of filings
+      age 48  -0.2930 (0.0378)      0.4% of filings
+      age 50  -0.2535 (0.0541)      0.3% of filings
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+
+=== 18a. Which ages carry the pooled gap ===
+  count-weighted average of the age-specific gaps: -0.1638, against the pooled estimate -0.1639
+  ages 21-29   38.6% of filings   mean gap -0.0732    17.3% of the pooled gap
+  ages 30-34   32.4% of filings   mean gap -0.1492    29.5% of the pooled gap
+  ages 35-39   17.3% of filings   mean gap -0.2763    29.1% of the pooled gap
+  ages 40-50   11.7% of filings   mean gap -0.3367    24.1% of the pooled gap
+  Borjas's own Table 5 column 3 reports that the native seniority premium is small for the first ten years of job tenure and jumps after that. The omitted-tenure bias therefore grows with age, which is exactly the shape of this profile -- and the 3.6-point correction he applies is a single constant.
+
+=== 17. Adjustments the regression cannot make ===
+  Preferred specification (critique step 5)                       running gap -0.1279
+  less the job-seniority bias, Borjas pp. 17-18 (0.886 x 0.041)   running gap -0.0919
+  less the job-seniority bias, Clemens (2026) Table 2 from the SIPP  running gap -0.0646
+  less the base-salary vs total-wage-income gap, Clemens (2026) sec. 3.3  running gap +0.0054
+  The last two lines are not estimates from this sample; they are the published corrections applied in sequence.
+
+Saved the critique tables to output/tables/critique_*.csv
+EXIT=0

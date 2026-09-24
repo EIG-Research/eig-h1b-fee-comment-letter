@@ -1,0 +1,1465 @@
+alloc_method,weight_scheme,mu_pi_num,fee_num,willing_share_num
+1. old unweighted lottery,eligible applicants,-0.1,0,1
+1. old unweighted lottery,eligible applicants,-0.1,5000,0.9630709169311135
+1. old unweighted lottery,eligible applicants,-0.1,10000,0.9282126831055176
+1. old unweighted lottery,eligible applicants,-0.1,15000,0.8948884146317185
+1. old unweighted lottery,eligible applicants,-0.1,20000,0.8628570234080424
+1. old unweighted lottery,eligible applicants,-0.1,25000,0.8319395348652017
+1. old unweighted lottery,eligible applicants,-0.1,30000,0.8019623894598111
+1. old unweighted lottery,eligible applicants,-0.1,35000,0.7729605857783901
+1. old unweighted lottery,eligible applicants,-0.1,40000,0.7449678482837154
+1. old unweighted lottery,eligible applicants,-0.1,45000,0.7180009396662593
+1. old unweighted lottery,eligible applicants,-0.1,50000,0.6921832110307266
+1. old unweighted lottery,eligible applicants,-0.1,55000,0.6675215506085931
+1. old unweighted lottery,eligible applicants,-0.1,60000,0.6440752449701974
+1. old unweighted lottery,eligible applicants,-0.1,65000,0.621809773325423
+1. old unweighted lottery,eligible applicants,-0.1,70000,0.600574032561825
+1. old unweighted lottery,eligible applicants,-0.1,75000,0.5802933271750683
+1. old unweighted lottery,eligible applicants,-0.1,80000,0.5609613263628146
+1. old unweighted lottery,eligible applicants,-0.1,85000,0.5423543019593633
+1. old unweighted lottery,eligible applicants,-0.1,90000,0.5243812337499453
+1. old unweighted lottery,eligible applicants,-0.1,95000,0.5069758673000121
+1. old unweighted lottery,eligible applicants,-0.1,100000,0.49010917647808294
+1. old unweighted lottery,eligible applicants,-0.1,105000,0.47363519448304425
+1. old unweighted lottery,eligible applicants,-0.1,110000,0.4576513917811056
+1. old unweighted lottery,eligible applicants,-0.1,115000,0.4420832719497678
+1. old unweighted lottery,eligible applicants,-0.1,120000,0.4269286450888503
+1. old unweighted lottery,eligible applicants,-0.1,125000,0.4122053091143644
+1. old unweighted lottery,eligible applicants,-0.1,130000,0.39785632662162107
+1. old unweighted lottery,eligible applicants,-0.1,135000,0.3838674035348971
+1. old unweighted lottery,eligible applicants,-0.1,140000,0.37026430104358693
+1. old unweighted lottery,eligible applicants,-0.1,145000,0.3570517971117207
+1. old unweighted lottery,eligible applicants,-0.1,150000,0.3441372788698523
+1. old unweighted lottery,eligible applicants,-0.1,155000,0.3315886730399399
+1. old unweighted lottery,eligible applicants,-0.1,160000,0.3193496792791645
+1. old unweighted lottery,eligible applicants,-0.1,165000,0.3074322823139681
+1. old unweighted lottery,eligible applicants,-0.1,170000,0.2958660258886017
+1. old unweighted lottery,eligible applicants,-0.1,175000,0.28455204596401407
+1. old unweighted lottery,eligible applicants,-0.1,180000,0.2735356933821216
+1. old unweighted lottery,eligible applicants,-0.1,185000,0.2628453970289027
+1. old unweighted lottery,eligible applicants,-0.1,190000,0.25240335572340356
+1. old unweighted lottery,eligible applicants,-0.1,195000,0.2422125955095101
+1. old unweighted lottery,eligible applicants,-0.1,200000,0.2323084733210434
+1. old unweighted lottery,eligible applicants,-0.1,205000,0.22266781603245814
+1. old unweighted lottery,eligible applicants,-0.1,210000,0.213279275979184
+1. old unweighted lottery,eligible applicants,-0.1,215000,0.20415121459827273
+1. old unweighted lottery,eligible applicants,-0.1,220000,0.19527821686382396
+1. old unweighted lottery,eligible applicants,-0.1,225000,0.18665809287565746
+1. old unweighted lottery,eligible applicants,-0.1,230000,0.17830047819456674
+1. old unweighted lottery,eligible applicants,-0.1,235000,0.17014676312845153
+1. old unweighted lottery,eligible applicants,-0.1,240000,0.16226730319765242
+1. old unweighted lottery,eligible applicants,-0.1,245000,0.1546104963906463
+1. old unweighted lottery,eligible applicants,-0.1,250000,0.14722157410024964
+1. old unweighted lottery,eligible applicants,-0.1,255000,0.1400382237122392
+1. old unweighted lottery,eligible applicants,-0.1,260000,0.13310802578507921
+1. old unweighted lottery,eligible applicants,-0.1,265000,0.12640474133297236
+1. old unweighted lottery,eligible applicants,-0.1,270000,0.11995500750538522
+1. old unweighted lottery,eligible applicants,-0.1,275000,0.1137176143625598
+1. old unweighted lottery,eligible applicants,-0.1,280000,0.10773086524946945
+1. old unweighted lottery,eligible applicants,-0.1,285000,0.10194021174343931
+1. old unweighted lottery,eligible applicants,-0.1,290000,0.09639008890994734
+1. old unweighted lottery,eligible applicants,-0.1,295000,0.09105063447380682
+1. old unweighted lottery,eligible applicants,-0.1,300000,0.08590691729742429
+1. old unweighted lottery,eligible applicants,0,0,1
+1. old unweighted lottery,eligible applicants,0,5000,0.9487363877795607
+1. old unweighted lottery,eligible applicants,0,10000,0.9019216573164565
+1. old unweighted lottery,eligible applicants,0,15000,0.8585155263922789
+1. old unweighted lottery,eligible applicants,0,20000,0.8178572423980606
+1. old unweighted lottery,eligible applicants,0,25000,0.7796078486022462
+1. old unweighted lottery,eligible applicants,0,30000,0.7434931296858887
+1. old unweighted lottery,eligible applicants,0,35000,0.7094140225281003
+1. old unweighted lottery,eligible applicants,0,40000,0.6771783335257789
+1. old unweighted lottery,eligible applicants,0,45000,0.6468326080118493
+1. old unweighted lottery,eligible applicants,0,50000,0.6183061321186686
+1. old unweighted lottery,eligible applicants,0,55000,0.5914512269413463
+1. old unweighted lottery,eligible applicants,0,60000,0.5661617818620523
+1. old unweighted lottery,eligible applicants,0,65000,0.5423403264145761
+1. old unweighted lottery,eligible applicants,0,70000,0.5198011968799894
+1. old unweighted lottery,eligible applicants,0,75000,0.49839822737534484
+1. old unweighted lottery,eligible applicants,0,80000,0.47800675285582883
+1. old unweighted lottery,eligible applicants,0,85000,0.45854160611260864
+1. old unweighted lottery,eligible applicants,0,90000,0.4398028691674002
+1. old unweighted lottery,eligible applicants,0,95000,0.4217712310822486
+1. old unweighted lottery,eligible applicants,0,100000,0.4044580395217256
+1. old unweighted lottery,eligible applicants,0,105000,0.3877713983109897
+1. old unweighted lottery,eligible applicants,0,110000,0.3716766672108237
+1. old unweighted lottery,eligible applicants,0,115000,0.3562164497338275
+1. old unweighted lottery,eligible applicants,0,120000,0.34131147149347213
+1. old unweighted lottery,eligible applicants,0,125000,0.3268845285543074
+1. old unweighted lottery,eligible applicants,0,130000,0.312971973259328
+1. old unweighted lottery,eligible applicants,0,135000,0.29957906136896634
+1. old unweighted lottery,eligible applicants,0,140000,0.28668823386541276
+1. old unweighted lottery,eligible applicants,0,145000,0.2742268656954127
+1. old unweighted lottery,eligible applicants,0,150000,0.26215099958989124
+1. old unweighted lottery,eligible applicants,0,155000,0.25049408129705797
+1. old unweighted lottery,eligible applicants,0,160000,0.2392526866093576
+1. old unweighted lottery,eligible applicants,0,165000,0.22841104824549188
+1. old unweighted lottery,eligible applicants,0,170000,0.21792150601426225
+1. old unweighted lottery,eligible applicants,0,175000,0.20780126058617662
+1. old unweighted lottery,eligible applicants,0,180000,0.19804752481555077
+1. old unweighted lottery,eligible applicants,0,185000,0.18864763709770543
+1. old unweighted lottery,eligible applicants,0,190000,0.1795476860718367
+1. old unweighted lottery,eligible applicants,0,195000,0.17075237006924074
+1. old unweighted lottery,eligible applicants,0,200000,0.16229390053075218
+1. old unweighted lottery,eligible applicants,0,205000,0.15414747185978264
+1. old unweighted lottery,eligible applicants,0,210000,0.14631173029985706
+1. old unweighted lottery,eligible applicants,0,215000,0.13875008460977972
+1. old unweighted lottery,eligible applicants,0,220000,0.13146938320466
+1. old unweighted lottery,eligible applicants,0,225000,0.12449395388468383
+1. old unweighted lottery,eligible applicants,0,230000,0.11779321768005953
+1. old unweighted lottery,eligible applicants,0,235000,0.11136156048305214
+1. old unweighted lottery,eligible applicants,0,240000,0.10517103120408673
+1. old unweighted lottery,eligible applicants,0,245000,0.09924599745971577
+1. old unweighted lottery,eligible applicants,0,250000,0.09356049897871019
+1. old unweighted lottery,eligible applicants,0,255000,0.08814284519794709
+1. old unweighted lottery,eligible applicants,0,260000,0.08298379872030197
+1. old unweighted lottery,eligible applicants,0,265000,0.07803414651626694
+1. old unweighted lottery,eligible applicants,0,270000,0.07328616421066042
+1. old unweighted lottery,eligible applicants,0,275000,0.06878910464935716
+1. old unweighted lottery,eligible applicants,0,280000,0.06448141172910538
+1. old unweighted lottery,eligible applicants,0,285000,0.06040373796052606
+1. old unweighted lottery,eligible applicants,0,290000,0.05651837724414996
+1. old unweighted lottery,eligible applicants,0,295000,0.052827599112891345
+1. old unweighted lottery,eligible applicants,0,300000,0.04932041424948141
+1. old unweighted lottery,eligible applicants,0.1,0,1
+1. old unweighted lottery,eligible applicants,0.1,5000,0.931394010822088
+1. old unweighted lottery,eligible applicants,0.1,10000,0.8709005267705342
+1. old unweighted lottery,eligible applicants,0.1,15000,0.8165743988724006
+1. old unweighted lottery,eligible applicants,0.1,20000,0.7670291415989456
+1. old unweighted lottery,eligible applicants,0.1,25000,0.7215239316273349
+1. old unweighted lottery,eligible applicants,0.1,30000,0.679616648019335
+1. old unweighted lottery,eligible applicants,0.1,35000,0.6408340732541515
+1. old unweighted lottery,eligible applicants,0.1,40000,0.6049951224950528
+1. old unweighted lottery,eligible applicants,0.1,45000,0.5718397152333436
+1. old unweighted lottery,eligible applicants,0.1,50000,0.5410765947450359
+1. old unweighted lottery,eligible applicants,0.1,55000,0.5124794448005796
+1. old unweighted lottery,eligible applicants,0.1,60000,0.48579997053588847
+1. old unweighted lottery,eligible applicants,0.1,65000,0.46087408870290253
+1. old unweighted lottery,eligible applicants,0.1,70000,0.4374240403260165
+1. old unweighted lottery,eligible applicants,0.1,75000,0.41535064283524376
+1. old unweighted lottery,eligible applicants,0.1,80000,0.394417745358407
+1. old unweighted lottery,eligible applicants,0.1,85000,0.3746071119994584
+1. old unweighted lottery,eligible applicants,0.1,90000,0.35578460141825907
+1. old unweighted lottery,eligible applicants,0.1,95000,0.33790812771497863
+1. old unweighted lottery,eligible applicants,0.1,100000,0.32087687584858626
+1. old unweighted lottery,eligible applicants,0.1,105000,0.3046906467372479
+1. old unweighted lottery,eligible applicants,0.1,110000,0.28925830071709285
+1. old unweighted lottery,eligible applicants,0.1,115000,0.2745547136605973
+1. old unweighted lottery,eligible applicants,0.1,120000,0.2605485102706318
+1. old unweighted lottery,eligible applicants,0.1,125000,0.24712462124680964
+1. old unweighted lottery,eligible applicants,0.1,130000,0.23436033015731447
+1. old unweighted lottery,eligible applicants,0.1,135000,0.22217429216453713
+1. old unweighted lottery,eligible applicants,0.1,140000,0.2105334198675708
+1. old unweighted lottery,eligible applicants,0.1,145000,0.19940701484752318
+1. old unweighted lottery,eligible applicants,0.1,150000,0.18878185807057846
+1. old unweighted lottery,eligible applicants,0.1,155000,0.17858831071100084
+1. old unweighted lottery,eligible applicants,0.1,160000,0.16893351861216072
+1. old unweighted lottery,eligible applicants,0.1,165000,0.15965554860981152
+1. old unweighted lottery,eligible applicants,0.1,170000,0.15082388026422144
+1. old unweighted lottery,eligible applicants,0.1,175000,0.14235585479767318
+1. old unweighted lottery,eligible applicants,0.1,180000,0.13429809717582514
+1. old unweighted lottery,eligible applicants,0.1,185000,0.12656766990639173
+1. old unweighted lottery,eligible applicants,0.1,190000,0.11918937858596154
+1. old unweighted lottery,eligible applicants,0.1,195000,0.11216545293108186
+1. old unweighted lottery,eligible applicants,0.1,200000,0.10549537532898276
+1. old unweighted lottery,eligible applicants,0.1,205000,0.09913980720915143
+1. old unweighted lottery,eligible applicants,0.1,210000,0.09311292319820985
+1. old unweighted lottery,eligible applicants,0.1,215000,0.08735428205117998
+1. old unweighted lottery,eligible applicants,0.1,220000,0.08189713043443642
+1. old unweighted lottery,eligible applicants,0.1,225000,0.07672386951380232
+1. old unweighted lottery,eligible applicants,0.1,230000,0.07178198150131594
+1. old unweighted lottery,eligible applicants,0.1,235000,0.06710443434878345
+1. old unweighted lottery,eligible applicants,0.1,240000,0.0626988329822857
+1. old unweighted lottery,eligible applicants,0.1,245000,0.05852575919857616
+1. old unweighted lottery,eligible applicants,0.1,250000,0.054569764247291486
+1. old unweighted lottery,eligible applicants,0.1,255000,0.05085203043563089
+1. old unweighted lottery,eligible applicants,0.1,260000,0.04734185934470223
+1. old unweighted lottery,eligible applicants,0.1,265000,0.04403303962126673
+1. old unweighted lottery,eligible applicants,0.1,270000,0.040911635536903794
+1. old unweighted lottery,eligible applicants,0.1,275000,0.03798584926319812
+1. old unweighted lottery,eligible applicants,0.1,280000,0.03524692119942821
+1. old unweighted lottery,eligible applicants,0.1,285000,0.03265511461141217
+1. old unweighted lottery,eligible applicants,0.1,290000,0.030233284093759596
+1. old unweighted lottery,eligible applicants,0.1,295000,0.027952443331355777
+1. old unweighted lottery,eligible applicants,0.1,300000,0.025823342743268047
+1. old unweighted lottery,lottery winners,-0.1,0,1
+1. old unweighted lottery,lottery winners,-0.1,5000,0.9631466352941176
+1. old unweighted lottery,lottery winners,-0.1,10000,0.9283619945098041
+1. old unweighted lottery,lottery winners,-0.1,15000,0.8951277780392156
+1. old unweighted lottery,lottery winners,-0.1,20000,0.8631462372549017
+1. old unweighted lottery,lottery winners,-0.1,25000,0.8322464141176472
+1. old unweighted lottery,lottery winners,-0.1,30000,0.8023817529411765
+1. old unweighted lottery,lottery winners,-0.1,35000,0.7734118345098037
+1. old unweighted lottery,lottery winners,-0.1,40000,0.7455236843137253
+1. old unweighted lottery,lottery winners,-0.1,45000,0.7186441639215687
+1. old unweighted lottery,lottery winners,-0.1,50000,0.6928784462745097
+1. old unweighted lottery,lottery winners,-0.1,55000,0.6682724066666664
+1. old unweighted lottery,lottery winners,-0.1,60000,0.644817739607843
+1. old unweighted lottery,lottery winners,-0.1,65000,0.6225325533333332
+1. old unweighted lottery,lottery winners,-0.1,70000,0.6013612325490196
+1. old unweighted lottery,lottery winners,-0.1,75000,0.5811778243137254
+1. old unweighted lottery,lottery winners,-0.1,80000,0.561826568235294
+1. old unweighted lottery,lottery winners,-0.1,85000,0.5432044227450981
+1. old unweighted lottery,lottery winners,-0.1,90000,0.5252533325490197
+1. old unweighted lottery,lottery winners,-0.1,95000,0.5078402596078433
+1. old unweighted lottery,lottery winners,-0.1,100000,0.49091517176470567
+1. old unweighted lottery,lottery winners,-0.1,105000,0.47444807607843126
+1. old unweighted lottery,lottery winners,-0.1,110000,0.45848356117647066
+1. old unweighted lottery,lottery winners,-0.1,115000,0.4428987764705882
+1. old unweighted lottery,lottery winners,-0.1,120000,0.42770802823529414
+1. old unweighted lottery,lottery winners,-0.1,125000,0.41294534117647047
+1. old unweighted lottery,lottery winners,-0.1,130000,0.39859180196078425
+1. old unweighted lottery,lottery winners,-0.1,135000,0.38459678156862737
+1. old unweighted lottery,lottery winners,-0.1,140000,0.3709885560784315
+1. old unweighted lottery,lottery winners,-0.1,145000,0.35771931843137245
+1. old unweighted lottery,lottery winners,-0.1,150000,0.34480563098039224
+1. old unweighted lottery,lottery winners,-0.1,155000,0.33225118980392165
+1. old unweighted lottery,lottery winners,-0.1,160000,0.3200310054901961
+1. old unweighted lottery,lottery winners,-0.1,165000,0.3080746737254901
+1. old unweighted lottery,lottery winners,-0.1,170000,0.29645764705882344
+1. old unweighted lottery,lottery winners,-0.1,175000,0.2851527003921568
+1. old unweighted lottery,lottery winners,-0.1,180000,0.27411138
+1. old unweighted lottery,lottery winners,-0.1,185000,0.2633689709803921
+1. old unweighted lottery,lottery winners,-0.1,190000,0.25287483294117646
+1. old unweighted lottery,lottery winners,-0.1,195000,0.2426842568627451
+1. old unweighted lottery,lottery winners,-0.1,200000,0.23275423058823536
+1. old unweighted lottery,lottery winners,-0.1,205000,0.2230511901960784
+1. old unweighted lottery,lottery winners,-0.1,210000,0.21366757333333328
+1. old unweighted lottery,lottery winners,-0.1,215000,0.20448861176470579
+1. old unweighted lottery,lottery winners,-0.1,220000,0.1956133933333333
+1. old unweighted lottery,lottery winners,-0.1,225000,0.18695869058823533
+1. old unweighted lottery,lottery winners,-0.1,230000,0.17858007882352936
+1. old unweighted lottery,lottery winners,-0.1,235000,0.17045370352941178
+1. old unweighted lottery,lottery winners,-0.1,240000,0.16254453764705887
+1. old unweighted lottery,lottery winners,-0.1,245000,0.15490710588235293
+1. old unweighted lottery,lottery winners,-0.1,250000,0.14749199372549024
+1. old unweighted lottery,lottery winners,-0.1,255000,0.1403177564705882
+1. old unweighted lottery,lottery winners,-0.1,260000,0.1333903890196078
+1. old unweighted lottery,lottery winners,-0.1,265000,0.12666802509803923
+1. old unweighted lottery,lottery winners,-0.1,270000,0.12021161411764704
+1. old unweighted lottery,lottery winners,-0.1,275000,0.11397773529411764
+1. old unweighted lottery,lottery winners,-0.1,280000,0.10796524117647065
+1. old unweighted lottery,lottery winners,-0.1,285000,0.10217684705882352
+1. old unweighted lottery,lottery winners,-0.1,290000,0.09660841882352945
+1. old unweighted lottery,lottery winners,-0.1,295000,0.09127697019607844
+1. old unweighted lottery,lottery winners,-0.1,300000,0.08613316705882351
+1. old unweighted lottery,lottery winners,0,0,1
+1. old unweighted lottery,lottery winners,0,5000,0.948782163921568
+1. old unweighted lottery,lottery winners,0,10000,0.9020039964705883
+1. old unweighted lottery,lottery winners,0,15000,0.8586289631372549
+1. old unweighted lottery,lottery winners,0,20000,0.8181733925490196
+1. old unweighted lottery,lottery winners,0,25000,0.7800020643137257
+1. old unweighted lottery,lottery winners,0,30000,0.7439719756862744
+1. old unweighted lottery,lottery winners,0,35000,0.7099204345098038
+1. old unweighted lottery,lottery winners,0,40000,0.6777570266666667
+1. old unweighted lottery,lottery winners,0,45000,0.6474153160784313
+1. old unweighted lottery,lottery winners,0,50000,0.6189188203921568
+1. old unweighted lottery,lottery winners,0,55000,0.5920895870588232
+1. old unweighted lottery,lottery winners,0,60000,0.566785724705882
+1. old unweighted lottery,lottery winners,0,65000,0.5430201384313725
+1. old unweighted lottery,lottery winners,0,70000,0.5204897627450977
+1. old unweighted lottery,lottery winners,0,75000,0.49905905529411776
+1. old unweighted lottery,lottery winners,0,80000,0.4786315078431374
+1. old unweighted lottery,lottery winners,0,85000,0.45911488352941177
+1. old unweighted lottery,lottery winners,0,90000,0.4403886623529412
+1. old unweighted lottery,lottery winners,0,95000,0.4223745274509805
+1. old unweighted lottery,lottery winners,0,100000,0.4050773270588235
+1. old unweighted lottery,lottery winners,0,105000,0.3883763941176469
+1. old unweighted lottery,lottery winners,0,110000,0.3723046960784315
+1. old unweighted lottery,lottery winners,0,115000,0.35678016431372533
+1. old unweighted lottery,lottery winners,0,120000,0.3418370721568626
+1. old unweighted lottery,lottery winners,0,125000,0.32741907960784317
+1. old unweighted lottery,lottery winners,0,130000,0.3135103788235294
+1. old unweighted lottery,lottery winners,0,135000,0.30007862
+1. old unweighted lottery,lottery winners,0,140000,0.2871284227450979
+1. old unweighted lottery,lottery winners,0,145000,0.274637336862745
+1. old unweighted lottery,lottery winners,0,150000,0.2625916070588235
+1. old unweighted lottery,lottery winners,0,155000,0.25094333098039223
+1. old unweighted lottery,lottery winners,0,160000,0.23969562862745092
+1. old unweighted lottery,lottery winners,0,165000,0.22883449137254888
+1. old unweighted lottery,lottery winners,0,170000,0.2183038980392156
+1. old unweighted lottery,lottery winners,0,175000,0.20816722588235292
+1. old unweighted lottery,lottery winners,0,180000,0.1983630050980393
+1. old unweighted lottery,lottery winners,0,185000,0.1889332913725491
+1. old unweighted lottery,lottery winners,0,190000,0.1798235839215686
+1. old unweighted lottery,lottery winners,0,195000,0.17104355568627458
+1. old unweighted lottery,lottery winners,0,200000,0.1625431756862745
+1. old unweighted lottery,lottery winners,0,205000,0.15439733568627448
+1. old unweighted lottery,lottery winners,0,210000,0.1465658713725491
+1. old unweighted lottery,lottery winners,0,215000,0.1389955368627451
+1. old unweighted lottery,lottery winners,0,220000,0.13171529607843135
+1. old unweighted lottery,lottery winners,0,225000,0.1247297556862745
+1. old unweighted lottery,lottery winners,0,230000,0.11800661647058827
+1. old unweighted lottery,lottery winners,0,235000,0.11154624862745104
+1. old unweighted lottery,lottery winners,0,240000,0.10536269019607843
+1. old unweighted lottery,lottery winners,0,245000,0.09941876941176471
+1. old unweighted lottery,lottery winners,0,250000,0.0937262058823529
+1. old unweighted lottery,lottery winners,0,255000,0.08830013372549024
+1. old unweighted lottery,lottery winners,0,260000,0.08312508901960783
+1. old unweighted lottery,lottery winners,0,265000,0.07816522039215686
+1. old unweighted lottery,lottery winners,0,270000,0.07343903960784315
+1. old unweighted lottery,lottery winners,0,275000,0.06893909490196078
+1. old unweighted lottery,lottery winners,0,280000,0.06466749647058823
+1. old unweighted lottery,lottery winners,0,285000,0.06058492941176466
+1. old unweighted lottery,lottery winners,0,290000,0.056691314509803935
+1. old unweighted lottery,lottery winners,0,295000,0.053000355686274495
+1. old unweighted lottery,lottery winners,0,300000,0.049520853333333344
+1. old unweighted lottery,lottery winners,0.1,0,1
+1. old unweighted lottery,lottery winners,0.1,5000,0.9315789262745104
+1. old unweighted lottery,lottery winners,0.1,10000,0.8712584070588238
+1. old unweighted lottery,lottery winners,0.1,15000,0.8169203909803925
+1. old unweighted lottery,lottery winners,0.1,20000,0.7675378078431373
+1. old unweighted lottery,lottery winners,0.1,25000,0.7221400964705883
+1. old unweighted lottery,lottery winners,0.1,30000,0.6801816956862745
+1. old unweighted lottery,lottery winners,0.1,35000,0.6414677874509802
+1. old unweighted lottery,lottery winners,0.1,40000,0.605657070588235
+1. old unweighted lottery,lottery winners,0.1,45000,0.5725163533333336
+1. old unweighted lottery,lottery winners,0.1,50000,0.5416914121568627
+1. old unweighted lottery,lottery winners,0.1,55000,0.5130337670588236
+1. old unweighted lottery,lottery winners,0.1,60000,0.4864044019607842
+1. old unweighted lottery,lottery winners,0.1,65000,0.46147279647058825
+1. old unweighted lottery,lottery winners,0.1,70000,0.438020217647059
+1. old unweighted lottery,lottery winners,0.1,75000,0.41598177529411773
+1. old unweighted lottery,lottery winners,0.1,80000,0.39505523725490194
+1. old unweighted lottery,lottery winners,0.1,85000,0.3752185905882353
+1. old unweighted lottery,lottery winners,0.1,90000,0.3564149843137255
+1. old unweighted lottery,lottery winners,0.1,95000,0.3384866815686276
+1. old unweighted lottery,lottery winners,0.1,100000,0.3214507180392158
+1. old unweighted lottery,lottery winners,0.1,105000,0.3052251356862746
+1. old unweighted lottery,lottery winners,0.1,110000,0.28977485294117655
+1. old unweighted lottery,lottery winners,0.1,115000,0.2750313227450979
+1. old unweighted lottery,lottery winners,0.1,120000,0.26096814235294125
+1. old unweighted lottery,lottery winners,0.1,125000,0.247548854509804
+1. old unweighted lottery,lottery winners,0.1,130000,0.23472831764705876
+1. old unweighted lottery,lottery winners,0.1,135000,0.2225008533333334
+1. old unweighted lottery,lottery winners,0.1,140000,0.2108358282352941
+1. old unweighted lottery,lottery winners,0.1,145000,0.1997032737254902
+1. old unweighted lottery,lottery winners,0.1,150000,0.18906439333333336
+1. old unweighted lottery,lottery winners,0.1,155000,0.17888862392156862
+1. old unweighted lottery,lottery winners,0.1,160000,0.16918922235294112
+1. old unweighted lottery,lottery winners,0.1,165000,0.1599352023529411
+1. old unweighted lottery,lottery winners,0.1,170000,0.1510504039215686
+1. old unweighted lottery,lottery winners,0.1,175000,0.14258457058823526
+1. old unweighted lottery,lottery winners,0.1,180000,0.1344818568627451
+1. old unweighted lottery,lottery winners,0.1,185000,0.1267502219607843
+1. old unweighted lottery,lottery winners,0.1,190000,0.11936598705882354
+1. old unweighted lottery,lottery winners,0.1,195000,0.11232406980392165
+1. old unweighted lottery,lottery winners,0.1,200000,0.10563079450980391
+1. old unweighted lottery,lottery winners,0.1,205000,0.09924240666666664
+1. old unweighted lottery,lottery winners,0.1,210000,0.09317848784313731
+1. old unweighted lottery,lottery winners,0.1,215000,0.08744791960784315
+1. old unweighted lottery,lottery winners,0.1,220000,0.0819725505882353
+1. old unweighted lottery,lottery winners,0.1,225000,0.07676450980392156
+1. old unweighted lottery,lottery winners,0.1,230000,0.07185664549019607
+1. old unweighted lottery,lottery winners,0.1,235000,0.06719806705882349
+1. old unweighted lottery,lottery winners,0.1,240000,0.06279195568627449
+1. old unweighted lottery,lottery winners,0.1,245000,0.058629142352941165
+1. old unweighted lottery,lottery winners,0.1,250000,0.05468890627450979
+1. old unweighted lottery,lottery winners,0.1,255000,0.050939369019607855
+1. old unweighted lottery,lottery winners,0.1,260000,0.047419476862745086
+1. old unweighted lottery,lottery winners,0.1,265000,0.044104758823529426
+1. old unweighted lottery,lottery winners,0.1,270000,0.04099522431372549
+1. old unweighted lottery,lottery winners,0.1,275000,0.038063028627450986
+1. old unweighted lottery,lottery winners,0.1,280000,0.035305389411764705
+1. old unweighted lottery,lottery winners,0.1,285000,0.032730674901960785
+1. old unweighted lottery,lottery winners,0.1,290000,0.03030744549019609
+1. old unweighted lottery,lottery winners,0.1,295000,0.02803374078431372
+1. old unweighted lottery,lottery winners,0.1,300000,0.02589814862745098
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,0,1
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,5000,0.9622455373942634
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,10000,0.926635538866801
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,15000,0.8926834944943469
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,20000,0.8600548929138241
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,25000,0.8287331271781281
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,30000,0.7984217264680382
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,35000,0.7691188910158873
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,40000,0.7409112959963349
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,45000,0.7138862710450107
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,50000,0.6879263404178735
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,55000,0.663134295390959
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,60000,0.6395864215710335
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,65000,0.6171874948870237
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,70000,0.5958997611217459
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,75000,0.575629673260361
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,80000,0.5561937777123317
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,85000,0.5375477756507796
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,90000,0.5195089088499486
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,95000,0.5020345146353832
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,100000,0.48513596426643113
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,105000,0.4687121435232905
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,110000,0.4527560578543497
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,115000,0.43720189302835466
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,120000,0.42210961403164304
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,125000,0.4074038760450923
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,130000,0.39309216446604145
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,135000,0.3791633534580082
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,140000,0.3656429260949948
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,145000,0.35247631669366314
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,150000,0.33970716961992187
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,155000,0.327229993946236
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,160000,0.31511031757718555
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,165000,0.3032837579148872
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,170000,0.2917943683633567
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,175000,0.28061412981233336
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,180000,0.26975437261735313
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,185000,0.2591489962204878
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,190000,0.24882143850521113
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,195000,0.23879742796838938
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,200000,0.2290226852533582
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,205000,0.21955468021400867
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,210000,0.21028636757800356
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,215000,0.20132462900243786
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,220000,0.19260487737037582
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,225000,0.18413378000294509
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,230000,0.17592058116134093
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,235000,0.1679328441237586
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,240000,0.16015588442219272
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,245000,0.15265318477069326
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,250000,0.14539590798278768
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,255000,0.13838254061748395
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,260000,0.13156064398959402
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,265000,0.1250039267658175
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,270000,0.11864313879481016
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,275000,0.11251263927747508
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,280000,0.10660972856231292
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,285000,0.1009724880969911
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,290000,0.09549988546933032
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,295000,0.09025078126278249
+"2a. weighted lottery, old wage levels",eligible applicants,-0.1,300000,0.08519961059572304
+"2a. weighted lottery, old wage levels",eligible applicants,0,0,1
+"2a. weighted lottery, old wage levels",eligible applicants,0,5000,0.9477171583304701
+"2a. weighted lottery, old wage levels",eligible applicants,0,10000,0.9001317511739394
+"2a. weighted lottery, old wage levels",eligible applicants,0,15000,0.8560071336245687
+"2a. weighted lottery, old wage levels",eligible applicants,0,20000,0.8148345440861269
+"2a. weighted lottery, old wage levels",eligible applicants,0,25000,0.7762623734027063
+"2a. weighted lottery, old wage levels",eligible applicants,0,30000,0.7398558958752595
+"2a. weighted lottery, old wage levels",eligible applicants,0,35000,0.7055391940313163
+"2a. weighted lottery, old wage levels",eligible applicants,0,40000,0.6731087714131447
+"2a. weighted lottery, old wage levels",eligible applicants,0,45000,0.6426385412064987
+"2a. weighted lottery, old wage levels",eligible applicants,0,50000,0.613903859683568
+"2a. weighted lottery, old wage levels",eligible applicants,0,55000,0.5868475842209459
+"2a. weighted lottery, old wage levels",eligible applicants,0,60000,0.5614545804087109
+"2a. weighted lottery, old wage levels",eligible applicants,0,65000,0.5375593105253684
+"2a. weighted lottery, old wage levels",eligible applicants,0,70000,0.5149560284036059
+"2a. weighted lottery, old wage levels",eligible applicants,0,75000,0.4934654526415681
+"2a. weighted lottery, old wage levels",eligible applicants,0,80000,0.4730675812758715
+"2a. weighted lottery, old wage levels",eligible applicants,0,85000,0.4535495099723491
+"2a. weighted lottery, old wage levels",eligible applicants,0,90000,0.43484714245979156
+"2a. weighted lottery, old wage levels",eligible applicants,0,95000,0.4168732309101915
+"2a. weighted lottery, old wage levels",eligible applicants,0,100000,0.39964634565356105
+"2a. weighted lottery, old wage levels",eligible applicants,0,105000,0.38298053796691683
+"2a. weighted lottery, old wage levels",eligible applicants,0,110000,0.366995492400072
+"2a. weighted lottery, old wage levels",eligible applicants,0,115000,0.3515666159459414
+"2a. weighted lottery, old wage levels",eligible applicants,0,120000,0.3367083476496669
+"2a. weighted lottery, old wage levels",eligible applicants,0,125000,0.3224091526366596
+"2a. weighted lottery, old wage levels",eligible applicants,0,130000,0.3086651041411017
+"2a. weighted lottery, old wage levels",eligible applicants,0,135000,0.2953712429849965
+"2a. weighted lottery, old wage levels",eligible applicants,0,140000,0.28258696150133356
+"2a. weighted lottery, old wage levels",eligible applicants,0,145000,0.27022906133935437
+"2a. weighted lottery, old wage levels",eligible applicants,0,150000,0.25830764574027715
+"2a. weighted lottery, old wage levels",eligible applicants,0,155000,0.2468383808635613
+"2a. weighted lottery, old wage levels",eligible applicants,0,160000,0.23576526939249662
+"2a. weighted lottery, old wage levels",eligible applicants,0,165000,0.22504053567630364
+"2a. weighted lottery, old wage levels",eligible applicants,0,170000,0.21470037958736238
+"2a. weighted lottery, old wage levels",eligible applicants,0,175000,0.20474848246862679
+"2a. weighted lottery, old wage levels",eligible applicants,0,180000,0.1951644333186081
+"2a. weighted lottery, old wage levels",eligible applicants,0,185000,0.1858971841816784
+"2a. weighted lottery, old wage levels",eligible applicants,0,190000,0.1769496801322012
+"2a. weighted lottery, old wage levels",eligible applicants,0,195000,0.1683345195438407
+"2a. weighted lottery, old wage levels",eligible applicants,0,200000,0.16002380601776864
+"2a. weighted lottery, old wage levels",eligible applicants,0,205000,0.15201377640340977
+"2a. weighted lottery, old wage levels",eligible applicants,0,210000,0.14425960012434755
+"2a. weighted lottery, old wage levels",eligible applicants,0,215000,0.13686194145846625
+"2a. weighted lottery, old wage levels",eligible applicants,0,220000,0.12975703136504196
+"2a. weighted lottery, old wage levels",eligible applicants,0,225000,0.12290171632389273
+"2a. weighted lottery, old wage levels",eligible applicants,0,230000,0.11632749226917984
+"2a. weighted lottery, old wage levels",eligible applicants,0,235000,0.11002609663116213
+"2a. weighted lottery, old wage levels",eligible applicants,0,240000,0.10394357728365977
+"2a. weighted lottery, old wage levels",eligible applicants,0,245000,0.09815380650861431
+"2a. weighted lottery, old wage levels",eligible applicants,0,250000,0.09259575582061225
+"2a. weighted lottery, old wage levels",eligible applicants,0,255000,0.0872603036698899
+"2a. weighted lottery, old wage levels",eligible applicants,0,260000,0.08217951864395684
+"2a. weighted lottery, old wage levels",eligible applicants,0,265000,0.07734084327295931
+"2a. weighted lottery, old wage levels",eligible applicants,0,270000,0.07270689147400972
+"2a. weighted lottery, old wage levels",eligible applicants,0,275000,0.06828273531962238
+"2a. weighted lottery, old wage levels",eligible applicants,0,280000,0.06406497979351752
+"2a. weighted lottery, old wage levels",eligible applicants,0,285000,0.060036158968569495
+"2a. weighted lottery, old wage levels",eligible applicants,0,290000,0.056249325087125115
+"2a. weighted lottery, old wage levels",eligible applicants,0,295000,0.05265028060014072
+"2a. weighted lottery, old wage levels",eligible applicants,0,300000,0.04922184590716469
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,0,1
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,5000,0.930320563163664
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,10000,0.8689772820235935
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,15000,0.8137957918159653
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,20000,0.763773417431568
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,25000,0.7179206956920106
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,30000,0.6757671100639736
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,35000,0.6368167836515648
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,40000,0.6008545624110342
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,45000,0.567552520492809
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,50000,0.5366540273891914
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,55000,0.5080021760827238
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,60000,0.4812283005284772
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,65000,0.45628744743860333
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,70000,0.43289578527135575
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,75000,0.41085722115872314
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,80000,0.3899782391727614
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,85000,0.37026027094684166
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,90000,0.3515263665963122
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,95000,0.33375501071679836
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,100000,0.3168378491140236
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,105000,0.3007042000032723
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,110000,0.2854156236194965
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,115000,0.2708240072645168
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,120000,0.2569213746952666
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,125000,0.2436943912694906
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,130000,0.23104018390353237
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,135000,0.21897760925407805
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,140000,0.20747729838511744
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,145000,0.19648374482566802
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,150000,0.18597134279029437
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,155000,0.17595281336409305
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,160000,0.16638954334985848
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,165000,0.1572987532518529
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,170000,0.14856828482141402
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,175000,0.14026710188321137
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,180000,0.1323212503476824
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,185000,0.12474062893699177
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,190000,0.11752859176360869
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,195000,0.1106439077864494
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,200000,0.10409852091820873
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,205000,0.09786122155139974
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,210000,0.09193610006708226
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,215000,0.08627063597244723
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,220000,0.08090270619610922
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,225000,0.07581877157676009
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,230000,0.07100840164269703
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,235000,0.06643944599878923
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,240000,0.062086176148169976
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,245000,0.05798540552037826
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,250000,0.05411635497962994
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,255000,0.05044392905643091
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,260000,0.04699991001161667
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,265000,0.04374462114890621
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,270000,0.04067442202915623
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,275000,0.03780653315662885
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,280000,0.035083893715538536
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,285000,0.03253165954940361
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,290000,0.030139686513195568
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,295000,0.027906297550679825
+"2a. weighted lottery, old wage levels",eligible applicants,0.1,300000,0.025809240988890522
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,0,1
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,5000,0.9534958929411768
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,10000,0.9107183188235295
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,15000,0.8709168968627452
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,20000,0.8335879298039218
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,25000,0.7982786909803922
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,30000,0.7648869223529414
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,35000,0.7331543882352939
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,40000,0.7030215886274509
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,45000,0.6744203015686275
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,50000,0.6472918207843139
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,55000,0.6215637439215684
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,60000,0.5972248956862746
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,65000,0.5742342709803921
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,70000,0.5523972262745096
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,75000,0.5316504329411768
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,80000,0.5119543058823527
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,85000,0.4931041360784314
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,90000,0.4750974164705884
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,95000,0.45778921254901966
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,100000,0.44109479999999984
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,105000,0.42496306274509793
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,110000,0.40938218313725483
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,115000,0.3943697466666668
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,120000,0.3798116619607843
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,125000,0.3657316125490195
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,130000,0.35214343254901964
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,135000,0.3389754396078431
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,140000,0.32622844313725496
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,145000,0.31389205411764715
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,150000,0.30194580549019606
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,155000,0.29040478627450983
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,160000,0.27921492156862743
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,165000,0.26834173686274504
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,170000,0.25782156274509804
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,175000,0.24764004
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,180000,0.23775787803921564
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,185000,0.22818009568627454
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,190000,0.21888157254901958
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,195000,0.2098846066666666
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,200000,0.20119017843137257
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,205000,0.19273190745098037
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,210000,0.18453950196078428
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,215000,0.17661331176470582
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,220000,0.16887821686274507
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,225000,0.16143178784313725
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,230000,0.15423616980392155
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,235000,0.14725541764705885
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,240000,0.14050437019607848
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,245000,0.13396477686274508
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,250000,0.12767316078431368
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,255000,0.12158450235294108
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,260000,0.11570538156862742
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,265000,0.11002702274509799
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,270000,0.1045621196078431
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,275000,0.0993066082352941
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,280000,0.09424859411764708
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,285000,0.08938542156862744
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,290000,0.0846816450980392
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,295000,0.08017308509803923
+"2a. weighted lottery, old wage levels",lottery winners,-0.1,300000,0.07584575882352945
+"2a. weighted lottery, old wage levels",lottery winners,0,0,1
+"2a. weighted lottery, old wage levels",lottery winners,0,5000,0.9375278505882356
+"2a. weighted lottery, old wage levels",lottery winners,0,10000,0.8820408137254901
+"2a. weighted lottery, old wage levels",lottery winners,0,15000,0.8319705074509804
+"2a. weighted lottery, old wage levels",lottery winners,0,20000,0.786135799215686
+"2a. weighted lottery, old wage levels",lottery winners,0,25000,0.7439084807843139
+"2a. weighted lottery, old wage levels",lottery winners,0,30000,0.7047425474509804
+"2a. weighted lottery, old wage levels",lottery winners,0,35000,0.6684270909803923
+"2a. weighted lottery, old wage levels",lottery winners,0,40000,0.634472640392157
+"2a. weighted lottery, old wage levels",lottery winners,0,45000,0.6028532349019607
+"2a. weighted lottery, old wage levels",lottery winners,0,50000,0.5732891878431372
+"2a. weighted lottery, old wage levels",lottery winners,0,55000,0.5457178278431374
+"2a. weighted lottery, old wage levels",lottery winners,0,60000,0.5199806137254902
+"2a. weighted lottery, old wage levels",lottery winners,0,65000,0.4958078513725489
+"2a. weighted lottery, old wage levels",lottery winners,0,70000,0.4730740094117649
+"2a. weighted lottery, old wage levels",lottery winners,0,75000,0.4516487827450982
+"2a. weighted lottery, old wage levels",lottery winners,0,80000,0.4313883592156864
+"2a. weighted lottery, old wage levels",lottery winners,0,85000,0.4121757701960784
+"2a. weighted lottery, old wage levels",lottery winners,0,90000,0.39391489999999985
+"2a. weighted lottery, old wage levels",lottery winners,0,95000,0.37647101294117646
+"2a. weighted lottery, old wage levels",lottery winners,0,100000,0.35986101294117645
+"2a. weighted lottery, old wage levels",lottery winners,0,105000,0.343979796470588
+"2a. weighted lottery, old wage levels",lottery winners,0,110000,0.32879127450980383
+"2a. weighted lottery, old wage levels",lottery winners,0,115000,0.31420528
+"2a. weighted lottery, old wage levels",lottery winners,0,120000,0.3002354650980392
+"2a. weighted lottery, old wage levels",lottery winners,0,125000,0.28684540862745106
+"2a. weighted lottery, old wage levels",lottery winners,0,130000,0.2740267407843137
+"2a. weighted lottery, old wage levels",lottery winners,0,135000,0.26179063372549005
+"2a. weighted lottery, old wage levels",lottery winners,0,140000,0.2500123356862746
+"2a. weighted lottery, old wage levels",lottery winners,0,145000,0.2386654058823529
+"2a. weighted lottery, old wage levels",lottery winners,0,150000,0.22779192156862746
+"2a. weighted lottery, old wage levels",lottery winners,0,155000,0.21737181803921568
+"2a. weighted lottery, old wage levels",lottery winners,0,160000,0.20739924078431365
+"2a. weighted lottery, old wage levels",lottery winners,0,165000,0.19776977803921572
+"2a. weighted lottery, old wage levels",lottery winners,0,170000,0.18852774549019607
+"2a. weighted lottery, old wage levels",lottery winners,0,175000,0.17963351176470588
+"2a. weighted lottery, old wage levels",lottery winners,0,180000,0.17108252509803928
+"2a. weighted lottery, old wage levels",lottery winners,0,185000,0.16288971294117638
+"2a. weighted lottery, old wage levels",lottery winners,0,190000,0.15497027019607842
+"2a. weighted lottery, old wage levels",lottery winners,0,195000,0.14739113686274508
+"2a. weighted lottery, old wage levels",lottery winners,0,200000,0.14008678823529416
+"2a. weighted lottery, old wage levels",lottery winners,0,205000,0.1330491556862745
+"2a. weighted lottery, old wage levels",lottery winners,0,210000,0.12630828117647058
+"2a. weighted lottery, old wage levels",lottery winners,0,215000,0.1198410376470588
+"2a. weighted lottery, old wage levels",lottery winners,0,220000,0.11363569490196083
+"2a. weighted lottery, old wage levels",lottery winners,0,225000,0.10766983529411762
+"2a. weighted lottery, old wage levels",lottery winners,0,230000,0.10195744980392157
+"2a. weighted lottery, old wage levels",lottery winners,0,235000,0.09650516431372552
+"2a. weighted lottery, old wage levels",lottery winners,0,240000,0.0912689517647059
+"2a. weighted lottery, old wage levels",lottery winners,0,245000,0.0862437015686275
+"2a. weighted lottery, old wage levels",lottery winners,0,250000,0.08145552117647059
+"2a. weighted lottery, old wage levels",lottery winners,0,255000,0.07689198156862742
+"2a. weighted lottery, old wage levels",lottery winners,0,260000,0.07252576666666669
+"2a. weighted lottery, old wage levels",lottery winners,0,265000,0.06834633843137256
+"2a. weighted lottery, old wage levels",lottery winners,0,270000,0.06435059647058826
+"2a. weighted lottery, old wage levels",lottery winners,0,275000,0.06055679921568629
+"2a. weighted lottery, old wage levels",lottery winners,0,280000,0.05692751803921569
+"2a. weighted lottery, old wage levels",lottery winners,0,285000,0.05347679294117647
+"2a. weighted lottery, old wage levels",lottery winners,0,290000,0.050196689803921564
+"2a. weighted lottery, old wage levels",lottery winners,0,295000,0.04706906666666666
+"2a. weighted lottery, old wage levels",lottery winners,0,300000,0.0441379525490196
+"2a. weighted lottery, old wage levels",lottery winners,0.1,0,1
+"2a. weighted lottery, old wage levels",lottery winners,0.1,5000,0.9191289901960783
+"2a. weighted lottery, old wage levels",lottery winners,0.1,10000,0.8497100313725494
+"2a. weighted lottery, old wage levels",lottery winners,0.1,15000,0.7887761415686272
+"2a. weighted lottery, old wage levels",lottery winners,0.1,20000,0.7345147870588236
+"2a. weighted lottery, old wage levels",lottery winners,0.1,25000,0.6856321690196079
+"2a. weighted lottery, old wage levels",lottery winners,0.1,30000,0.6412808423529412
+"2a. weighted lottery, old wage levels",lottery winners,0.1,35000,0.6008076925490193
+"2a. weighted lottery, old wage levels",lottery winners,0.1,40000,0.5637584913725491
+"2a. weighted lottery, old wage levels",lottery winners,0.1,45000,0.5298281364705884
+"2a. weighted lottery, old wage levels",lottery winners,0.1,50000,0.498593408235294
+"2a. weighted lottery, old wage levels",lottery winners,0.1,55000,0.4698238184313728
+"2a. weighted lottery, old wage levels",lottery winners,0.1,60000,0.4431387384313725
+"2a. weighted lottery, old wage levels",lottery winners,0.1,65000,0.4183725639215686
+"2a. weighted lottery, old wage levels",lottery winners,0.1,70000,0.3952681799999997
+"2a. weighted lottery, old wage levels",lottery winners,0.1,75000,0.3736406694117648
+"2a. weighted lottery, old wage levels",lottery winners,0.1,80000,0.3534422392156862
+"2a. weighted lottery, old wage levels",lottery winners,0.1,85000,0.3344643105882352
+"2a. weighted lottery, old wage levels",lottery winners,0.1,90000,0.31654272039215686
+"2a. weighted lottery, old wage levels",lottery winners,0.1,95000,0.2996249611764706
+"2a. weighted lottery, old wage levels",lottery winners,0.1,100000,0.2836052396078432
+"2a. weighted lottery, old wage levels",lottery winners,0.1,105000,0.2685138133333333
+"2a. weighted lottery, old wage levels",lottery winners,0.1,110000,0.2542002078431373
+"2a. weighted lottery, old wage levels",lottery winners,0.1,115000,0.2406376301960784
+"2a. weighted lottery, old wage levels",lottery winners,0.1,120000,0.22776396039215688
+"2a. weighted lottery, old wage levels",lottery winners,0.1,125000,0.21560018196078432
+"2a. weighted lottery, old wage levels",lottery winners,0.1,130000,0.2040367788235294
+"2a. weighted lottery, old wage levels",lottery winners,0.1,135000,0.19308165607843136
+"2a. weighted lottery, old wage levels",lottery winners,0.1,140000,0.1826707870588235
+"2a. weighted lottery, old wage levels",lottery winners,0.1,145000,0.17276755764705892
+"2a. weighted lottery, old wage levels",lottery winners,0.1,150000,0.163353243137255
+"2a. weighted lottery, old wage levels",lottery winners,0.1,155000,0.1544125933333334
+"2a. weighted lottery, old wage levels",lottery winners,0.1,160000,0.14588046941176472
+"2a. weighted lottery, old wage levels",lottery winners,0.1,165000,0.13776428941176472
+"2a. weighted lottery, old wage levels",lottery winners,0.1,170000,0.13007452823529408
+"2a. weighted lottery, old wage levels",lottery winners,0.1,175000,0.12274244941176471
+"2a. weighted lottery, old wage levels",lottery winners,0.1,180000,0.11574480431372551
+"2a. weighted lottery, old wage levels",lottery winners,0.1,185000,0.10912866274509803
+"2a. weighted lottery, old wage levels",lottery winners,0.1,190000,0.10283181411764708
+"2a. weighted lottery, old wage levels",lottery winners,0.1,195000,0.09684562313725494
+"2a. weighted lottery, old wage levels",lottery winners,0.1,200000,0.09114480039215687
+"2a. weighted lottery, old wage levels",lottery winners,0.1,205000,0.0857490549019608
+"2a. weighted lottery, old wage levels",lottery winners,0.1,210000,0.08059612980392156
+"2a. weighted lottery, old wage levels",lottery winners,0.1,215000,0.07569925294117646
+"2a. weighted lottery, old wage levels",lottery winners,0.1,220000,0.07105024431372549
+"2a. weighted lottery, old wage levels",lottery winners,0.1,225000,0.06665483215686273
+"2a. weighted lottery, old wage levels",lottery winners,0.1,230000,0.062487625882352925
+"2a. weighted lottery, old wage levels",lottery winners,0.1,235000,0.05853592627450982
+"2a. weighted lottery, old wage levels",lottery winners,0.1,240000,0.054801588627451
+"2a. weighted lottery, old wage levels",lottery winners,0.1,245000,0.05126221333333332
+"2a. weighted lottery, old wage levels",lottery winners,0.1,250000,0.04791245686274509
+"2a. weighted lottery, old wage levels",lottery winners,0.1,255000,0.044764129803921554
+"2a. weighted lottery, old wage levels",lottery winners,0.1,260000,0.041782441176470585
+"2a. weighted lottery, old wage levels",lottery winners,0.1,265000,0.03896706549019609
+"2a. weighted lottery, old wage levels",lottery winners,0.1,270000,0.03633109372549018
+"2a. weighted lottery, old wage levels",lottery winners,0.1,275000,0.033844673333333325
+"2a. weighted lottery, old wage levels",lottery winners,0.1,280000,0.03148827647058823
+"2a. weighted lottery, old wage levels",lottery winners,0.1,285000,0.02929684901960785
+"2a. weighted lottery, old wage levels",lottery winners,0.1,290000,0.02722621529411765
+"2a. weighted lottery, old wage levels",lottery winners,0.1,295000,0.025286356470588224
+"2a. weighted lottery, old wage levels",lottery winners,0.1,300000,0.02346511450980392
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,0,1
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,5000,0.9279209217072529
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,10000,0.8644851182683074
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,15000,0.8073822117482762
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,20000,0.7556433621366847
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,25000,0.7087048965697827
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,30000,0.6658757091734313
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,35000,0.6266680631928078
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,40000,0.5905043205027497
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,45000,0.5571947281138168
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,50000,0.5262812254516888
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,55000,0.4975433359518198
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,60000,0.47081330191149506
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,65000,0.4458449855983242
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,70000,0.4224570131797154
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,75000,0.40055948328532764
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,80000,0.37993994937592745
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,85000,0.3605516278257835
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,90000,0.342221873090687
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,95000,0.32497861569346265
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,100000,0.30856995723138697
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,105000,0.29310011346774884
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,110000,0.27841825957929656
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,115000,0.2645151435803439
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,120000,0.251362136684996
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,125000,0.2388216810683425
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,130000,0.22697250589159468
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,135000,0.21571196648337249
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,140000,0.2049548747490617
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,145000,0.1947780396264292
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,150000,0.18513712141049143
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,155000,0.1758919437898228
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,160000,0.16710290652003143
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,165000,0.1587551715108668
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,170000,0.15082656890983684
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,175000,0.14324639958104216
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,180000,0.13597765558174046
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,185000,0.12913345552937072
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,190000,0.12259998254342325
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,195000,0.11637479270315097
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,200000,0.11040726193593438
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,205000,0.10477419917954092
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,210000,0.09945535480492279
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,215000,0.09432294667015798
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,220000,0.08954630356986995
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,225000,0.08495435105175878
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,230000,0.08053277472287684
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,235000,0.07639120188531028
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,240000,0.07240150126560185
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,245000,0.06869669197870296
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,250000,0.06509103604783102
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,255000,0.06163987082133191
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,260000,0.05838631404381602
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,265000,0.0553012132320852
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,270000,0.05237025399319194
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,275000,0.04952500654621627
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,280000,0.046871781443658875
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,285000,0.04437950597887755
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,290000,0.04199807977655581
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,295000,0.039703936458060564
+"2b. weighted lottery, new wage levels",eligible applicants,-0.1,300000,0.03753827354455791
+"2b. weighted lottery, new wage levels",eligible applicants,0,0,1
+"2b. weighted lottery, new wage levels",eligible applicants,0,5000,0.9078896744348428
+"2b. weighted lottery, new wage levels",eligible applicants,0,10000,0.8294914899188273
+"2b. weighted lottery, new wage levels",eligible applicants,0,15000,0.7615234354543078
+"2b. weighted lottery, new wage levels",eligible applicants,0,20000,0.7018744872130577
+"2b. weighted lottery, new wage levels",eligible applicants,0,25000,0.6489080911233306
+"2b. weighted lottery, new wage levels",eligible applicants,0,30000,0.601447673911146
+"2b. weighted lottery, new wage levels",eligible applicants,0,35000,0.5587652963253905
+"2b. weighted lottery, new wage levels",eligible applicants,0,40000,0.5201070088155713
+"2b. weighted lottery, new wage levels",eligible applicants,0,45000,0.4847415553809899
+"2b. weighted lottery, new wage levels",eligible applicants,0,50000,0.45269337522911757
+"2b. weighted lottery, new wage levels",eligible applicants,0,55000,0.42320066334991707
+"2b. weighted lottery, new wage levels",eligible applicants,0,60000,0.3961087544732477
+"2b. weighted lottery, new wage levels",eligible applicants,0,65000,0.37122440429431797
+"2b. weighted lottery, new wage levels",eligible applicants,0,70000,0.3480619708475168
+"2b. weighted lottery, new wage levels",eligible applicants,0,75000,0.32673474731605134
+"2b. weighted lottery, new wage levels",eligible applicants,0,80000,0.3068611329318323
+"2b. weighted lottery, new wage levels",eligible applicants,0,85000,0.2882964126734747
+"2b. weighted lottery, new wage levels",eligible applicants,0,90000,0.2709533036571528
+"2b. weighted lottery, new wage levels",eligible applicants,0,95000,0.2548047481888801
+"2b. weighted lottery, new wage levels",eligible applicants,0,100000,0.23976939862093055
+"2b. weighted lottery, new wage levels",eligible applicants,0,105000,0.2255642838439381
+"2b. weighted lottery, new wage levels",eligible applicants,0,110000,0.21242611503884087
+"2b. weighted lottery, new wage levels",eligible applicants,0,115000,0.1999937156323646
+"2b. weighted lottery, new wage levels",eligible applicants,0,120000,0.18834127607576157
+"2b. weighted lottery, new wage levels",eligible applicants,0,125000,0.1773356026883128
+"2b. weighted lottery, new wage levels",eligible applicants,0,130000,0.16708614820633677
+"2b. weighted lottery, new wage levels",eligible applicants,0,135000,0.15742690058479536
+"2b. weighted lottery, new wage levels",eligible applicants,0,140000,0.1482929213581216
+"2b. weighted lottery, new wage levels",eligible applicants,0,145000,0.13978702976346344
+"2b. weighted lottery, new wage levels",eligible applicants,0,150000,0.13170585668150475
+"2b. weighted lottery, new wage levels",eligible applicants,0,155000,0.12417177271537055
+"2b. weighted lottery, new wage levels",eligible applicants,0,160000,0.11691018591254254
+"2b. weighted lottery, new wage levels",eligible applicants,0,165000,0.11021925460417213
+"2b. weighted lottery, new wage levels",eligible applicants,0,170000,0.10389403857903468
+"2b. weighted lottery, new wage levels",eligible applicants,0,175000,0.09790171947281139
+"2b. weighted lottery, new wage levels",eligible applicants,0,180000,0.0922620232172471
+"2b. weighted lottery, new wage levels",eligible applicants,0,185000,0.08691332809636033
+"2b. weighted lottery, new wage levels",eligible applicants,0,190000,0.08190643274853801
+"2b. weighted lottery, new wage levels",eligible applicants,0,195000,0.07719071310116087
+"2b. weighted lottery, new wage levels",eligible applicants,0,200000,0.07274731605132234
+"2b. weighted lottery, new wage levels",eligible applicants,0,205000,0.06856000698263066
+"2b. weighted lottery, new wage levels",eligible applicants,0,210000,0.06458654097931393
+"2b. weighted lottery, new wage levels",eligible applicants,0,215000,0.0608464694073492
+"2b. weighted lottery, new wage levels",eligible applicants,0,220000,0.05730540281050885
+"2b. weighted lottery, new wage levels",eligible applicants,0,225000,0.05397503709522562
+"2b. weighted lottery, new wage levels",eligible applicants,0,230000,0.05083704285589594
+"2b. weighted lottery, new wage levels",eligible applicants,0,235000,0.047896831631317104
+"2b. weighted lottery, new wage levels",eligible applicants,0,240000,0.04508440254866021
+"2b. weighted lottery, new wage levels",eligible applicants,0,245000,0.04243135201187047
+"2b. weighted lottery, new wage levels",eligible applicants,0,250000,0.03991463733961771
+"2b. weighted lottery, new wage levels",eligible applicants,0,255000,0.03756096709435279
+"2b. weighted lottery, new wage levels",eligible applicants,0,260000,0.03532146286113291
+"2b. weighted lottery, new wage levels",eligible applicants,0,265000,0.03321218469058219
+"2b. weighted lottery, new wage levels",eligible applicants,0,270000,0.03124657414680981
+"2b. weighted lottery, new wage levels",eligible applicants,0,275000,0.029382735445579126
+"2b. weighted lottery, new wage levels",eligible applicants,0,280000,0.027615606179628188
+"2b. weighted lottery, new wage levels",eligible applicants,0,285000,0.025951819848127774
+"2b. weighted lottery, new wage levels",eligible applicants,0,290000,0.02439940647638999
+"2b. weighted lottery, new wage levels",eligible applicants,0,295000,0.02291681941171336
+"2b. weighted lottery, new wage levels",eligible applicants,0,300000,0.021533560268831277
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,0,1
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,5000,0.8861590294143313
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,10000,0.7930735794710658
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,15000,0.7149965959675313
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,20000,0.6480731430566464
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,25000,0.5899755607925286
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,30000,0.53888731779698
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,35000,0.4934335340839661
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,40000,0.4529588897617176
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,45000,0.4167399842890809
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,50000,0.3842223967879901
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,55000,0.35468482150650255
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,60000,0.328018154839836
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,65000,0.3037692240551628
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,70000,0.2814859038142619
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,75000,0.26104652177707943
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,80000,0.24238020424194814
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,85000,0.2252242297285502
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,90000,0.20940490529807096
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,95000,0.19473788949986912
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,100000,0.1812511128567688
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,105000,0.1687741991795409
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,110000,0.15726106310552498
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,115000,0.14657065549445755
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,120000,0.1366450205114777
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,125000,0.1274345814785721
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,130000,0.11893724360652877
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,135000,0.11100427686130752
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,140000,0.10362904774373746
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,145000,0.09677297721916733
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,150000,0.09037566553198922
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,155000,0.08441162608012569
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,160000,0.07886305315527624
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,165000,0.07368368682901286
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,170000,0.06881801518722178
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,175000,0.0643065374879986
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,180000,0.060084140700008726
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,185000,0.05612271973466003
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,190000,0.052454569258968325
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,195000,0.04898821681068344
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,200000,0.045796281749149
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,205000,0.04277350091647029
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,210000,0.03998359081784063
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,215000,0.03734660033167498
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,220000,0.03491437549096623
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,225000,0.03258060574321377
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,230000,0.0304264641703762
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,235000,0.028441302260626678
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,240000,0.02658898490006111
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,245000,0.02486514794448808
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,250000,0.0232083442436938
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,255000,0.021678449855983245
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,260000,0.020234267260190276
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,265000,0.018922580082045906
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,270000,0.017688574670507117
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,275000,0.016516365540717462
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,280000,0.015417648599109723
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,285000,0.014384917517674775
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,290000,0.0134169503360391
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,295000,0.012538709958977044
+"2b. weighted lottery, new wage levels",eligible applicants,0.1,300000,0.011713363009513825
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,0,1
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,5000,0.9221996715729618
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,10000,0.8542892250409938
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,15000,0.7938936871285952
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,20000,0.7397211008506591
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,25000,0.6909915934840343
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,30000,0.6466567511292525
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,35000,0.6062530951938039
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,40000,0.5691896087964242
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,45000,0.5351928312982013
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,50000,0.5037361891498413
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,55000,0.47481807684637256
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,60000,0.4478948343966872
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,65000,0.4228409465536349
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,70000,0.3994639236616622
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,75000,0.3777788286421512
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,80000,0.35735631364949777
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,85000,0.3381732135405406
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,90000,0.32017615832299656
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,95000,0.30323577532411156
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,100000,0.28717527704297874
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,105000,0.2721548850230041
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,110000,0.2579046417193316
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,115000,0.24443423762096045
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,120000,0.23164424681682186
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,125000,0.2196328339892058
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,130000,0.20819312170642235
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,135000,0.19736100854250263
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,140000,0.1870806992493678
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,145000,0.17741231718706726
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,150000,0.16816162833541504
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,155000,0.15940938533292437
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,160000,0.15114455793428533
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,165000,0.14334106350698694
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,170000,0.13591416078847385
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,175000,0.12883920841374624
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,180000,0.12216377682954187
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,185000,0.11582115833377025
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,190000,0.10975795228925712
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,195000,0.10398057449114521
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,200000,0.09854797038650155
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,205000,0.09340308541377423
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,210000,0.0884983745040256
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,215000,0.08388189937989582
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,220000,0.07942937154751192
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,225000,0.07518591321414866
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,230000,0.07119235917535556
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,235000,0.06742355763717357
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,240000,0.06381714145896972
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,245000,0.060389206869531045
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,250000,0.0571810923897963
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,255000,0.054098733049245604
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,260000,0.05121499234236856
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,265000,0.04845756700158181
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,270000,0.04581617231430454
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,275000,0.04333853482468607
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,280000,0.04096038788770276
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,285000,0.03874610349018969
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,290000,0.0365857469177345
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,295000,0.034607385562282274
+"2b. weighted lottery, new wage levels",lottery winners,-0.1,300000,0.03271734756980031
+"2b. weighted lottery, new wage levels",lottery winners,0,0,1
+"2b. weighted lottery, new wage levels",lottery winners,0,5000,0.9016888269925937
+"2b. weighted lottery, new wage levels",lottery winners,0,10000,0.8187945128408081
+"2b. weighted lottery, new wage levels",lottery winners,0,15000,0.7477992611229582
+"2b. weighted lottery, new wage levels",lottery winners,0,20000,0.6858526598448266
+"2b. weighted lottery, new wage levels",lottery winners,0,25000,0.6308342583062616
+"2b. weighted lottery, new wage levels",lottery winners,0,30000,0.5822452965479727
+"2b. weighted lottery, new wage levels",lottery winners,0,35000,0.538684442139693
+"2b. weighted lottery, new wage levels",lottery winners,0,40000,0.4994573603879833
+"2b. weighted lottery, new wage levels",lottery winners,0,45000,0.463904767650679
+"2b. weighted lottery, new wage levels",lottery winners,0,50000,0.4316932623616823
+"2b. weighted lottery, new wage levels",lottery winners,0,55000,0.40217146678177657
+"2b. weighted lottery, new wage levels",lottery winners,0,60000,0.375159430282754
+"2b. weighted lottery, new wage levels",lottery winners,0,65000,0.3501370449084112
+"2b. weighted lottery, new wage levels",lottery winners,0,70000,0.3273006917365814
+"2b. weighted lottery, new wage levels",lottery winners,0,75000,0.306213550356618
+"2b. weighted lottery, new wage levels",lottery winners,0,80000,0.2865853360846699
+"2b. weighted lottery, new wage levels",lottery winners,0,85000,0.26842385714309663
+"2b. weighted lottery, new wage levels",lottery winners,0,90000,0.2515850073703357
+"2b. weighted lottery, new wage levels",lottery winners,0,95000,0.2357917636589425
+"2b. weighted lottery, new wage levels",lottery winners,0,100000,0.2211933441212924
+"2b. weighted lottery, new wage levels",lottery winners,0,105000,0.20748745510703093
+"2b. weighted lottery, new wage levels",lottery winners,0,110000,0.19476665663525328
+"2b. weighted lottery, new wage levels",lottery winners,0,115000,0.18287622073801987
+"2b. weighted lottery, new wage levels",lottery winners,0,120000,0.17174253695163302
+"2b. weighted lottery, new wage levels",lottery winners,0,125000,0.16138605786760876
+"2b. weighted lottery, new wage levels",lottery winners,0,130000,0.15166265673484922
+"2b. weighted lottery, new wage levels",lottery winners,0,135000,0.14259595597574165
+"2b. weighted lottery, new wage levels",lottery winners,0,140000,0.1340592394464863
+"2b. weighted lottery, new wage levels",lottery winners,0,145000,0.1260772289549206
+"2b. weighted lottery, new wage levels",lottery winners,0,150000,0.11855450971885945
+"2b. weighted lottery, new wage levels",lottery winners,0,155000,0.11147540400380283
+"2b. weighted lottery, new wage levels",lottery winners,0,160000,0.10487025503970791
+"2b. weighted lottery, new wage levels",lottery winners,0,165000,0.09864685043545668
+"2b. weighted lottery, new wage levels",lottery winners,0,170000,0.09279509222077058
+"2b. weighted lottery, new wage levels",lottery winners,0,175000,0.08730065295164163
+"2b. weighted lottery, new wage levels",lottery winners,0,180000,0.08213054962808357
+"2b. weighted lottery, new wage levels",lottery winners,0,185000,0.07728457252412628
+"2b. weighted lottery, new wage levels",lottery winners,0,190000,0.0727090327490933
+"2b. weighted lottery, new wage levels",lottery winners,0,195000,0.06839918226024742
+"2b. weighted lottery, new wage levels",lottery winners,0,200000,0.06430635984427605
+"2b. weighted lottery, new wage levels",lottery winners,0,205000,0.060491262974101005
+"2b. weighted lottery, new wage levels",lottery winners,0,210000,0.05690863249809247
+"2b. weighted lottery, new wage levels",lottery winners,0,215000,0.05355798336509147
+"2b. weighted lottery, new wage levels",lottery winners,0,220000,0.05042431729528195
+"2b. weighted lottery, new wage levels",lottery winners,0,225000,0.047405892294222554
+"2b. weighted lottery, new wage levels",lottery winners,0,230000,0.04459872024063899
+"2b. weighted lottery, new wage levels",lottery winners,0,235000,0.04194869805900531
+"2b. weighted lottery, new wage levels",lottery winners,0,240000,0.03943271806533059
+"2b. weighted lottery, new wage levels",lottery winners,0,245000,0.037097317877774295
+"2b. weighted lottery, new wage levels",lottery winners,0,250000,0.0348635404568818
+"2b. weighted lottery, new wage levels",lottery winners,0,255000,0.03280318917545851
+"2b. weighted lottery, new wage levels",lottery winners,0,260000,0.03084647987169368
+"2b. weighted lottery, new wage levels",lottery winners,0,265000,0.028982594899205832
+"2b. weighted lottery, new wage levels",lottery winners,0,270000,0.02724633823483994
+"2b. weighted lottery, new wage levels",lottery winners,0,275000,0.025590633580718992
+"2b. weighted lottery, new wage levels",lottery winners,0,280000,0.024046574487793397
+"2b. weighted lottery, new wage levels",lottery winners,0,285000,0.02260317619926266
+"2b. weighted lottery, new wage levels",lottery winners,0,290000,0.02127416044371886
+"2b. weighted lottery, new wage levels",lottery winners,0,295000,0.019977080494790488
+"2b. weighted lottery, new wage levels",lottery winners,0,300000,0.018763278993717568
+"2b. weighted lottery, new wage levels",lottery winners,0.1,0,1
+"2b. weighted lottery, new wage levels",lottery winners,0.1,5000,0.8793652844623939
+"2b. weighted lottery, new wage levels",lottery winners,0.1,10000,0.7818430780494241
+"2b. weighted lottery, new wage levels",lottery winners,0.1,15000,0.7007228397087872
+"2b. weighted lottery, new wage levels",lottery winners,0.1,20000,0.6317029011374283
+"2b. weighted lottery, new wage levels",lottery winners,0.1,25000,0.5721520312175671
+"2b. weighted lottery, new wage levels",lottery winners,0.1,30000,0.5201793090008112
+"2b. weighted lottery, new wage levels",lottery winners,0.1,35000,0.4745128915632938
+"2b. weighted lottery, new wage levels",lottery winners,0.1,40000,0.43390824728224103
+"2b. weighted lottery, new wage levels",lottery winners,0.1,45000,0.39770894536327234
+"2b. weighted lottery, new wage levels",lottery winners,0.1,50000,0.36520806994887806
+"2b. weighted lottery, new wage levels",lottery winners,0.1,55000,0.33585069761417574
+"2b. weighted lottery, new wage levels",lottery winners,0.1,60000,0.30955610253493093
+"2b. weighted lottery, new wage levels",lottery winners,0.1,65000,0.28559817605441773
+"2b. weighted lottery, new wage levels",lottery winners,0.1,70000,0.2637754289746004
+"2b. weighted lottery, new wage levels",lottery winners,0.1,75000,0.2438609186428431
+"2b. weighted lottery, new wage levels",lottery winners,0.1,80000,0.22571018696016804
+"2b. weighted lottery, new wage levels",lottery winners,0.1,85000,0.2090991158709648
+"2b. weighted lottery, new wage levels",lottery winners,0.1,90000,0.1938415472413732
+"2b. weighted lottery, new wage levels",lottery winners,0.1,95000,0.17975698505989768
+"2b. weighted lottery, new wage levels",lottery winners,0.1,100000,0.1669783697349145
+"2b. weighted lottery, new wage levels",lottery winners,0.1,105000,0.15496681756881148
+"2b. weighted lottery, new wage levels",lottery winners,0.1,110000,0.14398501225436497
+"2b. weighted lottery, new wage levels",lottery winners,0.1,115000,0.1338761716583123
+"2b. weighted lottery, new wage levels",lottery winners,0.1,120000,0.12446460191927992
+"2b. weighted lottery, new wage levels",lottery winners,0.1,125000,0.11583844588267932
+"2b. weighted lottery, new wage levels",lottery winners,0.1,130000,0.10780354566172491
+"2b. weighted lottery, new wage levels",lottery winners,0.1,135000,0.10033694583922596
+"2b. weighted lottery, new wage levels",lottery winners,0.1,140000,0.09337956067197542
+"2b. weighted lottery, new wage levels",lottery winners,0.1,145000,0.08697864984836765
+"2b. weighted lottery, new wage levels",lottery winners,0.1,150000,0.08103221041356479
+"2b. weighted lottery, new wage levels",lottery winners,0.1,155000,0.07548636098867118
+"2b. weighted lottery, new wage levels",lottery winners,0.1,160000,0.0703724943911471
+"2b. weighted lottery, new wage levels",lottery winners,0.1,165000,0.06563668327476087
+"2b. weighted lottery, new wage levels",lottery winners,0.1,170000,0.06120999100045755
+"2b. weighted lottery, new wage levels",lottery winners,0.1,175000,0.05712580517654446
+"2b. weighted lottery, new wage levels",lottery winners,0.1,180000,0.05330030484483747
+"2b. weighted lottery, new wage levels",lottery winners,0.1,185000,0.04970715598895729
+"2b. weighted lottery, new wage levels",lottery winners,0.1,190000,0.04639606079084406
+"2b. weighted lottery, new wage levels",lottery winners,0.1,195000,0.0432714866770141
+"2b. weighted lottery, new wage levels",lottery winners,0.1,200000,0.04037256669393582
+"2b. weighted lottery, new wage levels",lottery winners,0.1,205000,0.03769544197952586
+"2b. weighted lottery, new wage levels",lottery winners,0.1,210000,0.0351537001670386
+"2b. weighted lottery, new wage levels",lottery winners,0.1,215000,0.03276915515148992
+"2b. weighted lottery, new wage levels",lottery winners,0.1,220000,0.030572937832290554
+"2b. weighted lottery, new wage levels",lottery winners,0.1,225000,0.028520486229071995
+"2b. weighted lottery, new wage levels",lottery winners,0.1,230000,0.02659674364519538
+"2b. weighted lottery, new wage levels",lottery winners,0.1,235000,0.024814024059590913
+"2b. weighted lottery, new wage levels",lottery winners,0.1,240000,0.02315498533713808
+"2b. weighted lottery, new wage levels",lottery winners,0.1,245000,0.021610736628951886
+"2b. weighted lottery, new wage levels",lottery winners,0.1,250000,0.02018075074714877
+"2b. weighted lottery, new wage levels",lottery winners,0.1,255000,0.018854218185396315
+"2b. weighted lottery, new wage levels",lottery winners,0.1,260000,0.017605942618878836
+"2b. weighted lottery, new wage levels",lottery winners,0.1,265000,0.01642092720425944
+"2b. weighted lottery, new wage levels",lottery winners,0.1,270000,0.015323045747793987
+"2b. weighted lottery, new wage levels",lottery winners,0.1,275000,0.014313429237476106
+"2b. weighted lottery, new wage levels",lottery winners,0.1,280000,0.013340454918612679
+"2b. weighted lottery, new wage levels",lottery winners,0.1,285000,0.012432039328886473
+"2b. weighted lottery, new wage levels",lottery winners,0.1,290000,0.011598519851784067
+"2b. weighted lottery, new wage levels",lottery winners,0.1,295000,0.010834572895216738
+"2b. weighted lottery, new wage levels",lottery winners,0.1,300000,0.010099584881438988
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,0,1
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,5000,0.9366494877956242
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,10000,0.8803923738459593
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,15000,0.829705956747186
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,20000,0.7833863981282408
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,25000,0.7407349500442642
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,30000,0.7014272163905401
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,35000,0.6649034083723285
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,40000,0.6308911407613508
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,45000,0.5994669280384468
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,50000,0.5701323194637663
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,55000,0.5426825913747314
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,60000,0.5170371190084732
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,65000,0.4929356898950298
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,70000,0.4702951498672063
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,75000,0.44903566460098643
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,80000,0.42885576071835074
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,85000,0.40985076514480817
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,90000,0.3916336790185913
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,95000,0.37437665992158853
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,100000,0.35805978879473893
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,105000,0.34224974705956746
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,110000,0.32728832047552797
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,115000,0.3130550461616289
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,120000,0.29943831415201727
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,125000,0.2864528266093335
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,130000,0.2740720247881623
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,135000,0.26221243834576957
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,140000,0.25077083596812944
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,145000,0.2397821550524851
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,150000,0.22938709371443022
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,155000,0.21931943214872898
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,160000,0.20974136840774002
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,165000,0.20051995067661565
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,170000,0.19162640698115588
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,175000,0.18312507904388522
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,180000,0.17492664727456686
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,185000,0.16702004552927782
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,190000,0.15950771468319214
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,195000,0.15230776527127865
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,200000,0.1453852598962944
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,205000,0.13874936764891874
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,210000,0.13236119893765022
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,215000,0.12625031617554064
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,220000,0.12038209814088782
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,225000,0.1147930631086379
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,230000,0.10940432528139621
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,235000,0.1042816491716201
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,240000,0.09935041735171365
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,245000,0.09458312254963955
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,250000,0.09004552927785507
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,255000,0.08563740988997091
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,260000,0.08149187428860503
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,265000,0.07746284937397246
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,270000,0.07365988997091182
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,275000,0.069981345643101045
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,280000,0.0665339256355128
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,285000,0.06317139876059188
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,290000,0.0599622170228911
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,295000,0.05694590236499303
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,-0.1,300000,0.054048153534842575
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,0,1
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,5000,0.9183868723915516
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,10000,0.8483190527380805
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,15000,0.7868360313646133
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,20000,0.7322290375616539
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,25000,0.6833108321740231
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,30000,0.6388095990894146
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,35000,0.5985429050208677
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,40000,0.5617598330593145
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,45000,0.5279739471354494
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,50000,0.4970102440875175
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,55000,0.4682676742127228
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,60000,0.44162229669912734
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,65000,0.41693183255343347
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,70000,0.3939310104970278
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,75000,0.3724402428228151
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,80000,0.3523534526369042
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,85000,0.3335866953332491
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,90000,0.3160068610092324
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,95000,0.2993323953458961
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,100000,0.2836548311622613
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,105000,0.26884374604780564
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,110000,0.2548945554571899
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,115000,0.2417146199570001
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,120000,0.22913921209055277
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,125000,0.21734222840521056
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,130000,0.20616684583280637
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,135000,0.19550556468951555
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,140000,0.18542984064752743
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,145000,0.17586284305046157
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,150000,0.16682749462501578
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,155000,0.15825218161123047
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,160000,0.15000063235108133
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,165000,0.14222129126090807
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,170000,0.134771563171873
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,175000,0.12774187428860503
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,180000,0.12107420639939295
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,185000,0.1147263500695586
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,190000,0.10868028329328443
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,195000,0.10297284052105729
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,200000,0.09750015808777036
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,205000,0.09229306310863793
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,210000,0.08743613254078664
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,215000,0.08278771974200076
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,220000,0.07836695333249015
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,225000,0.07414996205893512
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,230000,0.07018195902364993
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,235000,0.06637757683065637
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,240000,0.0627527823447578
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,245000,0.05932417478183889
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,250000,0.05603294549133678
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,255000,0.05294217149361325
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,260000,0.050029246237511066
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,265000,0.047250063235108115
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,270000,0.04466406348804859
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,275000,0.042162482610345275
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,280000,0.03980618439357531
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,285000,0.03755738586062984
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,290000,0.03544422663462755
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,295000,0.03347287213861136
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0,300000,0.03159115340837233
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,0,1
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,5000,0.8986287466801568
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,10000,0.8145543505754397
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,15000,0.742799734412546
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,20000,0.6807849057796891
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,25000,0.6259278171240671
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,30000,0.5772364676868595
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,35000,0.533785411660554
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,40000,0.49471512583786537
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,45000,0.45937871506260264
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,50000,0.4272966991273553
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,55000,0.397860123940812
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,60000,0.37111515113190857
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,65000,0.3464159921588466
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,70000,0.32380786012394064
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,75000,0.3028896863538637
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,80000,0.2835911217908182
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,85000,0.2657076008599974
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,90000,0.24922932211964097
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,95000,0.2336904009105857
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,100000,0.21924718603768817
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,105000,0.20578522195522944
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,110000,0.1930915644365751
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,115000,0.1812579043885165
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,120000,0.1702260655115721
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,125000,0.1599404009105856
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,130000,0.15025989629442268
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,135000,0.1411491400025294
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,140000,0.1326418047299861
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,145000,0.12465726571392438
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,150000,0.11711632098140884
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,155000,0.11008220564057167
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,160000,0.10348725812571136
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,165000,0.09730080940938408
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,170000,0.09144413178196537
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,175000,0.0859339825471102
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,180000,0.08073083976223604
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,185000,0.07585399013532314
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,190000,0.07120620968761857
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,195000,0.0668575313013785
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,200000,0.06280558366004807
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,205000,0.058982072846844605
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,210000,0.05536628936385482
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,215000,0.05200360440116354
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,220000,0.048787941064879214
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,225000,0.04581399392942963
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,230000,0.04300524851397495
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,235000,0.04035964967750095
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,240000,0.037848109270266835
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,245000,0.03553243961047172
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,250000,0.03328443151637789
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,255000,0.031239882382698883
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,260000,0.02930188440622234
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,265000,0.02747454786897684
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,270000,0.025741431642848117
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,275000,0.02412371948906034
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,280000,0.02261919817882889
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,285000,0.021202889844441634
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,290000,0.019872106993802964
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,295000,0.01862226508157329
+"3. EIG wage ranking, RPP and NPV adjusted",eligible applicants,0.1,300000,0.017437239155178953
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,0,1
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,5000,0.9282315403921574
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,10000,0.8652714929411763
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,15000,0.8091805290196078
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,20000,0.7589510184313727
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,25000,0.7131446486274511
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,30000,0.6713282525490194
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,35000,0.6328448835294117
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,40000,0.5973565145098041
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,45000,0.5647034976470588
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,50000,0.5345666117647059
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,55000,0.5064378294117646
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,60000,0.4802689270588235
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,65000,0.45596777372549036
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,70000,0.4330327133333332
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,75000,0.4114641043137255
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,80000,0.39143835098039204
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,85000,0.3725966874509805
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,90000,0.35452371607843153
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,95000,0.3375991101960784
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,100000,0.32154718549019606
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,105000,0.30636002509803917
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,110000,0.29190282039215687
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,115000,0.2781943835294118
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,120000,0.26510924196078445
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,125000,0.25263577450980385
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,130000,0.2407790505882353
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,135000,0.22962656156862746
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,140000,0.21889085921568632
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,145000,0.20871751176470593
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,150000,0.1989292454901961
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,155000,0.18962916039215688
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,160000,0.18070749607843128
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,165000,0.1721675074509804
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,170000,0.16408726156862738
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,175000,0.15636369137254902
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,180000,0.14894142549019615
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,185000,0.14186378352941176
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,190000,0.13517620470588235
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,195000,0.12870929960784305
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,200000,0.12263481411764708
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,205000,0.11672807058823528
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,210000,0.11112298666666667
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,215000,0.10579286470588231
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,220000,0.10068926392156861
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,225000,0.09578915294117646
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,230000,0.09110770980392152
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,235000,0.08667637215686273
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,240000,0.08243796039215688
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,245000,0.07837766980392159
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,250000,0.07450826352941178
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,255000,0.07080461333333331
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,260000,0.06727179764705879
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,265000,0.06387429411764707
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,270000,0.06060367882352938
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,275000,0.057537142352941155
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,280000,0.05463192980392157
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,285000,0.05182434352941176
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,290000,0.04918347058823529
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,295000,0.046678616862745076
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,-0.1,300000,0.04429825568627451
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,0,1
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,5000,0.9090934360784317
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,10000,0.8320305505882353
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,15000,0.7655564658823535
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,20000,0.7073378525490193
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,25000,0.6554271658823528
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,30000,0.6089282858823531
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,35000,0.5670690980392157
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,40000,0.5291975733333334
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,45000,0.4945740643137253
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,50000,0.46304725921568635
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,55000,0.4340347250980393
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,60000,0.40741917882352935
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,65000,0.3827358549019607
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,70000,0.3600066384313728
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,75000,0.33871145450980383
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,80000,0.31911219490196074
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,85000,0.3006853419607843
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,90000,0.2834843937254902
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,95000,0.26741617725490197
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,100000,0.2523603270588236
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,105000,0.23819048980392155
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,110000,0.22498113411764709
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,115000,0.21257868509803923
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,120000,0.2007983164705882
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,125000,0.18978199450980401
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,130000,0.1793458717647059
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,135000,0.1695097843137255
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,140000,0.16028477254901963
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,145000,0.1515170725490197
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,150000,0.1432076968627451
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,155000,0.13535031725490188
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,160000,0.12793339215686278
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,165000,0.12094934588235295
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,170000,0.11435051686274511
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,175000,0.10807449490196078
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,180000,0.1021446603921568
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,185000,0.09661607372549018
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,190000,0.09131271372549019
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,195000,0.08631265411764709
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,200000,0.08151591725490194
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,205000,0.07699424627450982
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,210000,0.07273707607843134
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,215000,0.06871355411764707
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,220000,0.06490432901960787
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,225000,0.0613163619607843
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,230000,0.05793757490196074
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,235000,0.05470619960784315
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,240000,0.051676848235294115
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,245000,0.04880405686274512
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,250000,0.04610466862745101
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,255000,0.043517836470588246
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,260000,0.04106958156862747
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,265000,0.03873597921568628
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,270000,0.03654585098039217
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,275000,0.03445608235294117
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,280000,0.03246052117647057
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,285000,0.030626539215686286
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,290000,0.028869943529411756
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,295000,0.0272427905882353
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0,300000,0.025696751372549006
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,0,1
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,5000,0.8886091964705884
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,10000,0.7976368278431372
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,15000,0.7212311517647059
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,20000,0.6557068560784316
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,25000,0.5985064031372549
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,30000,0.5484452721568626
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,35000,0.5039792654901961
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,40000,0.4644098690196077
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,45000,0.4286452843137255
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,50000,0.3964695560784313
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,55000,0.3673978862745099
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,60000,0.34087499333333326
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,65000,0.31677521333333336
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,70000,0.29470373529411764
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,75000,0.2744037729411764
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,80000,0.2557089584313726
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,85000,0.23854002588235296
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,90000,0.22258013529411758
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,95000,0.2077757074509804
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,100000,0.19408649999999997
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,105000,0.18136591176470587
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,110000,0.16958865882352936
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,115000,0.1586567890196079
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,120000,0.14852589372549013
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,125000,0.13898401215686276
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,130000,0.13011035450980393
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,135000,0.1217996643137255
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,140000,0.11410495137254902
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,145000,0.10690820862745096
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,150000,0.10010420745098038
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,155000,0.09375983137254904
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,160000,0.08781543137254902
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,165000,0.08224226313725488
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,170000,0.07707942470588236
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,175000,0.07225248235294117
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,180000,0.06774238
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,185000,0.06348327647058821
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,190000,0.059522764313725524
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,195000,0.05577855921568629
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,200000,0.0522449831372549
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,205000,0.04894145803921567
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,210000,0.04586808588235293
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,215000,0.042990489019607815
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,220000,0.0402635043137255
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,225000,0.03774427019607842
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,230000,0.035377992941176474
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,235000,0.03313625647058824
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,240000,0.031058467058823522
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,245000,0.029122449019607845
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,250000,0.027295567843137247
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,255000,0.025572040392156877
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,260000,0.023960210196078427
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,265000,0.02243781411764707
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,270000,0.02101765450980391
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,275000,0.01968435607843138
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,280000,0.01845469921568627
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,285000,0.017301881568627452
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,290000,0.016228134509803937
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,295000,0.015193744705882344
+"3. EIG wage ranking, RPP and NPV adjusted",lottery winners,0.1,300000,0.014235771764705883

@@ -1,0 +1,5 @@
+step_chr,adjustment_num,note_chr,running_gap_num
+Preferred specification (critique step 5),NA,"H-1B base salary against native total wage income, no tenure adjustment",-0.1278601642728775
+"less the job-seniority bias, Borjas pp. 17-18 (0.886 x 0.041)",0.036,"Borjas's own correction, applied to his own estimate",-0.09186016427287749
+"less the job-seniority bias, Clemens (2026) Table 2 from the SIPP",0.0633,larger because it uses observed employer tenure rather than a CPS premium,-0.0645601642728775
+"less the base-salary vs total-wage-income gap, Clemens (2026) sec. 3.3",0.07,"natives' measured income includes bonuses, equity and second jobs; the H-1B figure is base salary only",0.005439835727122505

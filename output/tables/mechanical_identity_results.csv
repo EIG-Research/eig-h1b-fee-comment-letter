@@ -1,0 +1,19 @@
+scenario_id,true_elasticity_num,specification,estimated_coefficient_num,standard_error_num,pseudo_r_squared_num,n_observations_int,scenario_label,estimate_minus_truth_num,within_dhs_reported_range_flag
+A,0,Cross-section FY2021,0.9999999999999838,6.092733354404458e-4,0.529459077152978,47806,Fees have no effect on filing volume (true elasticity = 0),0.9999999999999838,TRUE
+A,0,Cross-section FY2022,0.9999999999999826,6.135192563791723e-4,0.5292309552166274,47796,Fees have no effect on filing volume (true elasticity = 0),0.9999999999999826,TRUE
+A,0,Cross-section FY2023,0.9999999999999845,6.091498570009158e-4,0.5292483351352907,47815,Fees have no effect on filing volume (true elasticity = 0),0.9999999999999845,TRUE
+A,0,Cross-section FY2024,0.9660887074322528,0.00153551216629067,0.42530998717804935,47639,Fees have no effect on filing volume (true elasticity = 0),0.9660887074322528,TRUE
+A,0,Cross-section FY2025,0.9663238411325259,0.0015281101760348122,0.42603243916898814,47786,Fees have no effect on filing volume (true elasticity = 0),0.9663238411325259,TRUE
+A,0,"Panel, two-way fixed effects",0.6902707678179493,0.0028873108285944124,0.4290873716209699,236918,Fees have no effect on filing volume (true elasticity = 0),0.6902707678179493,TRUE
+B,-0.5,Cross-section FY2021,0.9999999999999837,6.104376391093268e-4,0.5292965013808254,47750,Firms respond substantially to fees (true elasticity = -0.5),1.4999999999999836,TRUE
+B,-0.5,Cross-section FY2022,0.9999999999999831,6.152216432221501e-4,0.529253069708451,47764,Firms respond substantially to fees (true elasticity = -0.5),1.4999999999999831,TRUE
+B,-0.5,Cross-section FY2023,0.999999999999984,6.098050752688876e-4,0.5292480620462673,47671,Firms respond substantially to fees (true elasticity = -0.5),1.499999999999984,TRUE
+B,-0.5,Cross-section FY2024,0.9723053716603395,0.001931379766240462,0.4137973924639853,41070,Firms respond substantially to fees (true elasticity = -0.5),1.4723053716603394,TRUE
+B,-0.5,Cross-section FY2025,0.9721560329124727,0.0019214062852694026,0.41442189398339446,41176,Firms respond substantially to fees (true elasticity = -0.5),1.4721560329124728,TRUE
+B,-0.5,"Panel, two-way fixed effects",0.801970226921939,0.00338580588501731,0.4176121055491102,222224,Firms respond substantially to fees (true elasticity = -0.5),1.3019702269219389,TRUE
+C,-2,Cross-section FY2021,0.9999999999999837,6.095847147547969e-4,0.529390153148298,47740,Firms respond very strongly to fees (true elasticity = -2.0),2.9999999999999836,TRUE
+C,-2,Cross-section FY2022,0.9999999999999836,6.146351237900739e-4,0.5292259521754057,47829,Firms respond very strongly to fees (true elasticity = -2.0),2.9999999999999836,TRUE
+C,-2,Cross-section FY2023,0.9999999999999842,6.086039448639164e-4,0.5294042139728372,47809,Firms respond very strongly to fees (true elasticity = -2.0),2.999999999999984,TRUE
+C,-2,Cross-section FY2024,1.0174722764625113,0.003490039586167573,0.38602336031889606,22429,Firms respond very strongly to fees (true elasticity = -2.0),3.0174722764625113,FALSE
+C,-2,Cross-section FY2025,1.016237254358114,0.003493705182407285,0.38496002516130734,22291,Firms respond very strongly to fees (true elasticity = -2.0),3.016237254358114,FALSE
+C,-2,"Panel, two-way fixed effects",1.207813833401195,0.003806601047512,0.412298571928176,182052,Firms respond very strongly to fees (true elasticity = -2.0),3.207813833401195,FALSE

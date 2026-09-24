@@ -1,0 +1,126 @@
+Warning message:
+package ‘arrow’ was built under R version 4.6.1 
+Loaded 340,008 petitions with payroll savings, FY2021-FY2024
+Matched selection counts to payroll savings for 251,271 of 255,412 FY2022-24 petitions
+
+=== 3. Share of FY2022-24 petitions eligible under each regime ===
+  (measured on all 251,962 petitions, not only those that won a lottery)
+  1. old unweighted lottery                  Abroad   100.0%
+  1. old unweighted lottery                  In US    100.0%
+  2a. weighted lottery, old wage levels      Abroad    97.0%
+  2a. weighted lottery, old wage levels      In US     97.1%
+  2b. weighted lottery, new wage levels      Abroad    17.5%
+  2b. weighted lottery, new wage levels      In US     27.1%
+  3. EIG wage ranking, RPP and NPV adjusted  Abroad   100.0%
+  3. EIG wage ranking, RPP and NPV adjusted  In US    100.0%
+
+=== 4. Payroll savings by regime (tenure-adjusted, Figure 1 basis) ===
+  a negative mean means the average H-1B worker costs MORE than a comparable native
+
+  weighting: eligible applicants
+    1. old unweighted lottery                  mean savings +0.1307    69.3% positive   median wage $101,177   six-year saving $104,730 (headline) / $79,171 (tenure-adjusted)
+    2a. weighted lottery, old wage levels      mean savings +0.1216    68.6% positive   median wage $101,802   six-year saving $99,343 (headline) / $73,801 (tenure-adjusted)
+    2b. weighted lottery, new wage levels      mean savings -0.1127    35.5% positive   median wage $133,673   six-year saving $-60,133 (headline) / $-85,366 (tenure-adjusted)
+    3. EIG wage ranking, RPP and NPV adjusted  mean savings -0.0911    40.6% positive   median wage $139,696   six-year saving $-43,036 (headline) / $-70,354 (tenure-adjusted)
+
+  weighting: lottery winners
+    1. old unweighted lottery                  mean savings +0.1311    69.4% positive   median wage $101,177   six-year saving $105,028 (headline) / $79,459 (tenure-adjusted)
+    2a. weighted lottery, old wage levels      mean savings +0.0567    59.7% positive   median wage $109,034   six-year saving $56,626 (headline) / $30,852 (tenure-adjusted)
+    2b. weighted lottery, new wage levels      mean savings -0.1387    31.5% positive   median wage $135,253   six-year saving $-80,736 (headline) / $-105,729 (tenure-adjusted)
+    3. EIG wage ranking, RPP and NPV adjusted  mean savings -0.1350    32.8% positive   median wage $145,077   six-year saving $-79,265 (headline) / $-106,341 (tenure-adjusted)
+  simulated regime: 1. old unweighted lottery
+  simulated regime: 2a. weighted lottery, old wage levels
+  simulated regime: 2b. weighted lottery, new wage levels
+  simulated regime: 3. EIG wage ranking, RPP and NPV adjusted
+
+=== 5. Share of employers willing to pay $103,265, tenure-adjusted ===
+
+  weighting: eligible applicants
+    1. old unweighted lottery                  in-US  mu -0.1:  43.3%   mu 0.0:  34.8%   mu +0.1:  26.9%
+    2a. weighted lottery, old wage levels      in-US  mu -0.1:  42.8%   mu 0.0:  34.3%   mu +0.1:  26.5%
+    2b. weighted lottery, new wage levels      in-US  mu -0.1:  30.6%   mu 0.0:  23.6%   mu +0.1:  17.8%
+    3. EIG wage ranking, RPP and NPV adjusted  in-US  mu -0.1:  36.2%   mu 0.0:  28.5%   mu +0.1:  21.9%
+
+  weighting: lottery winners
+    1. old unweighted lottery                  in-US  mu -0.1:  43.4%   mu 0.0:  34.9%   mu +0.1:  27.1%
+    2a. weighted lottery, old wage levels      in-US  mu -0.1:  39.0%   mu 0.0:  31.0%   mu +0.1:  23.9%
+    2b. weighted lottery, new wage levels      in-US  mu -0.1:  28.7%   mu 0.0:  22.0%   mu +0.1:  16.5%
+    3. EIG wage ranking, RPP and NPV adjusted  in-US  mu -0.1:  33.0%   mu 0.0:  25.7%   mu +0.1:  19.7%
+
+=== 6. FY2027, 211,600 registrations ===
+  in-US 196,960, abroad 14,640 (already paid the $100,000 Proclamation payment)
+
+  --- compliance: employers raise pay to the new floor, volume unchanged ---
+
+  1. old unweighted lottery
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  43.4%  ->   100,182 petitions   visas   85,000   shortfall        0   revenue $8.8bn
+    mu = +0.0  in-US willing  34.9%  ->    83,443 petitions   visas   83,443   shortfall    1,557   revenue $8.6bn
+    mu = +0.1  in-US willing  27.1%  ->    67,927 petitions   visas   67,927   shortfall   17,073   revenue $7.0bn
+
+  2a. weighted lottery, old wage levels
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  39.0%  ->    91,408 petitions   visas   85,000   shortfall        0   revenue $8.8bn
+    mu = +0.0  in-US willing  31.0%  ->    75,718 petitions   visas   75,718   shortfall    9,282   revenue $7.8bn
+    mu = +0.1  in-US willing  23.9%  ->    61,723 petitions   visas   61,723   shortfall   23,277   revenue $6.4bn
+
+  2b. weighted lottery, new wage levels
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  28.7%  ->    71,145 petitions   visas   71,145   shortfall   13,855   revenue $7.3bn
+    mu = +0.0  in-US willing  22.0%  ->    57,974 petitions   visas   57,974   shortfall   27,026   revenue $6.0bn
+    mu = +0.1  in-US willing  16.5%  ->    47,233 petitions   visas   47,233   shortfall   37,767   revenue $4.9bn
+
+  3. EIG wage ranking, RPP and NPV adjusted
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  33.0%  ->    79,608 petitions   visas   79,608   shortfall    5,392   revenue $8.2bn
+    mu = +0.0  in-US willing  25.7%  ->    65,353 petitions   visas   65,353   shortfall   19,647   revenue $6.7bn
+    mu = +0.1  in-US willing  19.7%  ->    53,466 petitions   visas   53,466   shortfall   31,534   revenue $5.5bn
+
+  --- exclusion: registrations below the new floor disappear ---
+
+  1. old unweighted lottery
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  43.4%  ->   100,182 petitions   visas   85,000   shortfall        0   revenue $8.8bn
+    mu = +0.0  in-US willing  34.9%  ->    83,443 petitions   visas   83,443   shortfall    1,557   revenue $8.6bn
+    mu = +0.1  in-US willing  27.1%  ->    67,927 petitions   visas   67,927   shortfall   17,073   revenue $7.0bn
+
+  2a. weighted lottery, old wage levels
+    eligible: abroad 14,194 + in-US 191,232 = 205,426   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  39.0%  ->    88,730 petitions   visas   85,000   shortfall        0   revenue $8.8bn
+    mu = +0.0  in-US willing  31.0%  ->    73,496 petitions   visas   73,496   shortfall   11,504   revenue $7.6bn
+    mu = +0.1  in-US willing  23.9%  ->    59,908 petitions   visas   59,908   shortfall   25,092   revenue $6.2bn
+
+  2b. weighted lottery, new wage levels
+    eligible: abroad 2,567 + in-US 53,310 = 55,878   (fee priced against eligible applicants)
+    mu = -0.1  in-US willing  30.6%  ->    18,888 petitions   visas   18,888   shortfall   66,112   revenue $2.0bn
+    mu = +0.0  in-US willing  23.6%  ->    15,169 petitions   visas   15,169   shortfall   69,831   revenue $1.6bn
+    mu = +0.1  in-US willing  17.8%  ->    12,063 petitions   visas   12,063   shortfall   72,937   revenue $1.2bn
+
+  3. EIG wage ranking, RPP and NPV adjusted
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  33.0%  ->    79,608 petitions   visas   79,608   shortfall    5,392   revenue $8.2bn
+    mu = +0.0  in-US willing  25.7%  ->    65,353 petitions   visas   65,353   shortfall   19,647   revenue $6.7bn
+    mu = +0.1  in-US willing  19.7%  ->    53,466 petitions   visas   53,466   shortfall   31,534   revenue $5.5bn
+
+=== 7. Revenue-maximising fee, N = 170,000 (Borjas Table 9: $95k / $115k / $136k) ===
+
+  weighting: eligible applicants
+    1. old unweighted lottery                  $  138k  $  117k  $   97k   (revenue $8.8 / 7.0 / 5.5 bn)
+    2a. weighted lottery, old wage levels      $  137k  $  116k  $   96k   (revenue $8.7 / 6.9 / 5.4 bn)
+    2b. weighted lottery, new wage levels      $   97k  $   79k  $   65k   (revenue $5.3 / 4.2 / 3.4 bn)
+    3. EIG wage ranking, RPP and NPV adjusted  $  111k  $   93k  $   76k   (revenue $6.1 / 4.8 / 3.9 bn)
+
+  weighting: lottery winners
+    1. old unweighted lottery                  $  139k  $  117k  $   97k   (revenue $8.8 / 7.0 / 5.5 bn)
+    2a. weighted lottery, old wage levels      $  131k  $  110k  $   91k   (revenue $7.8 / 6.2 / 4.8 bn)
+    2b. weighted lottery, new wage levels      $   91k  $   75k  $   62k   (revenue $4.9 / 3.9 / 3.2 bn)
+    3. EIG wage ranking, RPP and NPV adjusted  $  103k  $   84k  $   69k   (revenue $5.5 / 4.3 / 3.5 bn)
+
+  with N set to each regime's own FY2027 eligible pool (exclusion reading):
+    1. old unweighted lottery                  N =  211,600   $  139k  $  117k  $   97k
+    2a. weighted lottery, old wage levels      N =  205,426   $  131k  $  110k  $   91k
+    2b. weighted lottery, new wage levels      N =   55,878   $   97k  $   79k  $   65k
+    3. EIG wage ranking, RPP and NPV adjusted  N =  211,600   $  103k  $   84k  $   69k
+
+Saved the regime fee tables to output/tables/fee_regime_*.csv
+EXIT=0

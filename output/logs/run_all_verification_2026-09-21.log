@@ -1,0 +1,1090 @@
+Pipeline start: 2026-09-21 11:33:52
+Scripts selected: 8
+
+--- 01_appendix_audit.R ---
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘arrow’
+
+The following object is masked from ‘package:lubridate’:
+
+    duration
+
+The following object is masked from ‘package:utils’:
+
+    timestamp
+
+Loaded 6 keyed appendix tables from: /Users/jiaxinhe/Documents/projects/Claude Projects/h1b-fee-comment-letter/data/raw/DHS Technical Appendix
+Table A.1 checked. FY2021 nonprofit share = 5.22% (footnote 8 states 5.07%). 86.13% claim reproduced: TRUE
+Table A.2 checked. Column totals vs Table A.3 entity counts differ by: 0, 0, 0, 0, 0
+Table A.3 checked. Largest gap between stated and implied mean: 0.0039
+Table A.5 checked. Entities x 4 = 428,140 but reported N = 428,103 (shortfall 37). Panel is balanced: FALSE
+Table A.6 checked. Max arithmetic gap: difference = 0, consular share = 0.005. Category rule mismatches: 0. Firms with an increase shown: 0
+Table A.7 checked. Column total gaps: 0, 0, 0, 0. Consular change = -91.23% (appendix states -91.23%)
+Audit complete. 14 claims checked; 5 did not reproduce as published.
+    ok in 0.0 minutes
+
+--- 02_mechanical_identity_sim.R ---
+Variance decomposition of DHS's regressor, from DHS's own tables: 90.3% of the variance in log(total fees) is variance in the dependent variable.
+Scenario A estimated (true elasticity = 0)
+Scenario B estimated (true elasticity = -0.5)
+Scenario C estimated (true elasticity = -2)
+
+=== DHS's specification applied to data with KNOWN true elasticities ===
+  True elasticity +0.00  ->  estimated +0.690 to +1.000   (100% of estimates fall inside DHS's reported 0.62-0.97 range)
+  True elasticity -0.50  ->  estimated +0.802 to +1.000   (100% of estimates fall inside DHS's reported 0.62-0.97 range)
+  True elasticity -2.00  ->  estimated +1.000 to +1.208   (50% of estimates fall inside DHS's reported 0.62-0.97 range)
+
+DHS reports 0.94 to 0.97 (cross-section) and 0.62 (panel).
+Saved simulation results to output/tables/ and data/processed/
+    ok in 0.3 minutes
+
+--- 03_implied_elasticity.R ---
+Loaded Tables A.6 and A.7
+Implied elasticity from Table A.7 ranges from -0.45 to -1.36 across baseline cost assumptions -- all NEGATIVE.
+Among the 30 firms DHS lists, registrations fell from 58,551 to 18,655 (-68.1%); firms increasing: 0
+
+=== DHS's own parameters vs. DHS's own observed outcome ===
+  Observed: 13,823 -> 1,212 receipts (-91.2%)
+  Table A.4 cross-section, FY2025 (elasticity +0.94) predicts 784,713 receipts (+5576.9%)
+  Table A.4 cross-section, FY2021 (elasticity +0.97) predicts 892,675 receipts (+6357.9%)
+  Table A.5 panel (long run) (elasticity +0.62) predicts 198,412 receipts (+1335.4%)
+  Table A.5 panel, read with the sign a demand elasticity must have (elasticity -0.62) predicts 963 receipts (-93.0%)
+
+Extrapolation: the proposed fee change is 3.9 times larger in log points than the change used to estimate the elasticity.
+Saved implied elasticity outputs to output/tables/ and data/processed/
+    ok in 0.0 minutes
+
+--- 04_borjas_replication.R ---
+Retrieved 103 monthly CPIAUCNS observations, 2018-01-01 to 2026-08-01
+NOTE: the 2025 CPI base uses 11 months. This rescales all dollar figures uniformly and leaves the wage-gap coefficients unchanged.
+Loaded 4 I-129 files: 373,104 petitions, FY2021-FY2024
+H-1B after core restrictions: 356,537; after the status-date window: 356,413 (dropped 124)
+Loaded ACS: 752,303 rows, years 2021, 2022, 2023, 2024
+ACS native sample before the earnings floor: 611,729
+H-1B rows with no place-of-work PUMA: 68 (0.02%)
+H-1B rows missing an occupation match: 1; missing an industry match: 16359; falling back to a state pseudo-metro: 30893
+ACS rows falling back to a state pseudo-metro: 113142 (18.5%)
+
+Earnings bounds applied at Borjas's stated values: floor $34,780 (the 0.01 percentile here); ceiling $1,290,000 (the 100.00 percentile here)
+
+=== Table 1 check (replication vs Borjas) ===
+  Native:
+    N            571,623   vs 581,648
+    Salary(000s)    127.1   vs    127.0
+    Log salary      11.53   vs    11.53
+    Age              35.8   vs     35.8
+    Male %           55.1   vs     55.1
+    Bachelor %       71.9   vs     71.8
+    Master %         20.9   vs     20.9
+    Prof %            4.6   vs      4.6
+    Doctorate %       2.7   vs      2.7
+  H-1B:
+    N            340,008   vs 343,397
+    Salary(000s)    112.7   vs    112.6
+    Log salary      11.58   vs    11.58
+    Age              31.9   vs     31.9
+    Male %           67.0   vs     67.2
+    Bachelor %       53.7   vs     52.3
+    Master %         40.6   vs     41.8
+    Prof %            1.0   vs      0.9
+    Doctorate %       4.8   vs      5.1
+
+=== Beneficiary location (Borjas: Abroad 42.1, USA 57.7, Other 0.2) ===
+  Abroad     144,626   42.5%
+  Other          697    0.2%
+  USA        194,685   57.3%
+
+Total regression observations: 911,631   (Borjas: 925,045)
+Estimated column 1
+Estimated column 2
+Estimated column 3
+NOTE: 0/0/0/0/0/3 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3 fixed-effect singletons were removed (3 observations).
+Estimated column 4
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+Estimated column 5
+
+================ Table 2. Estimates of the H-1B wage gap ================
+  replication (se)   [Borjas reported]
+
+  A. Baseline (OLS)
+    H-1B
+      (1)  +0.048 (0.001)   [+0.044]   diff +0.004
+      (2)  -0.064 (0.002)   [-0.062]   diff -0.002
+      (3)  -0.025 (0.002)   [-0.023]   diff -0.002
+      (4)  -0.128 (0.002)   [-0.136]   diff +0.008
+      (5)  -0.158 (0.002)   [-0.161]   diff +0.003
+
+  B. Location of beneficiary (OLS)
+    Abroad
+      (1)  +0.032 (0.001)   [+0.021]   diff +0.011
+      (2)  -0.061 (0.002)   [-0.065]   diff +0.004
+      (3)  -0.083 (0.002)   [-0.087]   diff +0.004
+      (4)  -0.168 (0.003)   [-0.181]   diff +0.013
+      (5)  -0.207 (0.003)   [-0.219]   diff +0.012
+    USA
+      (1)  +0.059 (0.001)   [+0.061]   diff -0.002
+      (2)  -0.066 (0.002)   [-0.059]   diff -0.007
+      (3)  +0.019 (0.002)   [+0.025]   diff -0.006
+      (4)  -0.099 (0.002)   [-0.102]   diff +0.003
+      (5)  -0.122 (0.003)   [-0.118]   diff -0.004
+
+Saved Table 2 to output/tables/borjas_august_table2.csv
+
+=== 12. Quality of the place-of-work metro in the ACS native sample ===
+  match error no metro identified      113,142   18.5%
+  match error under 0.1%               157,896   25.8%
+  match error 0.1 to 0.9%               58,727    9.6%
+  match error 1.0 to 1.9%               73,293   12.0%
+  match error 2.0 to 4.9%               99,358   16.2%
+  match error 5.0 to 9.9%               66,711   10.9%
+  match error 10.0 to 14.9%             42,602    7.0%
+  no metro of work at all: 18.5% of natives; no place-of-work PUMA: 0.71%
+  among natives with a metro, 41.9% sit in a cell with 2% or more match error and 21.9% with 5% or more
+  distinct metro cells: 315; distinct place-of-work PUMA cells: 1293
+
+=== 13. Critique sample: 690,540 rows (255,344 H-1B), FY2022-FY2024 ===
+  dropped from the Table 2 sample: 221,091 rows (24.3%), of which 215,804 are FY2021
+  distinct cells -- place-of-work state x SOC major group: 1167; place-of-work state x NAICS sector: 1011; detailed occupation: 522; detailed industry: 280
+
+=== 13a. Asymmetry in the metro fallback ===
+  natives assigned a state pseudo-metro: 18.0%; H-1B filings: 8.7%
+  under place-of-work PUMA the same rates are 0.71% and 0.02%, so the asymmetry is a property of the metro coding, not of the data
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+
+=== 13b. The wage gap as a function of geographic granularity ===
+  place-of-work state (about 50 cells)            57 cells   -0.1378 (0.0028)
+  metro of work, Borjas's choice (315 cells)     313 cells   -0.1639 (0.0030)
+  place-of-work PUMA (1,293 cells)             1,012 cells   -0.1729 (0.0029)
+  The estimate widens monotonically as the cells shrink. Clemens (2026) makes the same point in the other direction, reporting -0.125 on PUMAs against -0.085 on commuting zones.
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+
+=== 13c. Age as dummies against age as a quadratic ===
+  single-year age fixed effects, as published: -0.1639 (0.0030)
+  age and age squared entered linearly:        -0.1629 (0.0029)
+  Age is therefore already categorical in the published specification. The problem is not the functional form of the control but that one pooled coefficient is reported for a profile that varies with age, as section 16 shows.
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+  estimated critique step 1
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+  estimated critique step 2
+NOTE: 0/37/35/0/0/0 fixed-effect singletons were removed (64 observations).
+  estimated critique step 3
+NOTE: 0/37/35/0/0/0 fixed-effect singletons were removed (64 observations).
+  estimated critique step 4
+    two-way clustered on pw_state_chr + soc_major_chr (57 and 22 clusters)
+NOTE: 0/37/36/0/0/0 fixed-effect singletons were removed (65 observations).
+  estimated critique step 5
+    two-way clustered on pw_state_chr + soc_major_chr (57 and 22 clusters)
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+  estimated critique step 6
+    two-way clustered on metro_area + occ_code (313 and 522 clusters)
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+  estimated critique step 7
+    two-way clustered on metro_area + occ_code (313 and 522 clusters)
+
+=== 14. Stepwise critique of the headline wage gap ===
+  Borjas reports -0.161; Part I reproduces -0.158 on the full sample
+
+  1. Borjas Table 2 col. 5, on the critique sample             -0.1639 (0.0030)  t = -55.54  N = 690,537
+  2. + place-of-work PUMA replaces the metro of work           -0.1729 (0.0029)  t = -59.27  N = 690,535
+  3. + PW state x SOC major group and PW state x NAICS sector  -0.1014 (0.0028)  t = -36.14  N = 690,476
+  4. + standard errors clustered by geography and occupation   -0.1014 (0.0130)  t =  -7.79  N = 690,476
+  5. + only filings whose education is reported                -0.1279 (0.0116)  t = -10.98  N = 628,936
+  6. Borjas specification, only reported education             -0.1805 (0.0409)  t =  -4.42  N = 628,998
+  7. Borjas specification, education as a reported category    -0.1808 (0.0408)  t =  -4.43  N = 690,537
+
+=== 15. Education imputation ===
+  FY2021    84,596 filings, 0.1% with education imputed to bachelor's
+  FY2022    81,404 filings, 0.1% with education imputed to bachelor's
+  FY2023    86,930 filings, 38.5% with education imputed to bachelor's
+  FY2024    87,078 filings, 32.2% with education imputed to bachelor's
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/7/1 fixed-effect singletons were removed (8 observations).
+
+  Table 2 col. 5 as published (education imputed)            -0.1579 (0.0025)  N = 911,628
+  dropping filings with no reported education                -0.1679 (0.0026)  N = 849,969
+  education entered with an 'unknown' category               -0.1679 (0.0026)  N = 911,628
+  restricted to FY2021-FY2022, where education is reported   -0.1504 (0.0037)  N = 440,163
+  Borjas footnote 19 reports -0.172 (0.003) for the first two alternatives
+  of the 63,206 filings imputed to bachelor's, 38.7% entered through the master's-cap lottery, which requires a master's degree or above
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/37/35/0/0/0 fixed-effect singletons were removed (64 observations).
+
+=== 16. The H-1B wage gap by single year of age ===
+  (positive means H-1B workers out-earn comparable natives of that age)
+
+  Borjas Table 2 col. 5
+    gap turns negative at age 25; share of H-1B filings below that age: 2.0%
+      age 22  +0.1928 (0.0239)      0.0% of filings
+      age 24  +0.0448 (0.0064)      1.5% of filings
+      age 26  -0.0531 (0.0052)      6.7% of filings
+      age 28  -0.0996 (0.0050)      9.0% of filings
+      age 30  -0.1251 (0.0051)      8.1% of filings
+      age 32  -0.1451 (0.0054)      6.3% of filings
+      age 34  -0.1898 (0.0057)      5.0% of filings
+      age 36  -0.2661 (0.0064)      3.8% of filings
+      age 38  -0.2953 (0.0068)      3.0% of filings
+      age 40  -0.3338 (0.0071)      2.4% of filings
+      age 42  -0.3272 (0.0078)      1.6% of filings
+      age 44  -0.3363 (0.0089)      1.1% of filings
+      age 46  -0.3479 (0.0105)      0.7% of filings
+      age 48  -0.3362 (0.0123)      0.4% of filings
+      age 50  -0.2844 (0.0156)      0.3% of filings
+
+  PW state x broad occupation and sector
+    gap turns negative at age 28; share of H-1B filings below that age: 20.7%
+      age 22  +0.2858 (0.0345)      0.0% of filings
+      age 24  +0.1463 (0.0385)      1.5% of filings
+      age 26  +0.0347 (0.0235)      6.7% of filings
+      age 28  -0.0268 (0.0188)      9.0% of filings
+      age 30  -0.0654 (0.0100)      8.1% of filings
+      age 32  -0.0902 (0.0119)      6.3% of filings
+      age 34  -0.1384 (0.0123)      5.0% of filings
+      age 36  -0.2168 (0.0147)      3.8% of filings
+      age 38  -0.2492 (0.0191)      3.0% of filings
+      age 40  -0.2757 (0.0239)      2.4% of filings
+      age 42  -0.2744 (0.0215)      1.6% of filings
+      age 44  -0.2918 (0.0261)      1.1% of filings
+      age 46  -0.3046 (0.0345)      0.7% of filings
+      age 48  -0.2930 (0.0378)      0.4% of filings
+      age 50  -0.2535 (0.0541)      0.3% of filings
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+
+=== 18a. Which ages carry the pooled gap ===
+  count-weighted average of the age-specific gaps: -0.1638, against the pooled estimate -0.1639
+  ages 21-29   38.6% of filings   mean gap -0.0732    17.3% of the pooled gap
+  ages 30-34   32.4% of filings   mean gap -0.1492    29.5% of the pooled gap
+  ages 35-39   17.3% of filings   mean gap -0.2763    29.1% of the pooled gap
+  ages 40-50   11.7% of filings   mean gap -0.3367    24.1% of the pooled gap
+  Borjas's own Table 5 column 3 reports that the native seniority premium is small for the first ten years of job tenure and jumps after that. The omitted-tenure bias therefore grows with age, which is exactly the shape of this profile -- and the 3.6-point correction he applies is a single constant.
+
+=== 17. Adjustments the regression cannot make ===
+  Preferred specification (critique step 5)                       running gap -0.1279
+  less the job-seniority bias, Borjas pp. 17-18 (0.886 x 0.041)   running gap -0.0919
+  less the job-seniority bias, Clemens (2026) Table 2 from the SIPP  running gap -0.0646
+  less the base-salary vs total-wage-income gap, Clemens (2026) sec. 3.3  running gap +0.0054
+  The last two lines are not estimates from this sample; they are the published corrections applied in sequence.
+
+Saved the critique tables to output/tables/critique_*.csv
+    ok in 2.0 minutes
+
+--- 05_borjas_labor_demand.R ---
+R = 5.5797; R_g = 5.7857; sigma_pi = 0.1941
+Loaded 571,623 natives and 340,008 H-1B petitions
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+H-1B petitions with no native counterfactual (unseen fixed-effect level): 0 (0.00%)
+
+=== Payroll savings distribution (Figure 1) ===
+  Mean before the seniority adjustment: 0.157   (Borjas 0.156)
+  Mean after the seniority adjustment:  0.121   (Borjas 0.120)
+  Share with positive payroll savings:  68.5%   (Borjas 68.3%)
+Simulated baseline, mu_pi = -0.1
+Simulated baseline, mu_pi = +0.0
+Simulated baseline, mu_pi = +0.1
+Simulated growth_and_separations, mu_pi = -0.1
+Simulated growth_and_separations, mu_pi = +0.0
+Simulated growth_and_separations, mu_pi = +0.1
+
+=== Figure 2 benchmarks, degenerate pi = 0 ===
+  Hiring rate at F = 0:        68.5%   (Borjas 68%)
+  Hiring rate at F = $100,000: 45.0%   (Borjas 45%)
+  Hiring rate at $100,000 across mu: 45.3% to 64.5%   (Borjas 45% to 64%)
+
+================ Table 8. Impact of a visa fee on the demand for H-1B workers ================
+  replication   [Borjas]
+
+  N = 170,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    165.0   141.0   117.0   [  164.0   140.0   117.0]
+    Hiring rate (%)                     45.4    41.8    39.3   [   45.3    41.8    39.0]
+    Visas demanded (1000s)              77.2    71.1    66.8   [   77.1    71.1    66.3]
+    Total revenue ($bn)                 12.7    10.0     7.8   [   12.6    10.0     7.8]
+
+  N = 255,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    212.0   172.0   136.0   [  210.0   170.0   135.0]
+    Hiring rate (%)                     33.2    33.2    33.3   [   33.3    33.4    33.3]
+    Visas demanded (1000s)              84.6    84.6    84.9   [   84.9    85.0    84.9]
+    Total revenue ($bn)                 17.9    14.5    11.5   [   17.8    14.5    11.5]
+
+  N = 340,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    248.0   206.0   167.0   [  246.0   204.0   166.0]
+    Hiring rate (%)                     25.0    25.0    25.0   [   25.1    25.1    24.9]
+    Visas demanded (1000s)              84.9    84.8    84.8   [   85.0    85.0    84.8]
+    Total revenue ($bn)                 21.1    17.5    14.2   [   20.9    17.3    14.1]
+
+================ Table 9. Impact of a visa fee, allowing for wage growth and job separations ================
+  replication   [Borjas]
+
+  N = 170,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    137.0   116.0    96.0   [  136.0   115.0    95.0]
+    Hiring rate (%)                     37.4    34.9    33.1   [   37.5    35.0    33.2]
+    Visas demanded (1000s)              63.6    59.3    56.2   [   63.7    59.4    56.4]
+    Total revenue ($bn)                  8.7     6.9     5.4   [    8.7     6.8     5.4]
+
+  N = 255,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    153.0   122.0    96.0   [  152.0   121.0    95.0]
+    Hiring rate (%)                     33.3    33.1    33.1   [   33.2    33.2    33.2]
+    Visas demanded (1000s)              84.8    84.5    84.3   [   84.8    84.6    84.7]
+    Total revenue ($bn)                 13.0    10.3     8.1   [   12.9    10.2     8.0]
+
+  N = 340,000   (mu = -0.1, 0.0, +0.1)
+    Revenue-maximising fee ($1000s)    190.0   154.0   123.0   [  188.0   153.0   122.0]
+    Hiring rate (%)                     24.9    24.9    24.9   [   25.0    24.9    24.9]
+    Visas demanded (1000s)              84.6    84.7    84.6   [   85.0    84.7    84.8]
+    Total revenue ($bn)                 16.1    13.0    10.4   [   16.0    13.0    10.3]
+
+Saved Tables 8 and 9 to output/tables/borjas_august_tables8_9.csv
+
+=== Highest fee at which all 85,000 visas are still used (N = 170,000) ===
+  mu = -0.1 : $148,000
+  mu = +0.0 : $114,000
+  mu = +0.1 : $87,000
+  Borjas: $87,000 worst case (mu = +0.1); $147,000 at mu = -0.1
+Saved fig01_borjas_payroll_savings.png
+Saved fig02_borjas_fee_simulation.png
+    ok in 0.7 minutes
+
+--- 06_allocation_simulation.R ---
+Loaded the pooled Borjas sample: 911,631 rows, FY2021-FY2024
+FY2022-24 natives: 440,415; FY2022-24 approved H-1B petitions: 255,412
+Matched OFLC wage levels to 251,962 of 255,412 petitions (98.6%)
+  merge check: beneficiary age agrees on 100.000% of matched petitions
+After restricting to cap-subject types B and M: 251,962
+Dropping 0 petitions with no regional price parity or lifetime multiplier (territories and unmatched worksite states)
+Base sample for the simulation: 251,962 petitions (120,481 reserved, 131,481 unreserved)
+
+=== Synthetic registrant pool ===
+  FY2022  eligible registrations   301,419  approval rate 0.899  pool   270,961
+  FY2023  eligible registrations   474,384  approval rate 0.927  pool   439,800
+  FY2024  eligible registrations   758,967  approval rate 0.954  pool   723,873
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+
+Observed FY2022-24 allocation: Borjas gap -0.1668 (0.0029), tenure-adjusted -0.1308
+
+Running 100 replications in 5 batches of up to 20
+NOTE: 0/3/0/0/0/3/0 fixed-effect singletons were removed (6 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/3/0/0/0/3/0 fixed-effect singletons were removed (6 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/4/0/0/0/3/0 fixed-effect singletons were removed (7 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+  batch 1 of 5 done (replications 1-20)
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/3/0/0/0/3/0 fixed-effect singletons were removed (6 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/3/0/0/0/3/0 fixed-effect singletons were removed (6 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/3/0/0/0/3/0 fixed-effect singletons were removed (6 observations).
+NOTE: 0/3/0/0/0/3/0 fixed-effect singletons were removed (6 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+  batch 2 of 5 done (replications 21-40)
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/3/0/0/0/3/0 fixed-effect singletons were removed (6 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+  batch 3 of 5 done (replications 41-60)
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/3/0/0/0/3/0 fixed-effect singletons were removed (6 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+  batch 4 of 5 done (replications 61-80)
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/2/0/0/0/3/0 fixed-effect singletons were removed (5 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/1/0/0/0/3/0 fixed-effect singletons were removed (4 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+  batch 5 of 5 done (replications 81-100)
+
+=== Eligible pool per replication, against the 85,000 cap ===
+  FY2022  lca_wage_level_wt                 269,888  cap fillable
+  FY2023  lca_wage_level_wt                 438,588  cap fillable
+  FY2024  lca_wage_level_wt                 721,912  cap fillable
+  FY2022  Old_OFLC_wage_level_wt            265,260  cap fillable
+  FY2023  Old_OFLC_wage_level_wt            424,129  cap fillable
+  FY2024  Old_OFLC_wage_level_wt            699,086  cap fillable
+  FY2022  New_OFLC_wage_level_strict_wt      53,469  BELOW THE CAP
+  FY2023  New_OFLC_wage_level_strict_wt      86,625  cap fillable
+  FY2024  New_OFLC_wage_level_strict_wt     176,890  cap fillable
+
+Selection counts recorded for 251,271 distinct petitions across 4 regimes
+
+========== Estimated H-1B wage gap by allocation regime ==========
+  (negative means H-1B workers earn less than comparable natives)
+
+  Allocation regime                                Borjas     Tenure       SD        Visas
+  0. observed FY2022-24 allocation                -16.68%    -13.08%      NA      251,962
+  1. old unweighted lottery                       -16.68%    -13.08%    0.05      255,000
+  2a. weighted lottery, old wage levels            -9.27%     -5.67%    0.06      255,000
+  2b. weighted lottery, new wage levels            10.45%     14.05%    0.06      208,844
+  3. EIG wage ranking, RPP and NPV adjusted         9.88%     13.48%    0.05      255,000
+
+Saved simulation tables to output/tables/
+    ok in 16.1 minutes
+
+--- 07_fee_under_reformed_rules.R ---
+Loaded 340,008 petitions with payroll savings, FY2021-FY2024
+Matched selection counts to payroll savings for 251,271 of 255,412 FY2022-24 petitions
+
+=== 3. Share of FY2022-24 petitions eligible under each regime ===
+  (measured on all 251,962 petitions, not only those that won a lottery)
+  1. old unweighted lottery                  Abroad   100.0%
+  1. old unweighted lottery                  In US    100.0%
+  2a. weighted lottery, old wage levels      Abroad    97.0%
+  2a. weighted lottery, old wage levels      In US     97.1%
+  2b. weighted lottery, new wage levels      Abroad    17.5%
+  2b. weighted lottery, new wage levels      In US     27.1%
+  3. EIG wage ranking, RPP and NPV adjusted  Abroad   100.0%
+  3. EIG wage ranking, RPP and NPV adjusted  In US    100.0%
+
+=== 4. Payroll savings by regime (tenure-adjusted, Figure 1 basis) ===
+  a negative mean means the average H-1B worker costs MORE than a comparable native
+
+  weighting: eligible applicants
+    1. old unweighted lottery                  mean savings +0.1307    69.3% positive   median wage $101,177   six-year saving $104,730 (headline) / $79,171 (tenure-adjusted)
+    2a. weighted lottery, old wage levels      mean savings +0.1216    68.6% positive   median wage $101,802   six-year saving $99,345 (headline) / $73,803 (tenure-adjusted)
+    2b. weighted lottery, new wage levels      mean savings -0.1127    35.5% positive   median wage $133,673   six-year saving $-60,133 (headline) / $-85,366 (tenure-adjusted)
+    3. EIG wage ranking, RPP and NPV adjusted  mean savings -0.0909    40.6% positive   median wage $139,643   six-year saving $-42,835 (headline) / $-70,149 (tenure-adjusted)
+
+  weighting: lottery winners
+    1. old unweighted lottery                  mean savings +0.1312    69.4% positive   median wage $101,177   six-year saving $105,137 (headline) / $79,568 (tenure-adjusted)
+    2a. weighted lottery, old wage levels      mean savings +0.0568    59.7% positive   median wage $109,009   six-year saving $56,667 (headline) / $30,896 (tenure-adjusted)
+    2b. weighted lottery, new wage levels      mean savings -0.1387    31.5% positive   median wage $135,253   six-year saving $-80,749 (headline) / $-105,739 (tenure-adjusted)
+    3. EIG wage ranking, RPP and NPV adjusted  mean savings -0.1349    32.8% positive   median wage $145,055   six-year saving $-79,224 (headline) / $-106,302 (tenure-adjusted)
+  simulated regime: 1. old unweighted lottery
+  simulated regime: 2a. weighted lottery, old wage levels
+  simulated regime: 2b. weighted lottery, new wage levels
+  simulated regime: 3. EIG wage ranking, RPP and NPV adjusted
+
+=== 5. Share of employers willing to pay $103,265, tenure-adjusted ===
+
+  weighting: eligible applicants
+    1. old unweighted lottery                  in-US  mu -0.1:  43.3%   mu 0.0:  34.8%   mu +0.1:  26.9%
+    2a. weighted lottery, old wage levels      in-US  mu -0.1:  42.8%   mu 0.0:  34.3%   mu +0.1:  26.5%
+    2b. weighted lottery, new wage levels      in-US  mu -0.1:  30.6%   mu 0.0:  23.7%   mu +0.1:  17.8%
+    3. EIG wage ranking, RPP and NPV adjusted  in-US  mu -0.1:  36.2%   mu 0.0:  28.6%   mu +0.1:  21.9%
+
+  weighting: lottery winners
+    1. old unweighted lottery                  in-US  mu -0.1:  43.4%   mu 0.0:  34.9%   mu +0.1:  27.0%
+    2a. weighted lottery, old wage levels      in-US  mu -0.1:  39.0%   mu 0.0:  31.0%   mu +0.1:  23.9%
+    2b. weighted lottery, new wage levels      in-US  mu -0.1:  28.6%   mu 0.0:  22.0%   mu +0.1:  16.6%
+    3. EIG wage ranking, RPP and NPV adjusted  in-US  mu -0.1:  33.0%   mu 0.0:  25.8%   mu +0.1:  19.7%
+
+=== 6. FY2027, 211,600 registrations ===
+  in-US 196,960, abroad 14,640 (already paid the $100,000 Proclamation payment)
+
+  --- compliance: employers raise pay to the new floor, volume unchanged ---
+
+  1. old unweighted lottery
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  43.4%  ->   100,155 petitions   visas   85,000   shortfall        0   revenue $8.8bn
+    mu = +0.0  in-US willing  34.9%  ->    83,412 petitions   visas   83,412   shortfall    1,588   revenue $8.6bn
+    mu = +0.1  in-US willing  27.0%  ->    67,893 petitions   visas   67,893   shortfall   17,107   revenue $7.0bn
+
+  2a. weighted lottery, old wage levels
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  39.0%  ->    91,418 petitions   visas   85,000   shortfall        0   revenue $8.8bn
+    mu = +0.0  in-US willing  31.0%  ->    75,735 petitions   visas   75,735   shortfall    9,265   revenue $7.8bn
+    mu = +0.1  in-US willing  23.9%  ->    61,726 petitions   visas   61,726   shortfall   23,274   revenue $6.4bn
+
+  2b. weighted lottery, new wage levels
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  28.6%  ->    71,040 petitions   visas   71,040   shortfall   13,960   revenue $7.3bn
+    mu = +0.0  in-US willing  22.0%  ->    58,000 petitions   visas   58,000   shortfall   27,000   revenue $6.0bn
+    mu = +0.1  in-US willing  16.6%  ->    47,261 petitions   visas   47,261   shortfall   37,739   revenue $4.9bn
+
+  3. EIG wage ranking, RPP and NPV adjusted
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  33.0%  ->    79,621 petitions   visas   79,621   shortfall    5,379   revenue $8.2bn
+    mu = +0.0  in-US willing  25.8%  ->    65,378 petitions   visas   65,378   shortfall   19,622   revenue $6.8bn
+    mu = +0.1  in-US willing  19.7%  ->    53,460 petitions   visas   53,460   shortfall   31,540   revenue $5.5bn
+
+  --- exclusion: registrations below the new floor disappear ---
+
+  1. old unweighted lottery
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  43.4%  ->   100,155 petitions   visas   85,000   shortfall        0   revenue $8.8bn
+    mu = +0.0  in-US willing  34.9%  ->    83,412 petitions   visas   83,412   shortfall    1,588   revenue $8.6bn
+    mu = +0.1  in-US willing  27.0%  ->    67,893 petitions   visas   67,893   shortfall   17,107   revenue $7.0bn
+
+  2a. weighted lottery, old wage levels
+    eligible: abroad 14,194 + in-US 191,232 = 205,426   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  39.0%  ->    88,740 petitions   visas   85,000   shortfall        0   revenue $8.8bn
+    mu = +0.0  in-US willing  31.0%  ->    73,512 petitions   visas   73,512   shortfall   11,488   revenue $7.6bn
+    mu = +0.1  in-US willing  23.9%  ->    59,910 petitions   visas   59,910   shortfall   25,090   revenue $6.2bn
+
+  2b. weighted lottery, new wage levels
+    eligible: abroad 2,567 + in-US 53,310 = 55,878   (fee priced against eligible applicants)
+    mu = -0.1  in-US willing  30.6%  ->    18,893 petitions   visas   18,893   shortfall   66,107   revenue $2.0bn
+    mu = +0.0  in-US willing  23.7%  ->    15,180 petitions   visas   15,180   shortfall   69,820   revenue $1.6bn
+    mu = +0.1  in-US willing  17.8%  ->    12,055 petitions   visas   12,055   shortfall   72,945   revenue $1.2bn
+
+  3. EIG wage ranking, RPP and NPV adjusted
+    eligible: abroad 14,640 + in-US 196,960 = 211,600   (fee priced against lottery winners)
+    mu = -0.1  in-US willing  33.0%  ->    79,621 petitions   visas   79,621   shortfall    5,379   revenue $8.2bn
+    mu = +0.0  in-US willing  25.8%  ->    65,378 petitions   visas   65,378   shortfall   19,622   revenue $6.8bn
+    mu = +0.1  in-US willing  19.7%  ->    53,460 petitions   visas   53,460   shortfall   31,540   revenue $5.5bn
+
+=== 7. Revenue-maximising fee, N = 170,000 (Borjas Table 9: $95k / $115k / $136k) ===
+
+  weighting: eligible applicants
+    1. old unweighted lottery                  $  138k  $  117k  $   97k   (revenue $8.8 / 7.0 / 5.5 bn)
+    2a. weighted lottery, old wage levels      $  138k  $  116k  $   96k   (revenue $8.7 / 6.9 / 5.4 bn)
+    2b. weighted lottery, new wage levels      $   96k  $   80k  $   65k   (revenue $5.2 / 4.2 / 3.4 bn)
+    3. EIG wage ranking, RPP and NPV adjusted  $  111k  $   92k  $   76k   (revenue $6.1 / 4.8 / 3.9 bn)
+
+  weighting: lottery winners
+    1. old unweighted lottery                  $  139k  $  117k  $   97k   (revenue $8.8 / 7.0 / 5.5 bn)
+    2a. weighted lottery, old wage levels      $  131k  $  110k  $   91k   (revenue $7.8 / 6.1 / 4.8 bn)
+    2b. weighted lottery, new wage levels      $   92k  $   75k  $   62k   (revenue $4.9 / 3.9 / 3.2 bn)
+    3. EIG wage ranking, RPP and NPV adjusted  $  104k  $   85k  $   70k   (revenue $5.5 / 4.3 / 3.5 bn)
+
+  with N set to each regime's own FY2027 eligible pool (exclusion reading):
+    1. old unweighted lottery                  N =  211,600   $  139k  $  117k  $   97k
+    2a. weighted lottery, old wage levels      N =  205,426   $  131k  $  110k  $   91k
+    2b. weighted lottery, new wage levels      N =   55,878   $   96k  $   80k  $   65k
+    3. EIG wage ranking, RPP and NPV adjusted  N =  211,600   $  104k  $   85k  $   70k
+
+Saved the regime fee tables to output/tables/fee_regime_*.csv
+    ok in 1.8 minutes
+
+--- 08_fee_incidence_by_quartile.R ---
+FY2027 in-US registrations, derived as in script 07: 196,960
+In-US petitions, FY2022-24: 139,128; with an age match: 138,894
+
+Payroll-savings quartile cut points on the status-quo cohort: -0.0866, +0.0899, +0.2637
+Wage quartile cut points on the status-quo cohort: $85,586, $104,732, $135,257
+  simulated Borjas headline, current lottery (savings_quartile_int)
+  simulated Borjas headline, weighted lottery + old wage levels (savings_quartile_int)
+  simulated Borjas headline, weighted lottery + new wage levels (savings_quartile_int)
+  simulated Tenure-adjusted, current lottery (savings_quartile_int)
+  simulated Tenure-adjusted, weighted lottery + old wage levels (savings_quartile_int)
+  simulated Tenure-adjusted, weighted lottery + new wage levels (savings_quartile_int)
+  simulated Borjas headline, current lottery (wage_quartile_int)
+  simulated Borjas headline, weighted lottery + old wage levels (wage_quartile_int)
+  simulated Borjas headline, weighted lottery + new wage levels (wage_quartile_int)
+  simulated Tenure-adjusted, current lottery (wage_quartile_int)
+  simulated Tenure-adjusted, weighted lottery + old wage levels (wage_quartile_int)
+  simulated Tenure-adjusted, weighted lottery + new wage levels (wage_quartile_int)
+
+===== Fee incidence by payroll-savings quartile, mu = 0 =====
+  Q1 holds the smallest payroll savings, which is where the best-paid
+  H-1B workers sit: the payroll saving falls as the wage rises.
+
+  Borjas headline, current lottery
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     25.0%    -2.312    -0.221    -0.087   $134,272     86.7%    29.3     30.1    42,674
+    2     25.0%    -0.087    +0.007    +0.090   $113,658     63.1%    29.3     29.7    31,062
+    3     25.0%    +0.090    +0.172    +0.264   $100,151     38.7%    29.8     30.1    19,066
+    4     25.0%    +0.264    +0.383    +1.420    $86,369     14.6%    31.6     31.7     7,201
+    cohort: 100,004 of 196,960 in-US applications lost (50.8%); mean age 30.0 -> 30.7; F-1 share 85.3% -> 84.5%
+
+  Borjas headline, weighted lottery + old wage levels
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     33.6%    -2.312    -0.236    -0.087   $138,789     86.3%    29.8     30.5    57,106
+    2     26.7%    -0.087    +0.004    +0.090   $122,629     61.0%    29.9     30.3    32,107
+    3     22.3%    +0.090    +0.168    +0.264   $104,685     36.8%    30.5     30.7    16,177
+    4     17.4%    +0.264    +0.368    +1.246    $91,348     14.0%    32.2     32.3     4,791
+    cohort: 110,182 of 196,960 in-US applications lost (55.9%); mean age 30.4 -> 31.2; F-1 share 83.0% -> 82.2%
+
+  Borjas headline, weighted lottery + new wage levels
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     53.3%    -2.312    -0.260    -0.087   $144,656     86.3%    29.7     30.4    90,553
+    2     28.1%    -0.087    -0.006    +0.090   $133,290     58.3%    30.1     30.4    32,303
+    3     14.1%    +0.090    +0.156    +0.264   $127,111     33.4%    31.2     31.4     9,293
+    4      4.5%    +0.264    +0.333    +1.160   $107,977     12.7%    33.3     33.4     1,113
+    cohort: 133,261 of 196,960 in-US applications lost (67.7%); mean age 30.2 -> 31.0; F-1 share 82.7% -> 82.4%
+
+  Tenure-adjusted, current lottery
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     25.0%    -2.312    -0.221    -0.087   $134,272     92.0%    29.3     30.2    45,292
+    2     25.0%    -0.087    +0.007    +0.090   $113,658     76.2%    29.3     29.8    37,525
+    3     25.0%    +0.090    +0.172    +0.264   $100,151     57.5%    29.8     30.2    28,306
+    4     25.0%    +0.264    +0.383    +1.420    $86,369     34.8%    31.6     31.8    17,137
+    cohort: 128,259 of 196,960 in-US applications lost (65.1%); mean age 30.0 -> 30.9; F-1 share 85.3% -> 84.2%
+
+  Tenure-adjusted, weighted lottery + old wage levels
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     33.6%    -2.312    -0.236    -0.087   $138,789     91.7%    29.8     30.6    60,683
+    2     26.7%    -0.087    +0.004    +0.090   $122,629     74.5%    29.9     30.4    39,220
+    3     22.3%    +0.090    +0.168    +0.264   $104,685     55.6%    30.5     30.8    24,430
+    4     17.4%    +0.264    +0.368    +1.246    $91,348     33.6%    32.2     32.4    11,497
+    cohort: 135,830 of 196,960 in-US applications lost (69.0%); mean age 30.4 -> 31.3; F-1 share 83.0% -> 81.9%
+
+  Tenure-adjusted, weighted lottery + new wage levels
+    Q     share   sav.low   sav.med  sav.high  med. wage  vol. cut age pre age post FY27 lost
+    1     53.3%    -2.312    -0.260    -0.087   $144,656     91.7%    29.7     30.5    96,210
+    2     28.1%    -0.087    -0.006    +0.090   $133,290     72.5%    30.1     30.5    40,164
+    3     14.1%    +0.090    +0.156    +0.264   $127,111     52.2%    31.2     31.4    14,521
+    4      4.5%    +0.264    +0.333    +1.160   $107,977     30.8%    33.3     33.5     2,707
+    cohort: 153,602 of 196,960 in-US applications lost (78.0%); mean age 30.2 -> 31.2; F-1 share 82.7% -> 82.3%
+
+=== The fee removes the best-paid first, in every scenario ===
+  Borjas headline, current lottery                       Q1 (median wage $134,272) loses 86.7%; Q4 (median wage $86,369) loses 14.6%
+  Borjas headline, weighted lottery + old wage levels    Q1 (median wage $138,789) loses 86.3%; Q4 (median wage $91,348) loses 14.0%
+  Borjas headline, weighted lottery + new wage levels    Q1 (median wage $144,656) loses 86.3%; Q4 (median wage $107,977) loses 12.7%
+  Tenure-adjusted, current lottery                       Q1 (median wage $134,272) loses 92.0%; Q4 (median wage $86,369) loses 34.8%
+  Tenure-adjusted, weighted lottery + old wage levels    Q1 (median wage $138,789) loses 91.7%; Q4 (median wage $91,348) loses 33.6%
+  Tenure-adjusted, weighted lottery + new wage levels    Q1 (median wage $144,656) loses 91.7%; Q4 (median wage $107,977) loses 30.8%
+
+=== The fee selects for older workers ===
+  Borjas headline, current lottery                       mean age 30.00 -> 30.71 (+0.71 years)   F-1 share 85.3% -> 84.5%
+  Borjas headline, weighted lottery + old wage levels    mean age 30.38 -> 31.16 (+0.78 years)   F-1 share 83.0% -> 82.2%
+  Borjas headline, weighted lottery + new wage levels    mean age 30.19 -> 31.04 (+0.85 years)   F-1 share 82.7% -> 82.4%
+  Tenure-adjusted, current lottery                       mean age 30.00 -> 30.86 (+0.86 years)   F-1 share 85.3% -> 84.2%
+  Tenure-adjusted, weighted lottery + old wage levels    mean age 30.38 -> 31.33 (+0.94 years)   F-1 share 83.0% -> 81.9%
+  Tenure-adjusted, weighted lottery + new wage levels    mean age 30.19 -> 31.19 (+1.00 years)   F-1 share 82.7% -> 82.3%
+
+=== Cut by wage instead of by payroll savings, mu = 0 ===
+
+  Borjas headline, current lottery
+    Q1   25.0% of cohort   median wage     $74,969   age 29.4 -> 30.1   volume cut  45.0%
+    Q2   25.1% of cohort   median wage     $95,218   age 29.8 -> 30.7   volume cut  46.5%
+    Q3   25.0% of cohort   median wage    $118,983   age 30.1 -> 30.9   volume cut  53.7%
+    Q4   25.0% of cohort   median wage    $156,651   age 30.8 -> 31.3   volume cut  57.8%
+
+  Borjas headline, weighted lottery + old wage levels
+    Q1   16.7% of cohort   median wage     $76,087   age 29.5 -> 30.4   volume cut  49.6%
+    Q2   21.8% of cohort   median wage     $95,851   age 30.0 -> 30.9   volume cut  50.7%
+    Q3   27.4% of cohort   median wage    $120,285   age 30.4 -> 31.3   volume cut  58.1%
+    Q4   34.1% of cohort   median wage    $159,752   age 31.1 -> 31.7   volume cut  60.6%
+
+  Borjas headline, weighted lottery + new wage levels
+    Q1    6.1% of cohort   median wage     $77,533   age 28.9 -> 30.4   volume cut  67.3%
+    Q2   11.6% of cohort   median wage     $95,851   age 29.6 -> 31.0   volume cut  69.9%
+    Q3   31.3% of cohort   median wage    $123,648   age 29.8 -> 30.6   volume cut  66.9%
+    Q4   51.0% of cohort   median wage    $161,245   age 30.7 -> 31.4   volume cut  67.6%
+
+  Tenure-adjusted, current lottery
+    Q1   25.0% of cohort   median wage     $74,969   age 29.4 -> 30.3   volume cut  62.1%
+    Q2   25.1% of cohort   median wage     $95,218   age 29.8 -> 30.8   volume cut  61.7%
+    Q3   25.0% of cohort   median wage    $118,983   age 30.1 -> 31.1   volume cut  66.9%
+    Q4   25.0% of cohort   median wage    $156,651   age 30.8 -> 31.4   volume cut  69.7%
+
+  Tenure-adjusted, weighted lottery + old wage levels
+    Q1   16.7% of cohort   median wage     $76,087   age 29.5 -> 30.6   volume cut  65.6%
+    Q2   21.8% of cohort   median wage     $95,851   age 30.0 -> 31.1   volume cut  65.1%
+    Q3   27.4% of cohort   median wage    $120,285   age 30.4 -> 31.5   volume cut  70.6%
+    Q4   34.1% of cohort   median wage    $159,752   age 31.1 -> 31.8   volume cut  71.9%
+
+  Tenure-adjusted, weighted lottery + new wage levels
+    Q1    6.1% of cohort   median wage     $77,533   age 28.9 -> 30.6   volume cut  78.6%
+    Q2   11.6% of cohort   median wage     $95,851   age 29.6 -> 31.2   volume cut  80.2%
+    Q3   31.3% of cohort   median wage    $123,648   age 29.8 -> 30.8   volume cut  77.6%
+    Q4   51.0% of cohort   median wage    $161,245   age 30.7 -> 31.5   volume cut  77.6%
+
+=== What it does to the F-1 pipeline ===
+  Borjas headline, current lottery                       F-1 applications lost 86,144 of 168,062 (51.3%)
+  Borjas headline, weighted lottery + old wage levels    F-1 applications lost 92,225 of 163,528 (56.4%)
+  Borjas headline, weighted lottery + new wage levels    F-1 applications lost 110,453 of 162,963 (67.8%)
+  Tenure-adjusted, current lottery                       F-1 applications lost 110,228 of 168,062 (65.6%)
+  Tenure-adjusted, weighted lottery + old wage levels    F-1 applications lost 113,491 of 163,528 (69.4%)
+  Tenure-adjusted, weighted lottery + new wage levels    F-1 applications lost 127,277 of 162,963 (78.1%)
+
+Saved the incidence tables to output/tables/fee_incidence_*.csv
+Saved the Datawrapper files to output/tables/datawrapper/
+    ok in 1.9 minutes
+Warning messages:
+1: package ‘arrow’ was built under R version 4.6.1 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+3: Removed 2045 rows containing non-finite outside the scale range (`stat_bin()`). 
+4: Removed 2 rows containing missing values or values outside the scale range
+(`geom_bar()`). 
+5: Removed 400 rows containing missing values or values outside the scale range
+(`geom_line()`). 
+6: Removed 300 rows containing missing values or values outside the scale range
+(`geom_line()`). 
+7: Removed 300 rows containing missing values or values outside the scale range
+(`geom_line()`). 
+
+Pipeline complete: 2026-09-21 11:56:47
+Total minutes: 22.9
+Run log: /Users/jiaxinhe/Documents/projects/Claude Projects/h1b-fee-comment-letter/output/logs/run_all_20260921_113352.log
+EXIT=0

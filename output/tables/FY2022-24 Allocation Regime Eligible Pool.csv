@@ -1,0 +1,10 @@
+registration_lottery_year,weight_col,eligible_per_replication_num,cap_fillable_flag
+2022,New_OFLC_wage_level_strict_wt,53469.4,FALSE
+2023,New_OFLC_wage_level_strict_wt,86624.8,TRUE
+2024,New_OFLC_wage_level_strict_wt,176890.4,TRUE
+2022,Old_OFLC_wage_level_wt,265260.4,TRUE
+2023,Old_OFLC_wage_level_wt,424129.35,TRUE
+2024,Old_OFLC_wage_level_wt,699086,TRUE
+2022,lca_wage_level_wt,269887.9,TRUE
+2023,lca_wage_level_wt,438588.45,TRUE
+2024,lca_wage_level_wt,721911.65,TRUE

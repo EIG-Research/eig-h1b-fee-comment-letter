@@ -1,0 +1,4 @@
+scenario_id,scenario_label,true_elasticity_num,min_estimate_num,max_estimate_num,mean_estimate_num,share_in_dhs_range_num
+A,Fees have no effect on filing volume (true elasticity = 0),0,0.6902707678179493,0.9999999999999845,0.9371138860637798,1
+B,Firms respond substantially to fees (true elasticity = -0.5),-0.5,0.801970226921939,0.999999999999984,0.957738605249117,1
+C,Firms respond very strongly to fees (true elasticity = -2.0),-2,0.9999999999999836,1.207813833401195,1.040253894036962,0.5

@@ -1,0 +1,15 @@
+table_id,claim,published_value,recomputed_value,verdict
+A.1,Footnote 8: FY2021 nonprofit share of I-129 H-1B receipts,5.07%,5.22%,"Internally inconsistent: body text of the same paragraph states 5.22%, which is the correct value"
+A.1,Footnote 8: FY2025 nonprofit share of I-129 H-1B receipts,12.07%,12.07%,Reproduced
+A.1,Share of petitions from entities employing more than 25 workers,86.13%,"86.13% (nearest of 13 constructions: pooled >90% coverage years, share of all receipts)",Reproduced
+A.2,Five-year totals equal the sum of the fiscal-year columns,as printed,16 of 16 rows match,Reproduced
+A.2,Bin definitions partition the support of petitions per entity,"'501 to 1,000' and '1,000 to 5,000'","the value 1,000 belongs to two bins",Overlapping bin boundary
+A.2 vs A.3,Table A.2 column totals equal Table A.3 entity counts,46136; 50424; 46926; 53669; 58350,46136; 50424; 46926; 53669; 58350,Reproduced
+A.3,Mean petitions per entity equals receipts divided by entities,8.63; 9.41; 8.24; 7.96; 7.83,8.63; 9.41; 8.24; 7.96; 7.83,Reproduced
+A.5,The panel dataset is balanced across four fiscal years,"N = 428,103 observations, 107,035 entities","107,035 x 4 = 428,140, i.e. 3.9997 observations per entity","Not balanced: reported N is 37 observations short of entities x 4, and is not divisible by 4"
+A.6,Difference in Registration Volume column equals (B) minus (A),as printed,max absolute gap = 0,Reproduced
+A.6,% Share Consular column equals (D) divided by (C),as printed,max absolute gap = 0.005 percentage points,Reproduced
+A.6,Footnote 14 categories are exhaustive and mutually exclusive,High >70; Upper Medium 50-70; Lower Medium 30-49; Low <30,"no category covers shares in [49, 50); the value 70 is in two categories",Definitional gap and overlap
+A.6,Table A.6 supports an inference about consular reliance and registration declines,"30 firms, sorted descending by decline","30 of 30 firms shown declined; 0 increased; total registrations fell 58,551 to 18,655 (-68.1%)","Sample selected on the dependent variable; no firm with a flat or rising count is shown, so the stated correlation is not identified"
+A.7,Column totals equal the sum of the monthly rows,17607; 16191; 13823; 1212,17607; 16191; 13823; 1212,Reproduced
+A.7,Footnote 15: decline in initial consular receipts after the Proclamation payment,-91.23%,-91.23%,Reproduced

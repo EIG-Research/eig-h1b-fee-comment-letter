@@ -1,0 +1,77 @@
+Warning message:
+package ‘arrow’ was built under R version 4.6.1 
+Retrieved 103 monthly CPIAUCNS observations, 2018-01-01 to 2026-08-01
+NOTE: the 2025 CPI base uses 11 months. This rescales all dollar figures uniformly and leaves the wage-gap coefficients unchanged.
+Loaded 4 I-129 files: 373,104 petitions, FY2021-FY2024
+H-1B after core restrictions: 356,537; after the status-date window: 356,413 (dropped 124)
+Loaded ACS: 752,303 rows, years 2021, 2022, 2023, 2024
+ACS native sample before the earnings floor: 611,729
+H-1B rows missing an occupation match: 1; missing an industry match: 16359; falling back to a state pseudo-metro: 30893
+ACS rows falling back to a state pseudo-metro: 113142 (18.5%)
+
+Earnings bounds applied at Borjas's stated values: floor $34,780 (the 0.01 percentile here); ceiling $1,290,000 (the 100.00 percentile here)
+
+=== Table 1 check (replication vs Borjas) ===
+  Native:
+    N            571,623   vs 581,648
+    Salary(000s)    127.1   vs    127.0
+    Log salary      11.53   vs    11.53
+    Age              35.8   vs     35.8
+    Male %           55.1   vs     55.1
+    Bachelor %       71.9   vs     71.8
+    Master %         20.9   vs     20.9
+    Prof %            4.6   vs      4.6
+    Doctorate %       2.7   vs      2.7
+  H-1B:
+    N            340,008   vs 343,397
+    Salary(000s)    112.7   vs    112.6
+    Log salary      11.58   vs    11.58
+    Age              31.9   vs     31.9
+    Male %           67.0   vs     67.2
+    Bachelor %       53.7   vs     52.3
+    Master %         40.6   vs     41.8
+    Prof %            1.0   vs      0.9
+    Doctorate %       4.8   vs      5.1
+
+=== Beneficiary location (Borjas: Abroad 42.1, USA 57.7, Other 0.2) ===
+  Abroad     144,626   42.5%
+  Other          697    0.2%
+  USA        194,685   57.3%
+
+Total regression observations: 911,631   (Borjas: 925,045)
+Estimated column 1
+Estimated column 2
+Estimated column 3
+NOTE: 0/0/0/0/0/3 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3 fixed-effect singletons were removed (3 observations).
+Estimated column 4
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+NOTE: 0/0/0/0/0/3/0 fixed-effect singletons were removed (3 observations).
+Estimated column 5
+
+================ Table 2. Estimates of the H-1B wage gap ================
+  replication (se)   [Borjas reported]
+
+  A. Baseline (OLS)
+    H-1B
+      (1)  +0.048 (0.001)   [+0.044]   diff +0.004
+      (2)  -0.064 (0.002)   [-0.062]   diff -0.002
+      (3)  -0.025 (0.002)   [-0.023]   diff -0.002
+      (4)  -0.128 (0.002)   [-0.136]   diff +0.008
+      (5)  -0.158 (0.002)   [-0.161]   diff +0.003
+
+  B. Location of beneficiary (OLS)
+    Abroad
+      (1)  +0.032 (0.001)   [+0.021]   diff +0.011
+      (2)  -0.061 (0.002)   [-0.065]   diff +0.004
+      (3)  -0.083 (0.002)   [-0.087]   diff +0.004
+      (4)  -0.168 (0.003)   [-0.181]   diff +0.013
+      (5)  -0.207 (0.003)   [-0.219]   diff +0.012
+    USA
+      (1)  +0.059 (0.001)   [+0.061]   diff -0.002
+      (2)  -0.066 (0.002)   [-0.059]   diff -0.007
+      (3)  +0.019 (0.002)   [+0.025]   diff -0.006
+      (4)  -0.099 (0.002)   [-0.102]   diff +0.003
+      (5)  -0.122 (0.003)   [-0.118]   diff -0.004
+
+Saved Table 2 to output/tables/borjas_august_table2.csv
