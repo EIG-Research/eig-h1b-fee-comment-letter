@@ -1,5 +1,5 @@
 # EIG public comment on the proposed H-1B fee
-This code underlies [EIG's comment letter](link) to the Department of Homeland Security in response to its [proposed](https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions) $103,265 fee on all cap-subject H-1B petitions. Contact jiaxin@eig.org and sam@eig.org with any questions.
+This code underlies EIG's comment letter to the Department of Homeland Security in response to its [proposed](https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions) $103,265 fee on all cap-subject H-1B petitions. Contact jiaxin@eig.org and sam@eig.org with any questions.
 
 ---
 
